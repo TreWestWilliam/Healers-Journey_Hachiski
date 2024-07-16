@@ -28,5 +28,6 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
             cc.Move(movement * moveSpeed * Time.fixedDeltaTime);
         }
+        cc.Move(gravity * Time.fixedDeltaTime);
     }
 }
