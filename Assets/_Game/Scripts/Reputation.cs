@@ -16,10 +16,16 @@ public class Reputation : MonoBehaviour
 
     public int[] ReputationPerTier = { 1000, 2000, 3000 };
 
+    public ReputationUIHandler ui;
+
     public void setRep(int rep)
     {
         CurrentRep = rep;
         RepTier = getTierOfRep(rep);
+        if(ui != null)
+        {
+            ui.setReputation();
+        }
     }
 
     public void adjustRep(int rep)
