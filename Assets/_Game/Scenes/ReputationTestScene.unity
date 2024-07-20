@@ -1505,6 +1505,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rep: {fileID: 2126577274}
+  tierNames:
+  - UseConstant: 1
+    ConstantValue: Tier 1
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Tier 2
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Tier 3
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Tier 4
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Max Tier
+    Variable: {fileID: 0}
   sliders:
   - {fileID: 2134118919}
   - {fileID: 133816582}
@@ -1605,19 +1621,6 @@ MonoBehaviour:
   - UseConstant: 0
     ConstantValue: {r: 0, g: 0.8867924, b: 0.069658905, a: 1}
     Variable: {fileID: 11400000, guid: 1b92b30ac513b044aa3effcd84332613, type: 2}
-  tierStrings:
-  - UseConstant: 1
-    ConstantValue: Tier 1
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Tier 2
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Tier 3
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Max Tier!
-    Variable: {fileID: 0}
   progressTexts:
   - {fileID: 1538049554}
   progressFonts:
@@ -3244,7 +3247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1795f2d27fdc0a3469fca6e46eade15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReputationPerTier: e8030000d0070000b80b0000
+  ReputationPerTier: e8030000d0070000b80b0000a00f0000
   ui: {fileID: 1013078191}
 --- !u!4 &2126577275
 Transform:

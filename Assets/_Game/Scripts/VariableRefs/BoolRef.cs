@@ -9,7 +9,7 @@ public class BoolRef
 
     public bool Value
     {
-        get { return UseConstant ? ConstantValue : Variable.Value; }
+        get { return UseConstant ? ConstantValue : (Variable != null) ? Variable.Value : default; }
         set
         {
             if(UseConstant)

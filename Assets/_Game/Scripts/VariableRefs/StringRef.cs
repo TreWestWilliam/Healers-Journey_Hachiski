@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 [Serializable]
 public class StringRef
@@ -9,7 +10,7 @@ public class StringRef
 
     public string Value
     {
-        get { return UseConstant ? ConstantValue : Variable.Value; }
+        get { return UseConstant ? ConstantValue : (Variable != null) ? Variable.Value : default; }
         set
         {
             if(UseConstant)

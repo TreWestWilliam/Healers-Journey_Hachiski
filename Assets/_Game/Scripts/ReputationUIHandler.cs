@@ -8,6 +8,8 @@ public class ReputationUIHandler : MonoBehaviour
 {
     public Reputation rep;
 
+    public StringRef[] tierNames;
+
     [Header("Sliders")]
     public Slider[] sliders;
     public ColorRef[] SliderEmptyColor;
@@ -21,7 +23,6 @@ public class ReputationUIHandler : MonoBehaviour
     public TMP_Text[] tierTexts;
     public FontRef[] tierFonts;
     public ColorRef[] tierColors;
-    public StringRef[] tierStrings;
 
     [Header("Progress Text")]
     public TMP_Text[] progressTexts;
@@ -56,6 +57,11 @@ public class ReputationUIHandler : MonoBehaviour
         setSliders();
     }
 
+    public string getTierName(int tier)
+    {
+        return getElementByTier<StringRef>(tierNames, tier);
+    }
+
     private void setSliders()
     {
         foreach(Slider slider in sliders)
@@ -79,7 +85,7 @@ public class ReputationUIHandler : MonoBehaviour
         {
             tierText.font = getElementByRep<FontRef>(tierFonts);
             tierText.color = getElementByRep<ColorRef>(tierColors);
-            tierText.text = getElementByRep<StringRef>(tierStrings);
+            tierText.text = getElementByRep<StringRef>(tierNames);
         }
 
         foreach(TMP_Text progressText in progressTexts)
@@ -98,13 +104,24 @@ public class ReputationUIHandler : MonoBehaviour
         }
     }
 
-    private T getElementByRep<T>(T[] array)
+    private T getElementByTier<T>(T[] array, int tier)
     {
-        int tier = rep.RepTier;
+        if(array == null || array.Length == 0)
+        {
+            return default(T);
+        }
+
         if(tier >= array.Length)
         {
             tier = array.Length - 1;
         }
         return array[tier];
+    }
+
+
+
+    private T getElementByRep<T>(T[] array)
+    {
+        return getElementByTier<T>(array, rep.RepTier);
     }
 }

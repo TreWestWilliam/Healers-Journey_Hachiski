@@ -10,7 +10,7 @@ public class Vector2Ref
 
     public Vector2 Value
     {
-        get { return UseConstant ? ConstantValue : Variable.Value; }
+        get { return UseConstant ? ConstantValue : (Variable != null) ? Variable.Value : default; }
         set
         {
             if(UseConstant)

@@ -40,7 +40,7 @@ public class SpriteVarEditor : Editor
         if(spriteVar.Value != null)
             DrawTexturePreview(new Rect(67, 5, 60, 60), spriteVar.Value);
 
-        Rect rect = new Rect(Screen.width / 2f, 5, (Screen.width / 2f), EditorGUIUtility.singleLineHeight);
+        //Rect rect = new Rect(Screen.width / 2f, 5, (Screen.width / 2f), EditorGUIUtility.singleLineHeight);
 
         EditorGUI.indentLevel = 8;
         spriteVar.Value = (Sprite)EditorGUILayout.ObjectField(spriteVar.Value, typeof(Sprite), false, GUILayout.Width((Screen.width / 1f) - 23f), GUILayout.Height(EditorGUIUtility.singleLineHeight));
