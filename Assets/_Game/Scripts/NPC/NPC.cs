@@ -2,32 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class NPC : MonoBehaviour, IInteractable
 {
-	public GameObject DialogueBoxPrefab;
+	public DialogueBox DialogueBoxPrefab;
 
 	private GameObject _dialogueBoxInstance;
 	private DialogueBox _dialogueBox;
 
 	private void Awake()
 	{
-		CreateDialogueBox();
+	}
+
+	private void Update()
+	{
 	}
 
 	public void CreateDialogueBox()
 	{
-		Vector3 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
-
 		if (!_dialogueBoxInstance && DialogueBoxPrefab)
 		{
-			_dialogueBoxInstance = Instantiate(DialogueBoxPrefab.transform.root.gameObject);
+			_dialogueBoxInstance = 
+				Instantiate(DialogueBoxPrefab.transform.root.gameObject,
+				transform.position + Vector3.up * 1.5f, 
+				Camera.main.transform.rotation,transform);
 			_dialogueBox = _dialogueBoxInstance.GetComponentInChildren<DialogueBox>();
-
-			_dialogueBox.transform.position = screenPosition;
 		}
 	}
 	public void DestroyDialogueBox()
 	{
 		DestroyImmediate(_dialogueBoxInstance);
+	}
+
+	public void Engage()
+	{
+		CreateDialogueBox();
+		_dialogueBox.textField.text = "Hello Player!";
+	}
+
+	public void Disengage()
+	{
+		DestroyDialogueBox();
 	}
 }

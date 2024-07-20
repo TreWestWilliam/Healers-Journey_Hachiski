@@ -9,5 +9,5 @@ public class DialogueBox : MonoBehaviour
 {
 	public GameObject ButtonPrefab;
 
-	public Text text;
+	public Text textField;
 }
