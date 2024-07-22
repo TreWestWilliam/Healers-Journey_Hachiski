@@ -8,4 +8,9 @@ public class Item : MonoBehaviour
     //CLARIFY: What other properties does an Item need?
     protected string itemName;
     protected Image inventoryIcon;
+
+    public string GetItemName()
+    {
+        return itemName;
+    }
 }

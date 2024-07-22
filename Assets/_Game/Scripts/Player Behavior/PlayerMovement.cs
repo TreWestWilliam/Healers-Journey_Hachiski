@@ -7,13 +7,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float interactDist = 2f;
     [SerializeField] private CharacterController cc;
+    [SerializeField] private GameObject inventory;
     private Vector3 movement;
     private Vector3 gravity;
     [SerializeField] private LayerMask NPCMask;
+    private bool canMove;
 
     private void Awake()
     {
         gravity = new Vector3 (0, -9.8f, 0);
+        canMove = true;
     }
 
     // Update is called once per frame
@@ -26,12 +29,26 @@ public class PlayerMovement : MonoBehaviour
         if(movement.magnitude > 1) movement = movement.normalized;
 
         if(Input.GetKeyDown(KeyCode.E) ) Interact();
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(canMove)
+            {
+                canMove = false;
+                inventory.SetActive(true);
+            }
+            else
+            {
+                canMove = true;
+                inventory.SetActive(false);
+            }
+        }
     }
 
     void FixedUpdate()
     {
         // Check if need to move this update
-        if (movement != Vector3.zero)
+        if (canMove && movement != Vector3.zero)
         {
             // Rotate and move
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
