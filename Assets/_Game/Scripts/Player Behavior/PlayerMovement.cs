@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 movement;
     private Vector3 gravity;
     [SerializeField] private LayerMask NPCMask;
+    [SerializeField] private InventoryManager inventoryManager;
     private bool canMove;
 
     private void Awake()
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 canMove = false;
                 inventory.SetActive(true);
+                inventoryManager.UpdateInventory();
             }
             else
             {
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
             else if (hit.transform.CompareTag("Ingredient"))
             {
                 Debug.Log("Ingredient: " + hit.transform.name);
+                hit.transform.GetComponent<Collectable>().Collect();
             }
         }
     }

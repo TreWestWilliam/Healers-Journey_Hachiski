@@ -12,7 +12,30 @@ public class ItemSlot : MonoBehaviour
 
     private void Start()
     {
-        listedName.text = itemContained.GetItemName();
-        listedQuantity.text = itemQuantity.ToString();
+        UpdateDisplay();
+    }
+
+    public void SetItem(Item item)
+    {
+        itemContained = item;
+    }
+
+    public void SetQuantity(int quantity)
+    {
+        itemQuantity = quantity;
+    }
+
+    public void UpdateDisplay()
+    {
+        if(itemContained == null)
+        {
+            listedName.text = string.Empty;
+            listedQuantity.text = string.Empty;
+        }
+        else
+        {
+            listedName.text = itemContained.GetItemName();
+            listedQuantity.text = itemQuantity.ToString();
+        }
     }
 }

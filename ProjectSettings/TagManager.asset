@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Ingredient
+  - Item Slot
   layers:
   - Default
   - TransparentFX
