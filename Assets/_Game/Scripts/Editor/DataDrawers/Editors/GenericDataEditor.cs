@@ -37,7 +37,7 @@ public class GenericDataEditor : Editor
         {
             genericData.sortArrays();
         }
-        if(GUILayout.Button("Reciprocare Data Relationships"))
+        if(GUILayout.Button("Reciprocate Data Relationships"))
         {
             genericData.reciprocateData();
         }
