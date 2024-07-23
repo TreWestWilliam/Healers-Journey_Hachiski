@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditor.Rendering;
+using UnityEngine.UI;
 
 public class IndexPage : MonoBehaviour
 {
@@ -48,10 +49,17 @@ public class IndexPage : MonoBehaviour
             tierEntries.tierLable.text = notebookHandler.repHandler.getTierName(i);
             tierEntries.tierLable.font = tiersFont;
             tierEntries.tierLable.color = tiersColor;
+            EntryTile lastTile = null;
             foreach(GenericData data in tier.data)
             {
-                notebookHandler.createEntryTile(data, tierEntries.entryGrid);
+                lastTile = notebookHandler.createEntryTile(data, tierEntries.entryGrid.transform);
             }
+            if(lastTile != null)
+            {
+                StartCoroutine(tierEntries.updateGrid(tier.data.Length));
+            }
+
         }
     }
+
 }

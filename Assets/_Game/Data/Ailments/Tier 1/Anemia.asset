@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Anemia
+  m_EditorClassIdentifier: 
+  Name: Anemia
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: e5cea2a5f7be8f040a3f712a39eff9bb, type: 2}
+  - {fileID: 11400000, guid: b688b7e4d345f5d4aa7f38f5d7c0dbb1, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 0
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 35c4525f5c698664cb490a36dffd4bb9, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: cb0494c7562c29442b8921ad14d45603, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: c45da7c9630937743a5282bfb11dd149, type: 2}
+      temperature: 0

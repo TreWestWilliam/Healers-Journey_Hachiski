@@ -6,6 +6,9 @@ using UnityEditor;
 using Codice.CM.SEIDInfo;
 
 [CustomPropertyDrawer(typeof(GenericData))]
+[CustomPropertyDrawer(typeof(AilmentData))]
+[CustomPropertyDrawer(typeof(IngredientData))]
+[CustomPropertyDrawer(typeof(SymptomData))]
 public class GenericDataDrawer : PropertyDrawer
 {
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
@@ -61,16 +64,22 @@ public class GenericDataDrawer : PropertyDrawer
                 break;
         }
 
-        Color color = GUI.color;
-        if(type != typeof(GenericData) && property.objectReferenceValue != null && property.objectReferenceValue.GetType() != type)
+
+        if(type == typeof(GenericData))
         {
-            GUI.color = Color.red;
+            EditorGUI.PropertyField(position, property, GUIContent.none);
         }
+        else
+        {
+            Color color = GUI.color;
+            if(property.objectReferenceValue != null && property.objectReferenceValue.GetType() != type)
+            {
+                GUI.color = Color.red;
+            }
+            property.objectReferenceValue = EditorGUI.ObjectField(position, property.objectReferenceValue, type, false);
 
-        property.objectReferenceValue = EditorGUI.ObjectField(position, property.objectReferenceValue, type, false);
-
-        GUI.color = color;
-        //EditorGUI.PropertyField(position, property, GUIContent.none);
+            GUI.color = color;
+        }
 
         position.y += extraHeight;
 

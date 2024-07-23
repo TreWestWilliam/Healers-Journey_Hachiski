@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
+using System.Linq;
 
 public class NotebookHandler : MonoBehaviour
 {
@@ -73,11 +75,12 @@ public class NotebookHandler : MonoBehaviour
 
     public bool checkIfKnown(GenericData entry)
     {
-        if(entry.tier > repHandler.rep.highestTierReached)
+        /*if(entry.tier > repHandler.rep.highestTierReached)
         {
             return false;
         }
-        return true;
+        return true;*/
+        return records.topicDiscovered(entry);
     }
 
     private void closeCurretPage()
@@ -105,24 +108,26 @@ public class NotebookHandler : MonoBehaviour
             currentPage = page;
             currentPage.SetActive(true);
         }
-        checkBookmarks();
     }
 
     public void goToTitlePage()
     {
         goToPage(titlePage.gameObject);
+        checkBookmarks();
     }
 
     public void goToEntryPage(GenericData entry)
     {
-        entryPage.openEntry(entry);
         goToPage(entryPage.gameObject);
+        entryPage.openEntry(entry);
+        checkBookmarks();
     }
 
     public void goToIndexPage(IndexData index)
     {
-        indexPage.openIndex(index);
         goToPage(indexPage.gameObject);
+        indexPage.openIndex(index);
+        checkBookmarks();
     }
 
     public bool onEntryPage()
@@ -130,21 +135,23 @@ public class NotebookHandler : MonoBehaviour
         return currentPage == entryPage.gameObject;
     }
 
-    public void createEntryTile(GenericData data, Transform parent)
+    public EntryTile createEntryTile(GenericData data, Transform parent)
     {
         EntryTile newTile = Instantiate(entryTilePrefab, parent);
         newTile.gameObject.name = data.Name + " Tile";
         newTile.notebookHandler = this;
         newTile.setData(data);
+        return newTile;
     }
 
-    public void createUnknownEntryTile(Transform parent)
+    public EntryTile createUnknownEntryTile(Transform parent)
     {
         EntryTile newTile = Instantiate(unknownEntryTilePrefab, parent);
         newTile.notebookHandler = this;
+        return newTile;
     }
 
-    public void createCureRecipeTiles(Cure cure, Transform parent)
+    public CureTile createCureRecipeTiles(Cure cure, Transform parent)
     {
         CureTile cureTile = Instantiate(cureRecipePrefab, parent);
         cureTile.setData(cure);
@@ -172,19 +179,23 @@ public class NotebookHandler : MonoBehaviour
                 Instantiate(combineSymbolePrefab, cureTile.transform);
             }
         }
-
+        return cureTile;
     }
 
-    public void createLocationFound(string location, Transform parent)
+    public TMP_Text createLocationFound(string location, Transform parent)
     {
         TMP_Text Location = Instantiate(locationFoundPrefab, parent);
 
         Location.text += location;
+
+        return Location;
     }
 
-    public void createUnknownLocation(Transform parent)
+    public TMP_Text createUnknownLocation(Transform parent)
     {
         TMP_Text Location = Instantiate(unknownLocationPrefab, parent);
+
+        return Location;
     }
 
     public void clearSection(GameObject section)
@@ -216,8 +227,97 @@ public class NotebookHandler : MonoBehaviour
         return null;
     }
 
-    private bool isCurrentPage(Data data)
+#if UNITY_EDITOR
+    public void DiscoverTier1IngredientsAndSymptoms()
     {
-        return currentPageData() == data;
+        foreach(Bookmark bookmark in bookmarks)
+        {
+            switch(bookmark.page)
+            {
+                case IngredientIndex index:
+                    if(index.tiers != null && index.tiers.Length > 0 &&
+                        index.tiers[0] != null && index.tiers[0].data != null
+                        && index.tiers[0].data.Length > 0)
+                    {
+                        foreach(GenericData data in index.tiers[0].data)
+                        {
+                            if(data is IngredientData)
+                            {
+                                records.discoverIngredientSymptoms(data as IngredientData);
+                            }
+                        }
+                    }
+                    break;
+                case SymptomIndex index:
+                    if(index.tiers != null && index.tiers.Length > 0 &&
+                        index.tiers[0] != null && index.tiers[0].data != null
+                        && index.tiers[0].data.Length > 0)
+                    {
+                        foreach(GenericData data in index.tiers[0].data)
+                        {
+                            if(data is SymptomData)
+                            {
+                                records.discoverSymptomIngredients(data as SymptomData);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
     }
+
+    public void DiscoverTier1Ailments()
+    {
+        foreach(Bookmark bookmark in bookmarks)
+        {
+            switch(bookmark.page)
+            {
+                case AilmentIndex index:
+                    if(index.tiers != null && index.tiers.Length > 0 &&
+                        index.tiers[0] != null && index.tiers[0].data != null
+                        && index.tiers[0].data.Length > 0)
+                    {
+                        foreach(GenericData data in index.tiers[0].data)
+                        {
+                            if(data is AilmentData)
+                            {
+                                records.discover(data);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    public void DiscoverTier1AilmentSymptoms()
+    {
+        foreach(Bookmark bookmark in bookmarks)
+        {
+            switch(bookmark.page)
+            {
+                case AilmentIndex index:
+                    if(index.tiers != null && index.tiers.Length > 0 &&
+                        index.tiers[0] != null && index.tiers[0].data != null
+                        && index.tiers[0].data.Length > 0)
+                    {
+                        foreach(GenericData data in index.tiers[0].data)
+                        {
+                            if(data is AilmentData)
+                            {
+                                records.discoverAilmentSymptoms(data as AilmentData);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+#endif
 }

@@ -19,10 +19,9 @@ MonoBehaviour:
   tier: 2
   icon:
     UseConstant: 1
-    ConstantValue: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    ConstantValue: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
   - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
   cures:
   - cureName:

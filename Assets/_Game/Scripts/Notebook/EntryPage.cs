@@ -219,5 +219,15 @@ public class EntryPage : MonoBehaviour
         return !(list.Length <= index || !list[index]);
     }
 
+    public void discoverCuresDEBUG()
+    {
+        if(currentEntry is AilmentData)
+        {
+            for(int i = 0; i < (currentEntry as AilmentData).cures.Length; i++)
+            {
+                notebookHandler.records.discoverCure((currentEntry as AilmentData), i);
+            }
+        }
+        openEntry(currentEntry);
+    }
 }
-

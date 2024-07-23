@@ -23,7 +23,6 @@ MonoBehaviour:
     Variable: {fileID: 0}
   symptoms:
   - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-  - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
   cures:
   - cureName:
       UseConstant: 1

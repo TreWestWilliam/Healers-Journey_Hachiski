@@ -16,18 +16,34 @@ MonoBehaviour:
   title: Symptom Index
   tiers:
   - data:
+    - {fileID: 11400000, guid: e5cea2a5f7be8f040a3f712a39eff9bb, type: 2}
+    - {fileID: 11400000, guid: 72f75b32fb6c6d04b8684419546f9bf0, type: 2}
+    - {fileID: 11400000, guid: 96270d035660b6d42a29029eb07edd6e, type: 2}
+    - {fileID: 11400000, guid: 068809176d054d542b5a038e370e9637, type: 2}
+    - {fileID: 11400000, guid: 7769d60d977e50247900a4fc6b62e4fe, type: 2}
+    - {fileID: 11400000, guid: e67f5a19fdfa9da48b03e72bb8f58037, type: 2}
+    - {fileID: 11400000, guid: 7c704ce6097225a419c080a74442d2fb, type: 2}
+    - {fileID: 11400000, guid: 88c1deef8003e5c4d92df43f80fe2ed0, type: 2}
+    - {fileID: 11400000, guid: edcac4bf74a5b634ca33f9b2a40cdd85, type: 2}
+    - {fileID: 11400000, guid: d5c8a748d30e98547acee3c3f0ff0adc, type: 2}
+    - {fileID: 11400000, guid: 86c105fb0cbc75b459d3972111c14ae8, type: 2}
+    - {fileID: 11400000, guid: bb6104a8210756047a3785f7be451900, type: 2}
+    - {fileID: 11400000, guid: 60193084e64041945b7610dcde54524d, type: 2}
+    - {fileID: 11400000, guid: c1e85f893ad4fdd469d18aca3062cfb9, type: 2}
+    - {fileID: 11400000, guid: 36a7ded7c677194438233094b9709354, type: 2}
+    - {fileID: 11400000, guid: 33d57e0db61b74941b18671fe873b1dd, type: 2}
+    - {fileID: 11400000, guid: 934df4062e415a24f921183314abac4c, type: 2}
+    - {fileID: 11400000, guid: b164acf5a4ed0f342be4591a79dd1f4e, type: 2}
+    - {fileID: 11400000, guid: d173111494553644fb283721c8af37b7, type: 2}
+    - {fileID: 11400000, guid: 95066c1276e08ab4fad03603acfa1ca6, type: 2}
     - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
+    - {fileID: 11400000, guid: b688b7e4d345f5d4aa7f38f5d7c0dbb1, type: 2}
+    - {fileID: 11400000, guid: 12756ba0b6b388d49bfaa5eb7a984646, type: 2}
+    - {fileID: 11400000, guid: f495330d543e2714096f4e59d2f50397, type: 2}
   - data:
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-  - data:
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-  - data:
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-  - data:
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
-    - {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
+    - {fileID: 11400000, guid: 91fd4e4aaa60ea34592315561eae4c90, type: 2}
+    - {fileID: 11400000, guid: b7739f896b839b44098eb21ef78e5fb8, type: 2}
+    - {fileID: 11400000, guid: 110233684b554fc468778f163937fd81, type: 2}
+    - {fileID: 11400000, guid: 03d50469bd519ff4cba73408fa124952, type: 2}
+  - data: []
+  - data: []

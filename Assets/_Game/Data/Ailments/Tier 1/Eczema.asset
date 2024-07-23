@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Eczema
+  m_EditorClassIdentifier: 
+  Name: Eczema
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 7c704ce6097225a419c080a74442d2fb, type: 2}
+  - {fileID: 11400000, guid: b164acf5a4ed0f342be4591a79dd1f4e, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 0
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 0
+      ConstantValue: 
+      Variable: {fileID: 11400000, guid: 357cfa03e8071384087d817884ed9733, type: 2}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 023e189f39cdfe648a4c79ef4b545e5e, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: dc6617d291626dc4ba2da07f53c085df, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 671969b5257a8d54fb677272b43428eb, type: 2}
+      temperature: 0

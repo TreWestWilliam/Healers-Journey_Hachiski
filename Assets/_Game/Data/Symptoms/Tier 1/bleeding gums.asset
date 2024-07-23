@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: bleeding gums
+  m_EditorClassIdentifier: 
+  Name: Bleeding gums
+  Description: 
+  UnlockedDescription: 
+  tier: 5
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 8d0c2feaee3b24040b1b356dca7724d2, type: 2}
+  - {fileID: 11400000, guid: 29d6c4ce565e71744b51935fc72f6e76, type: 2}
+  ingredients: []
+  complaints: []
