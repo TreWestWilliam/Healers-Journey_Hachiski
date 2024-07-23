@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public enum Temperature
 {
@@ -12,10 +13,45 @@ public enum Temperature
 }
 
 [Serializable]
-public class TreatedIngredient
+public class TreatedIngredient : IEquatable<TreatedIngredient>
 {
     public IngredientData ingredient;
     public Temperature temperature;
+
+    public static bool operator ==(TreatedIngredient v1, TreatedIngredient v2)
+    {
+        if(v1 is null)
+        {
+            if(v2 is null)
+            {
+                return true;
+            }
+            return false;
+        }
+        return v1.Equals(v2);
+    }
+
+    public static bool operator !=(TreatedIngredient v1, TreatedIngredient v2)
+    {
+        return !(v1 == v2);
+    }
+
+    public bool Equals(TreatedIngredient other)
+    {
+        if(other == null) return false;
+
+        return ingredient.Equals(other.ingredient) && temperature.Equals(other.temperature);
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(ingredient, temperature);
+    }
+
+    public override bool Equals(object obj)
+    {
+        return obj is TreatedIngredient @ref && this.Equals(@ref);
+    }
 }
 
 
