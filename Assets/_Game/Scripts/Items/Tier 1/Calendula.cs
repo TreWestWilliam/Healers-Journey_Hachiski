@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackstrapMolasses : Item
+public class Calendula : Item
 {
     void Awake()
     {
-        itemName = "Blackstrap Molasses";
+        itemName = "Calendula";
     }
 }
