@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -45,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
                 inventory.SetActive(false);
             }
         }
+
+        HandleInteractNotifs();
     }
 
     void FixedUpdate()
@@ -76,6 +79,17 @@ public class PlayerMovement : MonoBehaviour
             {
                 Debug.Log("Ingredient: " + hit.transform.name);
                 hit.transform.GetComponent<Collectable>().Collect();
+            }
+        }
+    }
+
+    private void HandleInteractNotifs() {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
+        {
+            if (hit.transform.CompareTag("Ingredient"))
+            {
+                hit.transform.GetComponent<Collectable>().SetCollectNotifVisible(true);
             }
         }
     }
