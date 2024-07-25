@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class ItemSlot : MonoBehaviour
     [SerializeField] private int itemQuantity;
     [SerializeField] private TMP_Text listedName;
     [SerializeField] private TMP_Text listedQuantity;
+    [SerializeField] private Image itemIcon;
+
+    private void Awake() {
+        itemIcon = GetComponent<Image>();
+    }
 
     private void Start()
     {
@@ -31,11 +37,13 @@ public class ItemSlot : MonoBehaviour
         {
             listedName.text = string.Empty;
             listedQuantity.text = string.Empty;
+            itemIcon.sprite = null;
         }
         else
         {
             listedName.text = itemContained.GetItemName();
             listedQuantity.text = itemQuantity.ToString();
+            itemIcon.sprite = itemContained.GetIcon();
         }
     }
 }
