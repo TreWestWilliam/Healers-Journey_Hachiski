@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 7c704ce6097225a419c080a74442d2fb, type: 2}
-  - {fileID: 11400000, guid: b164acf5a4ed0f342be4591a79dd1f4e, type: 2}
+  - {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
+  - {fileID: 11400000, guid: 1f68f93f196838c43aa6852462a50387, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 357cfa03e8071384087d817884ed9733, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 023e189f39cdfe648a4c79ef4b545e5e, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: dc6617d291626dc4ba2da07f53c085df, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: 671969b5257a8d54fb677272b43428eb, type: 2}
+    - ingredient: {fileID: 11400000, guid: 70842324c1a416e4e8b4d83cfdeeb7b0, type: 2}
       temperature: 0
+    - ingredient: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My skin is so dry and itchy, and there's this rash that won't
+      go away.
+    Variable: {fileID: 0}

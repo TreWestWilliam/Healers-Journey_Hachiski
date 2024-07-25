@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: difficulty seeing at night
+  m_Name: Difficulty Seeing at Night
   m_EditorClassIdentifier: 
-  Name: Difficulty seeing at night
+  Name: Difficulty Seeing at Night
   Description: 
   UnlockedDescription: 
   tier: 0
@@ -20,6 +20,8 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 7354a229217fad04ea465f179180a1d9, type: 2}
+  - {fileID: 11400000, guid: 27608c72873c42743b6ba1543acf3f0a, type: 2}
   ingredients: []
   complaints: []

@@ -56,7 +56,7 @@ public class IndexPage : MonoBehaviour
             }
             if(lastTile != null)
             {
-                StartCoroutine(tierEntries.updateGrid(tier.data.Length));
+                StartCoroutine(notebookHandler.updateGrid(tierEntries.entryGrid, tier.data.Length));
             }
 
         }

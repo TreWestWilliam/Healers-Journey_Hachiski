@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: High Blood Pressure
+  m_EditorClassIdentifier: 
+  Name: High Blood Pressure
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: d76cabdfe7b71bc45a18297730d858c8, type: 2}
+  - {fileID: 11400000, guid: 999749a6bbec17b4e8b96a61e4fd6fbe, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 78024f20a8f497c4785572e625bb2669, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My chest hurts, and it's hard to breathe sometimes.
+    Variable: {fileID: 0}

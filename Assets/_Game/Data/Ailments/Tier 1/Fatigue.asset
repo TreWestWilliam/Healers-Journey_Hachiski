@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: bb6104a8210756047a3785f7be451900, type: 2}
-  - {fileID: 11400000, guid: b688b7e4d345f5d4aa7f38f5d7c0dbb1, type: 2}
+  - {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 15d0f8de48dd0f34998e3d524cc8d9e9, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: 177274c86cfa6d1459c2d739b47d3ce8, type: 2}
+    - ingredient: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 671969b5257a8d54fb677272b43428eb, type: 2}
-      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I have no energy at all, and my muscles feel so weak.
+    Variable: {fileID: 0}

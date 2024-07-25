@@ -10,16 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: joint pain
+  m_Name: Joint Pain
   m_EditorClassIdentifier: 
-  Name: Joint pain
+  Name: Joint Pain
   Description: 
   UnlockedDescription: 
-  tier: 0
+  tier: 1
   icon:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 92d3033de7b09db4db7b033386866e51, type: 2}
+  - {fileID: 11400000, guid: 252af44ce7e0f7c488189b087ac4f9f3, type: 2}
+  - {fileID: 11400000, guid: 1595563ee4a59744cb7f07271fa50936, type: 2}
   ingredients: []
   complaints: []

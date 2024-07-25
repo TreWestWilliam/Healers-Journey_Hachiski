@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hypovitaminosis A
   m_EditorClassIdentifier: 
   Name: Hypovitaminosis A
-  Description: Also known as Night Blindness.
+  Description: 
   UnlockedDescription: 
   tier: 0
   icon:
@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 7c704ce6097225a419c080a74442d2fb, type: 2}
-  - {fileID: 11400000, guid: 96270d035660b6d42a29029eb07edd6e, type: 2}
+  - {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
+  - {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 1f60c35974cc00d499ae326be94064de, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: fa969cdec5b89d24a96411720db90ab5, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: cb0494c7562c29442b8921ad14d45603, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: 90fec0c52a0dfe347a5bef2d8d2698dd, type: 2}
-      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: ebaf91e593f54fb4dada9a3edb0a318a, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My skin is really dry, and I struggle to see at night.
+    Variable: {fileID: 0}

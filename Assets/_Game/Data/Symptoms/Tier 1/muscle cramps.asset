@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: muscle cramps
+  m_Name: Muscle Cramps
   m_EditorClassIdentifier: 
-  Name: Muscle cramps
+  Name: Muscle Cramps
   Description: 
   UnlockedDescription: 
   tier: 0
@@ -20,6 +20,10 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: a530ab8e0acee65499ede34ac5e06f39, type: 2}
+  - {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
+  - {fileID: 11400000, guid: 7a15966b0a523d24ca16ed36c77ce194, type: 2}
+  - {fileID: 11400000, guid: 5f9031588bc6bb744b620d388f1d33f8, type: 2}
   ingredients: []
   complaints: []

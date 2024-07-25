@@ -227,6 +227,47 @@ public class NotebookHandler : MonoBehaviour
         return null;
     }
 
+    public IEnumerator updateGrid(GridLayoutGroup grid, int count)
+    {
+        yield return new WaitForFixedUpdate();
+
+        RectTransform gridTransform = grid.transform as RectTransform;
+        GridLayoutGroup eG = grid;
+
+        int columns = Mathf.FloorToInt((gridTransform.rect.width - eG.padding.left - eG.padding.right + eG.spacing.x) / (eG.cellSize.x + eG.spacing.x));
+
+        int rows = Mathf.CeilToInt((float)(count) / (float)columns);
+
+        float height = ((eG.cellSize.y + eG.spacing.y) * (float)rows) + eG.padding.top + eG.padding.bottom - eG.spacing.y;
+        float width = gridTransform.sizeDelta.x;
+        if(height > gridTransform.rect.height)
+        {
+            gridTransform.sizeDelta = new Vector2(width, height - gridTransform.rect.height);
+        }
+    }
+
+    public IEnumerator updateVertical(VerticalLayoutGroup vertical, int count)
+    {
+        yield return new WaitForFixedUpdate();
+
+        RectTransform verticalTransform = vertical.transform as RectTransform;
+        VerticalLayoutGroup vG = vertical;
+
+        float childHeight = 0f;
+
+        foreach(Transform child in vertical.transform)
+        {
+            childHeight += (child as RectTransform).rect.height;
+        }
+
+        float height = vG.padding.top + childHeight + (vG.spacing * (float)count - 1) + vG.padding.bottom;
+        float width = verticalTransform.sizeDelta.x;
+        if(height > verticalTransform.rect.height)
+        {
+            verticalTransform.sizeDelta = new Vector2(width, height - verticalTransform.rect.height);
+        }
+    }
+
 #if UNITY_EDITOR
     public void DiscoverTier1IngredientsAndSymptoms()
     {

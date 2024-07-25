@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: edcac4bf74a5b634ca33f9b2a40cdd85, type: 2}
-  - {fileID: 11400000, guid: 8766b2fa7744705468fa8e76aca4d730, type: 2}
+  - {fileID: 11400000, guid: 45cce8cfc9af34c4d9283c1c63163751, type: 2}
+  - {fileID: 11400000, guid: 6456ca37605ca6642860e3a4751291b4, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 8179ac6667b25ee40bbe89200fa3a5d2, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: 6fcb8938230129f4ca786a574fdbaa43, type: 2}
+    - ingredient: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 671969b5257a8d54fb677272b43428eb, type: 2}
-      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 48d5e2ef8c7564a40944200aac55c542, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I have these terrible headaches, and sometimes my vision gets
+      blurry.
+    Variable: {fileID: 0}

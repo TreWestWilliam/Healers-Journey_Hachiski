@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mind Fog
   m_EditorClassIdentifier: 
   Name: Mind Fog
-  Description: Also known as Cognitive Impairment.
+  Description: 
   UnlockedDescription: 
   tier: 0
   icon:
@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 33d57e0db61b74941b18671fe873b1dd, type: 2}
-  - {fileID: 11400000, guid: 86c105fb0cbc75b459d3972111c14ae8, type: 2}
+  - {fileID: 11400000, guid: 1d967ec43a90dce49b620b96811e931e, type: 2}
+  - {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: ff4be0ab780c91648baf1091d5520da0, type: 2}
+    - ingredient: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: 33805768071cc80468ff8daca4a02850, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 0c46ea133393688418f30b945c0dde6d, type: 2}
-      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 40b04b0f9534a384b80c65ebb07a5500, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I can't seem to focus on anything, and I'm getting irritable over
+      small things.
+    Variable: {fileID: 0}

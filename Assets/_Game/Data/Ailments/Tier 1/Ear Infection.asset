@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 88c1deef8003e5c4d92df43f80fe2ed0, type: 2}
-  - {fileID: 11400000, guid: d5c8a748d30e98547acee3c3f0ff0adc, type: 2}
+  - {fileID: 11400000, guid: 58587b9e8e8db1d4da294fa38650edbb, type: 2}
+  - {fileID: 11400000, guid: ed81b27e1866d234bb94c3926ea32328, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: a709b3fc98c187d45b631d165868ab84, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: bb1f58ee71c68044cb1176b8f57c8c62, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: b9e13e096eb5d0b4ea09dd62db9cf0c3, type: 2}
+    - ingredient: {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: dd8c6b0c224652348877ab2323878dcc, type: 2}
-      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 81423a955cbfc374b80eab8c814fe2cb, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 39a3cec885f651e4db3a9fe4bb7e50e7, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My ear hurts so much, and I think I'm losing my hearing.
+    Variable: {fileID: 0}

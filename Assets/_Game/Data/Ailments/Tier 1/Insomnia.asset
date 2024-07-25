@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 068809176d054d542b5a038e370e9637, type: 2}
-  - {fileID: 11400000, guid: 33d57e0db61b74941b18671fe873b1dd, type: 2}
+  - {fileID: 11400000, guid: 866476ec938120c4dabbb07be8ab907e, type: 2}
+  - {fileID: 11400000, guid: 1d967ec43a90dce49b620b96811e931e, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: dd8c6b0c224652348877ab2323878dcc, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: 177274c86cfa6d1459c2d739b47d3ce8, type: 2}
+    - ingredient: {fileID: 11400000, guid: 39a3cec885f651e4db3a9fe4bb7e50e7, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 575f1dec0f5fa0a489297c10d8720cfd, type: 2}
-      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 4fd1d1943e14d484ab39d90ee3ee78a4, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I can't sleep at night, and during the day, I can't concentrate
+      on anything.
+    Variable: {fileID: 0}

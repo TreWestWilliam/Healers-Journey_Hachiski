@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: ear pain
+  m_Name: Ear Pain
   m_EditorClassIdentifier: 
-  Name: Ear pain
+  Name: Ear Pain
   Description: 
   UnlockedDescription: 
   tier: 0
@@ -20,6 +20,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 2f10a1fa09031f14a99ea0f1262fe369, type: 2}
   ingredients: []
   complaints: []

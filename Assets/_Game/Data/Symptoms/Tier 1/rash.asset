@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: rash
+  m_Name: Rash
   m_EditorClassIdentifier: 
   Name: Rash
   Description: 
@@ -20,6 +20,11 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 2b6e4b36e178ea64d8337b588971b075, type: 2}
+  - {fileID: 11400000, guid: 362403503f7e0a64c8f3585bd2d0b2b5, type: 2}
+  - {fileID: 11400000, guid: e66db8af75c36614b9ecaf8251e7ad65, type: 2}
+  - {fileID: 11400000, guid: ba1ad22213a382f4b90f1f8b837b9064, type: 2}
+  - {fileID: 11400000, guid: a6972ca6dc69ce541990926360f15fef, type: 2}
   ingredients: []
   complaints: []

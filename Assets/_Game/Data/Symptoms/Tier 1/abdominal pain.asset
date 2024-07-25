@@ -10,17 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: abdominal pain
+  m_Name: Abdominal Pain
   m_EditorClassIdentifier: 
-  Name: Abdominal pain
+  Name: Abdominal Pain
   Description: 
   UnlockedDescription: 
-  tier: 5
+  tier: 0
   icon:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   ailments:
-  - {fileID: 11400000, guid: 0f9a53bd701bea6409936c073969043e, type: 2}
+  - {fileID: 11400000, guid: a286fa535a59bd046a9c4b2529a0db01, type: 2}
+  - {fileID: 11400000, guid: c6dbb32924583344d972abd57b20148d, type: 2}
+  - {fileID: 11400000, guid: 830baa3e3309bc14fb9307a232aea3e3, type: 2}
+  - {fileID: 11400000, guid: 6703411292fdd5f4c99ea0a3d7b8cd1c, type: 2}
+  - {fileID: 11400000, guid: 833b0d3e093349049812828fac0cf08c, type: 2}
   ingredients: []
   complaints: []

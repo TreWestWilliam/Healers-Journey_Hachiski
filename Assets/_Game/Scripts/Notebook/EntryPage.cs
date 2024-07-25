@@ -34,13 +34,13 @@ public class EntryPage : MonoBehaviour
     public GameObject IngredientDetails;
     public GameObject SymptomDetails;
 
-    public Transform SymptomsA;
-    public Transform SymptomsI;
-    public Transform AilmentsI;
-    public Transform AilmentsS;
-    public Transform Ingredients;
-    public Transform Cures;
-    public Transform Locations;
+    public GridLayoutGroup SymptomsA;
+    public GridLayoutGroup SymptomsI;
+    public GridLayoutGroup AilmentsI;
+    public GridLayoutGroup AilmentsS;
+    public GridLayoutGroup Ingredients;
+    public VerticalLayoutGroup Cures;
+    public VerticalLayoutGroup Locations;
 
     // Start is called before the first frame update
     private void Start()
@@ -123,24 +123,32 @@ public class EntryPage : MonoBehaviour
         {
             if(checkDiscoveries(discoveries.symptoms, i))
             {
-                notebookHandler.createEntryTile(ailment.symptoms[i], SymptomsA);
+                notebookHandler.createEntryTile(ailment.symptoms[i], SymptomsA.transform);
             }
             else
             {
-                notebookHandler.createUnknownEntryTile(SymptomsA);
+                notebookHandler.createUnknownEntryTile(SymptomsA.transform);
             }
+        }
+        if(ailment.symptoms.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateGrid(SymptomsA, ailment.symptoms.Length));
         }
 
         for(int i = 0; i < ailment.cures.Length; i++)
         {
             if(checkDiscoveries(discoveries.cures, i))
             {
-                notebookHandler.createCureRecipeTiles(ailment.cures[i], Cures);
+                notebookHandler.createCureRecipeTiles(ailment.cures[i], Cures.transform);
             }
             else
             {
-                notebookHandler.createUnknownEntryTile(Cures);
+                notebookHandler.createUnknownEntryTile(Cures.transform);
             }
+        }
+        if(ailment.cures.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateVertical(Cures, ailment.cures.Length));
         }
     }
 
@@ -152,36 +160,48 @@ public class EntryPage : MonoBehaviour
         {
             if(checkDiscoveries(discoveries.symptoms, i))
             {
-                notebookHandler.createEntryTile(ingredient.symptoms[i], SymptomsI);
+                notebookHandler.createEntryTile(ingredient.symptoms[i], SymptomsI.transform);
             }
             else
             {
-                notebookHandler.createUnknownEntryTile(SymptomsI);
+                notebookHandler.createUnknownEntryTile(SymptomsI.transform);
             }
+        }
+        if(ingredient.symptoms.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateGrid(SymptomsI, ingredient.symptoms.Length));
         }
 
         for(int i = 0; i < ingredient.ailments.Length; i++)
         {
             if(checkDiscoveries(discoveries.ailments, i))
             {
-                notebookHandler.createEntryTile(ingredient.ailments[i], AilmentsI);
+                notebookHandler.createEntryTile(ingredient.ailments[i], AilmentsI.transform);
             }
             else
             {
-                notebookHandler.createUnknownEntryTile(AilmentsI);
+                notebookHandler.createUnknownEntryTile(AilmentsI.transform);
             }
+        }
+        if(ingredient.ailments.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateGrid(AilmentsI, ingredient.ailments.Length));
         }
 
         for(int i = 0; i < ingredient.locationsFound.Length; i++)
         {
             if(checkDiscoveries(discoveries.locationsFound, i))
             {
-                notebookHandler.createLocationFound(ingredient.locationsFound[i], Locations);
+                notebookHandler.createLocationFound(ingredient.locationsFound[i], Locations.transform);
             }
             else
             {
-                notebookHandler.createUnknownLocation(Locations);
+                notebookHandler.createUnknownLocation(Locations.transform);
             }
+        }
+        if(ingredient.locationsFound.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateVertical(Locations, ingredient.locationsFound.Length));
         }
     }
 
@@ -193,24 +213,32 @@ public class EntryPage : MonoBehaviour
         {
             if(checkDiscoveries(discoveries.symptoms, i))
             {
-                notebookHandler.createEntryTile(symptom.ingredients[i], Ingredients);
+                notebookHandler.createEntryTile(symptom.ingredients[i], Ingredients.transform);
             }
             else
             {
-                notebookHandler.createUnknownEntryTile(Ingredients);
+                notebookHandler.createUnknownEntryTile(Ingredients.transform);
             }
+        }
+        if(symptom.ingredients.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateGrid(Ingredients, symptom.ingredients.Length));
         }
 
         for(int i = 0; i < symptom.ailments.Length; i++)
         {
             if(checkDiscoveries(discoveries.ailments, i))
             {
-                notebookHandler.createEntryTile(symptom.ailments[i], AilmentsS);
+                notebookHandler.createEntryTile(symptom.ailments[i], AilmentsS.transform);
             }
             else
             {
-                notebookHandler.createUnknownEntryTile(AilmentsS);
+                notebookHandler.createUnknownEntryTile(AilmentsS.transform);
             }
+        }
+        if(symptom.ailments.Length > 0)
+        {
+            StartCoroutine(notebookHandler.updateGrid(AilmentsS, symptom.ailments.Length));
         }
     }
 

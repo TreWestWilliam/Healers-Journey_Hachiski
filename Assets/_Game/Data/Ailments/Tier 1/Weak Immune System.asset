@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: f495330d543e2714096f4e59d2f50397, type: 2}
-  - {fileID: 11400000, guid: bb6104a8210756047a3785f7be451900, type: 2}
+  - {fileID: 11400000, guid: c85e5a459acada74a9542fffeb1781c5, type: 2}
+  - {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 8b76b62c0f6c264429e72e9a38942fee, type: 2}
+    - ingredient: {fileID: 11400000, guid: fa29c6da7df46b74d9ee137c9097d97b, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: bb1f58ee71c68044cb1176b8f57c8c62, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 6bdb46c376d5f9748b643c2674d20b6d, type: 2}
+    - ingredient: {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
       temperature: 0
+    - ingredient: {fileID: 11400000, guid: ddcf3520bffeb4a46b9cd41b85c267f1, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: Even small wounds take forever to heal, and I feel so drained
+      of energy.
+    Variable: {fileID: 0}

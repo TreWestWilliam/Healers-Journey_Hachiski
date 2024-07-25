@@ -108,6 +108,11 @@ public class SymptomData : GenericData
         return null;
     }
 
+    public string getComplaint()
+    {
+        return getComplaint(0);
+    }
+
     public string getComplaint(int index)
     {
         if(complaints.Length == 0)

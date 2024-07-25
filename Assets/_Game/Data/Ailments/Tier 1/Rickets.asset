@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: c1e85f893ad4fdd469d18aca3062cfb9, type: 2}
-  - {fileID: 11400000, guid: b688b7e4d345f5d4aa7f38f5d7c0dbb1, type: 2}
+  - {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 35c4525f5c698664cb490a36dffd4bb9, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: fa51adee2ae2cf04294e974c067ce74c, type: 2}
-      temperature: -1
-    - ingredient: {fileID: 11400000, guid: af224a1d1bd90604b8c862a60d28dc77, type: 2}
-      temperature: -1
+    - ingredient: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 5fff3be1b089c4f4c93ffeda87f8b6e2, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I get muscle cramps often, and my muscles are weak.
+    Variable: {fileID: 0}

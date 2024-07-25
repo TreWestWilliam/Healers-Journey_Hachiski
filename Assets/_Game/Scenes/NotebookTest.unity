@@ -863,13 +863,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1048043921}
+  m_Father: {fileID: 266997004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: -50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &99115920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,6 +2032,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235319794}
   m_CullTransparentMesh: 1
+--- !u!1 &266997003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266997004}
+  - component: {fileID: 266997006}
+  - component: {fileID: 266997005}
+  m_Layer: 5
+  m_Name: Ingredient Symptoms Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &266997004
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266997003}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 99115919}
+  m_Father: {fileID: 1048043921}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 0, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &266997005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266997003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &266997006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266997003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 99115919}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &282611148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,7 +2698,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 15365955}
-  - {fileID: 1409869517}
+  - {fileID: 1658537520}
   m_Father: {fileID: 1251085670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2796,6 +2878,88 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &388354005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388354006}
+  - component: {fileID: 388354008}
+  - component: {fileID: 388354007}
+  m_Layer: 5
+  m_Name: Ailment Symptoms Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &388354006
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388354005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1497345545}
+  m_Father: {fileID: 736290230}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &388354007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388354005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &388354008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388354005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 1497345545}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &390658997
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,13 +3989,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 967709437}
+  m_Father: {fileID: 926468328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: -50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &481724277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4219,13 +4383,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1202341820}
+  m_Father: {fileID: 1472872528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 0, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &491556374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4281,13 +4445,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1147091072}
+  m_Father: {fileID: 868602216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: -50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &494419567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5304,7 +5468,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1809893686}
-  - {fileID: 1497345545}
+  - {fileID: 388354006}
   m_Father: {fileID: 468402775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -6076,609 +6240,581 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   discoveries:
-  - topic: {fileID: 11400000, guid: dc6617d291626dc4ba2da07f53c085df, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 3fd5557fb44938d49bf1caa029174dac, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 023e189f39cdfe648a4c79ef4b545e5e, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 575f1dec0f5fa0a489297c10d8720cfd, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 383fa63771c44cb4e86e3557fd8aee50, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: cb0494c7562c29442b8921ad14d45603, type: 2}
+  - topic: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
     UnlockDescription: 0
     ailments: 0000000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 15d0f8de48dd0f34998e3d524cc8d9e9, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ff4be0ab780c91648baf1091d5520da0, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 71674e5508ca5a74c97283549bf9b0ab, type: 2}
+  - topic: {fileID: 11400000, guid: 70842324c1a416e4e8b4d83cfdeeb7b0, type: 2}
     UnlockDescription: 0
     ailments: 00
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 973f09d0e1465244dabf8b737c893d3e, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: bb1f58ee71c68044cb1176b8f57c8c62, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 535618267ab1c404b9a19def4997826d, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 33805768071cc80468ff8daca4a02850, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 0c46ea133393688418f30b945c0dde6d, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6fcb8938230129f4ca786a574fdbaa43, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 671969b5257a8d54fb677272b43428eb, type: 2}
-    UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: fa51adee2ae2cf04294e974c067ce74c, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: dd8c6b0c224652348877ab2323878dcc, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 177274c86cfa6d1459c2d739b47d3ce8, type: 2}
+  - topic: {fileID: 11400000, guid: 4fd1d1943e14d484ab39d90ee3ee78a4, type: 2}
     UnlockDescription: 0
     ailments: 000000000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: e266c64180dff0c4faad8bb327916b2d, type: 2}
+  - topic: {fileID: 11400000, guid: ea1b7da6bf928f541950304171b690e9, type: 2}
     UnlockDescription: 0
     ailments: 00
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: af224a1d1bd90604b8c862a60d28dc77, type: 2}
+  - topic: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 00000000000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: c45da7c9630937743a5282bfb11dd149, type: 2}
+  - topic: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
+    UnlockDescription: 0
+    ailments: 000000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
     UnlockDescription: 0
     ailments: 000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 35c4525f5c698664cb490a36dffd4bb9, type: 2}
+  - topic: {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 480e9af550f766244a855eb8a9915cd7, type: 2}
     UnlockDescription: 0
     ailments: 000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: c9773624473e5f444b30c1b5d2d4f8fe, type: 2}
+  - topic: {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 000000000000000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: b9e13e096eb5d0b4ea09dd62db9cf0c3, type: 2}
+  - topic: {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 0000000000000000000000000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: e991b1401cfddcd488df67af30d7d265, type: 2}
+  - topic: {fileID: 11400000, guid: 40b04b0f9534a384b80c65ebb07a5500, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 8179ac6667b25ee40bbe89200fa3a5d2, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6bdb46c376d5f9748b643c2674d20b6d, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: b78d724804b5da1459ffc17e13237427, type: 2}
+  - topic: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
     UnlockDescription: 0
     ailments: 0000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 8b76b62c0f6c264429e72e9a38942fee, type: 2}
+  - topic: {fileID: 11400000, guid: 48d5e2ef8c7564a40944200aac55c542, type: 2}
     UnlockDescription: 0
     ailments: 0000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: bece57c7488ebc84c842a5a387d5b826, type: 2}
+  - topic: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+    UnlockDescription: 0
+    ailments: 00000000000000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 5fff3be1b089c4f4c93ffeda87f8b6e2, type: 2}
     UnlockDescription: 0
     ailments: 0000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 90fec0c52a0dfe347a5bef2d8d2698dd, type: 2}
+  - topic: {fileID: 11400000, guid: 39a3cec885f651e4db3a9fe4bb7e50e7, type: 2}
+    UnlockDescription: 0
+    ailments: 000000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+    UnlockDescription: 0
+    ailments: 000000000000000000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 574dfb1da3c79b746b76eecaafa1c5bf, type: 2}
     UnlockDescription: 0
     ailments: 00
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 21fbfc556b7208c44823be2f8faf5a79, type: 2}
+  - topic: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
+    UnlockDescription: 0
+    ailments: 000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+    UnlockDescription: 0
+    ailments: 00000000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
+    UnlockDescription: 0
+    ailments: 000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 81423a955cbfc374b80eab8c814fe2cb, type: 2}
     UnlockDescription: 0
     ailments: 00
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: fa969cdec5b89d24a96411720db90ab5, type: 2}
+  - topic: {fileID: 11400000, guid: ad7552e6cded2cf4c96a53c17d416f57, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+    UnlockDescription: 0
+    ailments: 000000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: ddcf3520bffeb4a46b9cd41b85c267f1, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: fa29c6da7df46b74d9ee137c9097d97b, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 276e17ede372b35468f9dd789318465c, type: 2}
     UnlockDescription: 0
     ailments: 00
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 6259eb7ef1b3c154d8528fbcce810bd5, type: 2}
+  - topic: {fileID: 11400000, guid: ebaf91e593f54fb4dada9a3edb0a318a, type: 2}
     UnlockDescription: 0
-    ailments: 
+    ailments: 0000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 65f2cc66c82f6ab4385ab2e6d39db7b2, type: 2}
+  - topic: {fileID: 11400000, guid: 49adc3a0d423249479f8979623222ed6, type: 2}
+    UnlockDescription: 0
+    ailments: 000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: e16f1a2df66475b43b515f4e6bcaa7bc, type: 2}
+    UnlockDescription: 0
+    ailments: 000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 30ecd8d6e4c49b74faace43cb015f726, type: 2}
+    UnlockDescription: 0
+    ailments: 0000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: caaf006fa44f2f8488f548287c37f24e, type: 2}
     UnlockDescription: 0
     ailments: 0000000000
     ingredients: 
-    symptoms: 01
+    symptoms: 
     cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: 579e09ef8f135764daa1dcbfda37b458, type: 2}
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: ec5df0ff7f644ef488c186e6feac2c45, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 0101
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: e5cea2a5f7be8f040a3f712a39eff9bb, type: 2}
+  - topic: {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}
     UnlockDescription: 0
-    ailments: 01
+    ailments: 01010000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 72f75b32fb6c6d04b8684419546f9bf0, type: 2}
+  - topic: {fileID: 11400000, guid: 6456ca37605ca6642860e3a4751291b4, type: 2}
     UnlockDescription: 0
     ailments: 0100
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 96270d035660b6d42a29029eb07edd6e, type: 2}
+  - topic: {fileID: 11400000, guid: 92af82a2c088894428fed0e72378e3de, type: 2}
+    UnlockDescription: 0
+    ailments: 01
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: c8535b2b5f07edc44a9824af3bb0b918, type: 2}
+    UnlockDescription: 0
+    ailments: 010000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
     UnlockDescription: 0
     ailments: 0101
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 068809176d054d542b5a038e370e9637, type: 2}
+  - topic: {fileID: 11400000, guid: 866476ec938120c4dabbb07be8ab907e, type: 2}
+    UnlockDescription: 0
+    ailments: 0100
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: d2675c520804d544487eb98a9cd21c00, type: 2}
     UnlockDescription: 0
     ailments: 01
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 7769d60d977e50247900a4fc6b62e4fe, type: 2}
+  - topic: {fileID: 11400000, guid: 0c57c202d1a11d74992e18aa30ef44b8, type: 2}
     UnlockDescription: 0
     ailments: 01
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: e67f5a19fdfa9da48b03e72bb8f58037, type: 2}
+  - topic: {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
+    UnlockDescription: 0
+    ailments: 01010100
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 58587b9e8e8db1d4da294fa38650edbb, type: 2}
     UnlockDescription: 0
     ailments: 01
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 7c704ce6097225a419c080a74442d2fb, type: 2}
+  - topic: {fileID: 11400000, guid: 042a52b91abdf4742b0321c0e4edc71d, type: 2}
     UnlockDescription: 0
-    ailments: 010101
+    ailments: 010000000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 88c1deef8003e5c4d92df43f80fe2ed0, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: edcac4bf74a5b634ca33f9b2a40cdd85, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: d5c8a748d30e98547acee3c3f0ff0adc, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 86c105fb0cbc75b459d3972111c14ae8, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: bb6104a8210756047a3785f7be451900, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 60193084e64041945b7610dcde54524d, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c1e85f893ad4fdd469d18aca3062cfb9, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 36a7ded7c677194438233094b9709354, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 33d57e0db61b74941b18671fe873b1dd, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 934df4062e415a24f921183314abac4c, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: b164acf5a4ed0f342be4591a79dd1f4e, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: d173111494553644fb283721c8af37b7, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 95066c1276e08ab4fad03603acfa1ca6, type: 2}
+  - topic: {fileID: 11400000, guid: 45cce8cfc9af34c4d9283c1c63163751, type: 2}
     UnlockDescription: 0
     ailments: 010100
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 12d04dc118e974a45b8644190a088256, type: 2}
+  - topic: {fileID: 11400000, guid: ed81b27e1866d234bb94c3926ea32328, type: 2}
+    UnlockDescription: 0
+    ailments: 01
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
+    UnlockDescription: 0
+    ailments: 01
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
+    UnlockDescription: 0
+    ailments: 010100000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: b9aae15cd7c5976479c62d20ba9b8255, type: 2}
+    UnlockDescription: 0
+    ailments: 01
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+    UnlockDescription: 0
+    ailments: 01010000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: c23b5d4538274584ca22fb2c04980972, type: 2}
+    UnlockDescription: 0
+    ailments: 01000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 1d967ec43a90dce49b620b96811e931e, type: 2}
+    UnlockDescription: 0
+    ailments: 010100
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 3f30eb5d54fb6644ea0f88efd9b4a0a4, type: 2}
+    UnlockDescription: 0
+    ailments: 01
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: 1f68f93f196838c43aa6852462a50387, type: 2}
     UnlockDescription: 0
     ailments: 0100000000
-    ingredients: 01
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: b688b7e4d345f5d4aa7f38f5d7c0dbb1, type: 2}
-    UnlockDescription: 0
-    ailments: 01010101
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 12756ba0b6b388d49bfaa5eb7a984646, type: 2}
+  - topic: {fileID: 11400000, guid: ba9149f6751e81f48909e5bba4017480, type: 2}
     UnlockDescription: 0
     ailments: 01
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: f495330d543e2714096f4e59d2f50397, type: 2}
+  - topic: {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+    UnlockDescription: 0
+    ailments: 01010000000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
+    UnlockDescription: 0
+    ailments: 0101010100
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: dbf335d3f042e4e4398db01b4b0f1c0a, type: 2}
+    UnlockDescription: 0
+    ailments: 01000000
+    ingredients: 
+    symptoms: 
+    cures: 
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: c85e5a459acada74a9542fffeb1781c5, type: 2}
     UnlockDescription: 0
     ailments: 01
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 7c62f5a53190acf419cb3b984a47e2c8, type: 2}
+  - topic: {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 77cfc5fd9d25c19408dd9db5b49371ac, type: 2}
+  - topic: {fileID: 11400000, guid: d55868ecf3e45a64ca6126cbbf56c111, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 584b3eac33b53ea4eaaf0d99eb7136a4, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 4268a53990c8f0b4890cde3bad26a87c, type: 2}
+  - topic: {fileID: 11400000, guid: 3ce46e6168eeecd42a383644d894473c, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 5c59f70b12bb75940b37f1bfae2a0998, type: 2}
-    UnlockDescription: 0
-    ailments: 010100
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 788e5b7492e7fbb49a3ca0aac896fe97, type: 2}
+  - topic: {fileID: 11400000, guid: eb1902b6234e00344ba5f3d551a7b5e2, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 43d777f9402cd9b42b9d505d76545ccb, type: 2}
+  - topic: {fileID: 11400000, guid: 2f10a1fa09031f14a99ea0f1262fe369, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: c368ec1eab7c3f54b864bb29740945f8, type: 2}
+  - topic: {fileID: 11400000, guid: 2b6e4b36e178ea64d8337b588971b075, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 7dfb67da1d93f3a4ab6c29204ae5d050, type: 2}
+  - topic: {fileID: 11400000, guid: 4dec709b7aea0a9438f9c87f3ce4eeb5, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 0aa4f5a6275f9544d93fc7edf2848f69, type: 2}
+  - topic: {fileID: 11400000, guid: a530ab8e0acee65499ede34ac5e06f39, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 167217fb69316e842acb58c94b6cbd4e, type: 2}
+  - topic: {fileID: 11400000, guid: 7354a229217fad04ea465f179180a1d9, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 7481a6afba12bda4887694198e130fa1, type: 2}
+  - topic: {fileID: 11400000, guid: d22bd85df4d904c48b09da531250b866, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 085fb59b6426fd548972db2dcd9fad5d, type: 2}
+  - topic: {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 8766b2fa7744705468fa8e76aca4d730, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c2104e6c2bd3dc345a04239886110c6c, type: 2}
+  - topic: {fileID: 11400000, guid: 76cab7ba666109748bb2320c708ca179, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 37452625089c0a6498a060f2dbd14b1f, type: 2}
+  - topic: {fileID: 11400000, guid: 3250dc0431c029d43a63bac8361a3c13, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: d33b6b2ac3a368b469d108eccf0b035d, type: 2}
+  - topic: {fileID: 11400000, guid: c3b54e5a5e528dc4886ae27b66bf6958, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 1be5d18ab769cba479f145ade67c661d, type: 2}
+  - topic: {fileID: 11400000, guid: 0af8383badafca8478b20f731e6f4e69, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 7c0972ae9e77cec4394d42e0c63bbadd, type: 2}
+  - topic: {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: cd4ac1038f403a0448cc40e0015262de, type: 2}
+  - topic: {fileID: 11400000, guid: f947d5ee2b79cad49bf1b42ed105c441, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: fc449a43b66a6f449ba67576cae0d80b, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 8d0c2feaee3b24040b1b356dca7724d2, type: 2}
+  - topic: {fileID: 11400000, guid: 6f24b93239517634c8f2503c09217380, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 8ef4182addfcecf4598d27de9c44877d, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 01
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 29d6c4ce565e71744b51935fc72f6e76, type: 2}
+  - topic: {fileID: 11400000, guid: e5af67fee305e1747bf05388e8145e95, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
     symptoms: 0101
     cures: 00
     locationsFound: 
-  - topic: {fileID: 11400000, guid: 0dfc4e17660796443be894a129764b53, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ca1e1be5afd6dae44a4c7d5876f23972, type: 2}
+  - topic: {fileID: 11400000, guid: 27608c72873c42743b6ba1543acf3f0a, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 
@@ -6818,6 +6954,88 @@ RectTransform:
   m_AnchoredPosition: {x: 102.5, y: 0}
   m_SizeDelta: {x: 70, y: 60}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &868602215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868602216}
+  - component: {fileID: 868602218}
+  - component: {fileID: 868602217}
+  m_Layer: 5
+  m_Name: Symptom Ingredients Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &868602216
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868602215}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 494419566}
+  m_Father: {fileID: 1147091072}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 0, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &868602217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868602215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &868602218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868602215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 494419566}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &871628516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7147,6 +7365,170 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901550303}
   m_CullTransparentMesh: 1
+--- !u!1 &914892648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914892649}
+  - component: {fileID: 914892651}
+  - component: {fileID: 914892650}
+  m_Layer: 5
+  m_Name: Ingredient Ailments Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &914892649
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914892648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2091740706}
+  m_Father: {fileID: 1722898238}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 0, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &914892650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914892648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &914892651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914892648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 2091740706}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &926468327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926468328}
+  - component: {fileID: 926468330}
+  - component: {fileID: 926468329}
+  m_Layer: 5
+  m_Name: Ingredient Locations Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &926468328
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926468327}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 481724276}
+  m_Father: {fileID: 967709437}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 0, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &926468329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926468327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &926468330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926468327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 481724276}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &958572683
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,7 +7681,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1430962136}
-  - {fileID: 481724276}
+  - {fileID: 926468328}
   m_Father: {fileID: 1574551153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -7718,7 +8100,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 696354710}
-  - {fileID: 99115919}
+  - {fileID: 266997004}
   m_Father: {fileID: 1574551153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -8195,13 +8577,13 @@ MonoBehaviour:
   AilmentDetails: {fileID: 468402774}
   IngredientDetails: {fileID: 1574551152}
   SymptomDetails: {fileID: 1251085669}
-  SymptomsA: {fileID: 1497345545}
-  SymptomsI: {fileID: 99115919}
-  AilmentsI: {fileID: 2091740706}
-  AilmentsS: {fileID: 1409869517}
-  Ingredients: {fileID: 494419566}
-  Cures: {fileID: 491556373}
-  Locations: {fileID: 481724276}
+  SymptomsA: {fileID: 1497345546}
+  SymptomsI: {fileID: 99115920}
+  AilmentsI: {fileID: 2091740707}
+  AilmentsS: {fileID: 1409869518}
+  Ingredients: {fileID: 494419567}
+  Cures: {fileID: 491556374}
+  Locations: {fileID: 481724277}
 --- !u!224 &1065410767
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8666,7 +9048,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2024580499}
-  - {fileID: 494419566}
+  - {fileID: 868602216}
   m_Father: {fileID: 1251085670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -8781,7 +9163,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 499567808}
-  - {fileID: 491556373}
+  - {fileID: 1472872528}
   m_Father: {fileID: 468402775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9279,13 +9661,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 367554428}
+  m_Father: {fileID: 1658537520}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: -50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1409869518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9578,6 +9960,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430962135}
   m_CullTransparentMesh: 1
+--- !u!1 &1472872527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472872528}
+  - component: {fileID: 1472872530}
+  - component: {fileID: 1472872529}
+  m_Layer: 5
+  m_Name: Ailment Cures Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1472872528
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472872527}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 491556373}
+  m_Father: {fileID: 1202341820}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -10}
+  m_SizeDelta: {x: 0, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1472872529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472872527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &1472872530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472872527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 491556373}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1487038065
 GameObject:
   m_ObjectHideFlags: 0
@@ -9892,13 +10356,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 736290230}
+  m_Father: {fileID: 388354006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1497345546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10705,6 +11169,88 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1658537519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1658537520}
+  - component: {fileID: 1658537522}
+  - component: {fileID: 1658537521}
+  m_Layer: 5
+  m_Name: Symptom Ailments Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1658537520
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658537519}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1409869517}
+  m_Father: {fileID: 367554428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 0, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1658537521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658537519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!114 &1658537522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658537519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 1409869517}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1672881268
 GameObject:
   m_ObjectHideFlags: 0
@@ -11022,7 +11568,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 506380039}
-  - {fileID: 2091740706}
+  - {fileID: 914892649}
   m_Father: {fileID: 1574551153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -13269,13 +13815,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1722898238}
+  m_Father: {fileID: 914892649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: -50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &2091740707
 MonoBehaviour:
   m_ObjectHideFlags: 0

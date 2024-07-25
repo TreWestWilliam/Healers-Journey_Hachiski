@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 72f75b32fb6c6d04b8684419546f9bf0, type: 2}
-  - {fileID: 11400000, guid: 584b3eac33b53ea4eaaf0d99eb7136a4, type: 2}
+  - {fileID: 11400000, guid: c8535b2b5f07edc44a9824af3bb0b918, type: 2}
+  - {fileID: 11400000, guid: 042a52b91abdf4742b0321c0e4edc71d, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: bece57c7488ebc84c842a5a387d5b826, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: 671969b5257a8d54fb677272b43428eb, type: 2}
+    - ingredient: {fileID: 11400000, guid: 276e17ede372b35468f9dd789318465c, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 15d0f8de48dd0f34998e3d524cc8d9e9, type: 2}
+    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
       temperature: 1
+    - ingredient: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My sinuses are so congested, and I keep getting these chills and
+      fevers.
+    Variable: {fileID: 0}

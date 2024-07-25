@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Xerophthalmia
   m_EditorClassIdentifier: 
   Name: Xerophthalmia
-  Description: Also known as Dry Eyes
+  Description: 
   UnlockedDescription: 
   tier: 0
   icon:
@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: e67f5a19fdfa9da48b03e72bb8f58037, type: 2}
-  - {fileID: 11400000, guid: 96270d035660b6d42a29029eb07edd6e, type: 2}
+  - {fileID: 11400000, guid: 0c57c202d1a11d74992e18aa30ef44b8, type: 2}
+  - {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: a709b3fc98c187d45b631d165868ab84, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: ff4be0ab780c91648baf1091d5520da0, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: cb0494c7562c29442b8921ad14d45603, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 8179ac6667b25ee40bbe89200fa3a5d2, type: 2}
-      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+      temperature: -1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My eyes are always dry, and I have a hard time seeing at night.
+    Variable: {fileID: 0}

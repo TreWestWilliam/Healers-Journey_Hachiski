@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Hyperglycemia
+  m_EditorClassIdentifier: 
+  Name: Hyperglycemia
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 801e7d25c8be5244cbf6680c9b1b3c71, type: 2}
+  - {fileID: 11400000, guid: 93ac3a8fd827b1846803f1dab90eb237, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 6b4e0c14ebde7d84783369f233e9091b, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 819a85b7f3d3227459a8ed006cb91c02, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I'm always thirsty, and I feel nauseous.
+    Variable: {fileID: 0}

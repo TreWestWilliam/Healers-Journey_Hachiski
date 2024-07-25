@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: cough
+  m_Name: Cough
   m_EditorClassIdentifier: 
-  Name: cough
+  Name: Cough
   Description: 
   UnlockedDescription: 
-  tier: 0
+  tier: 1
   icon:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 2d016fd7871484f43a4900e66ceeba5f, type: 2}
+  - {fileID: 11400000, guid: 787ea70fe801d5f49a6d3dc36a430405, type: 2}
   ingredients: []
   complaints: []

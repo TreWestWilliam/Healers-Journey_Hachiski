@@ -1,0 +1,318 @@
+[
+    {
+        "NAME": "Aloe Vera",
+        "TIER": 1
+    },
+    {
+        "NAME": "Calendula",
+        "TIER": 1
+    },
+    {
+        "NAME": "Chamomile",
+        "TIER": 1
+    },
+    {
+        "NAME": "Clove",
+        "TIER": 1
+    },
+    {
+        "NAME": "Dandelion",
+        "TIER": 1
+    },
+    {
+        "NAME": "Echinacea",
+        "TIER": 1
+    },
+    {
+        "NAME": "Elderberry",
+        "TIER": 1
+    },
+    {
+        "NAME": "Fenugreek",
+        "TIER": 1
+    },
+    {
+        "NAME": "Fish Oil",
+        "TIER": 1
+    },
+    {
+        "NAME": "Garlic",
+        "TIER": 1
+    },
+    {
+        "NAME": "Ginger",
+        "TIER": 1
+    },
+    {
+        "NAME": "Ginkgo",
+        "TIER": 1
+    },
+    {
+        "NAME": "Ginseng",
+        "TIER": 1
+    },
+    {
+        "NAME": "Green Tea",
+        "TIER": 1
+    },
+    {
+        "NAME": "Honey",
+        "TIER": 1
+    },
+    {
+        "NAME": "Kelp",
+        "TIER": 1
+    },
+    {
+        "NAME": "Lavender",
+        "TIER": 1
+    },
+    {
+        "NAME": "Lemon",
+        "TIER": 1
+    },
+    {
+        "NAME": "Magnesium",
+        "TIER": 1
+    },
+    {
+        "NAME": "Milk Thistle",
+        "TIER": 1
+    },
+    {
+        "NAME": "Nettle",
+        "TIER": 1
+    },
+    {
+        "NAME": "Oatmeal",
+        "TIER": 1
+    },
+    {
+        "NAME": "Olive Oil",
+        "TIER": 1
+    },
+    {
+        "NAME": "Orange",
+        "TIER": 1
+    },
+    {
+        "NAME": "Peppermint",
+        "TIER": 1
+    },
+    {
+        "NAME": "Pomegranate",
+        "TIER": 1
+    },
+    {
+        "NAME": "Prunes",
+        "TIER": 1
+    },
+    {
+        "NAME": "Reishi",
+        "TIER": 1
+    },
+    {
+        "NAME": "Rose",
+        "TIER": 1
+    },
+    {
+        "NAME": "Rose Hips",
+        "TIER": 1
+    },
+    {
+        "NAME": "Salt",
+        "TIER": 1
+    },
+    {
+        "NAME": "Spinach",
+        "TIER": 1
+    },
+    {
+        "NAME": "Willow Bark",
+        "TIER": 1
+    },
+    {
+        "NAME": "Molasses",
+        "TIER": 1
+    },
+    {
+        "NAME": "St. John's Wort",
+        "TIER": 1
+    },
+    {
+        "NAME": "Cherry",
+        "TIER": 2
+    },
+    {
+        "NAME": "Cranberry",
+        "TIER": 2
+    },
+    {
+        "NAME": "Elderflower",
+        "TIER": 2
+    },
+    {
+        "NAME": "Eucalyptus",
+        "TIER": 2
+    },
+    {
+        "NAME": "Flax Seeds",
+        "TIER": 2
+    },
+    {
+        "NAME": "Hawthorn",
+        "TIER": 2
+    },
+    {
+        "NAME": "Juniper",
+        "TIER": 2
+    },
+    {
+        "NAME": "Lemon Balm",
+        "TIER": 2
+    },
+    {
+        "NAME": "Sulfur",
+        "TIER": 2
+    },
+    {
+        "NAME": "Turmeric",
+        "TIER": 2
+    },
+    {
+        "NAME": "Water",
+        "TIER": 2
+    },
+    {
+        "NAME": "Yarrow",
+        "TIER": 2
+    },
+    {
+        "NAME": "Alfalfa",
+        "TIER": 2
+    },
+    {
+        "NAME": "Apple Cider Vinegar",
+        "TIER": 2
+    },
+    {
+        "NAME": "Goldenseal",
+        "TIER": 2
+    },
+    {
+        "NAME": "Horse Chestnut",
+        "TIER": 2
+    },
+    {
+        "NAME": "Red Clover",
+        "TIER": 2
+    },
+    {
+        "NAME": "Sesame Seeds",
+        "TIER": 2
+    },
+    {
+        "NAME": "Thyme",
+        "TIER": 2
+    },
+    {
+        "NAME": "Witch Hazel",
+        "TIER": 2
+    },
+    {
+        "NAME": "Arnica",
+        "TIER": 3
+    },
+    {
+        "NAME": "Ashwagandha",
+        "TIER": 3
+    },
+    {
+        "NAME": "Bitter Melon",
+        "TIER": 3
+    },
+    {
+        "NAME": "Bugleweed",
+        "TIER": 3
+    },
+    {
+        "NAME": "Charcoal",
+        "TIER": 3
+    },
+    {
+        "NAME": "Cinnamon",
+        "TIER": 3
+    },
+    {
+        "NAME": "Fennel",
+        "TIER": 3
+    },
+    {
+        "NAME": "Guggul",
+        "TIER": 3
+    },
+    {
+        "NAME": "Jojoba Oil",
+        "TIER": 3
+    },
+    {
+        "NAME": "Licorice Root",
+        "TIER": 3
+    },
+    {
+        "NAME": "Motherwort",
+        "TIER": 3
+    },
+    {
+        "NAME": "Rosemary",
+        "TIER": 3
+    },
+    {
+        "NAME": "Tea Tree Oil",
+        "TIER": 3
+    },
+    {
+        "NAME": "Boswellia",
+        "TIER": 3
+    },
+    {
+        "NAME": "Slippery Elm",
+        "TIER": 3
+    },
+    {
+        "NAME": "Marshmallow Root",
+        "TIER": 3
+    },
+    {
+        "NAME": "Bacopa",
+        "TIER": 4
+    },
+    {
+        "NAME": "Cat's Claw",
+        "TIER": 4
+    },
+    {
+        "NAME": "Dong Quai",
+        "TIER": 4
+    },
+    {
+        "NAME": "Japanese Knotweed",
+        "TIER": 4
+    },
+    {
+        "NAME": "Passionflower",
+        "TIER": 4
+    },
+    {
+        "NAME": "Skullcap",
+        "TIER": 4
+    },
+    {
+        "NAME": "Valerian",
+        "TIER": 4
+    },
+    {
+        "NAME": "Velvet Bean",
+        "TIER": 4
+    }
+]

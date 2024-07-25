@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: weak muscles
+  m_Name: Weak Muscles
   m_EditorClassIdentifier: 
-  Name: Weak muscles
+  Name: Weak Muscles
   Description: 
   UnlockedDescription: 
   tier: 0
@@ -20,6 +20,11 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
+  - {fileID: 11400000, guid: d55868ecf3e45a64ca6126cbbf56c111, type: 2}
+  - {fileID: 11400000, guid: 4dec709b7aea0a9438f9c87f3ce4eeb5, type: 2}
+  - {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
+  - {fileID: 11400000, guid: de1ae42794172c14a9d828a7457e8c13, type: 2}
   ingredients: []
   complaints: []

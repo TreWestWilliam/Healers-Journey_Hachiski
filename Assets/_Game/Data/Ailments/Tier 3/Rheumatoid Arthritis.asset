@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Rheumatoid Arthritis
+  m_EditorClassIdentifier: 
+  Name: Rheumatoid Arthritis
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: e9721b1417450404e976165d8fd48281, type: 2}
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 4fb3153803367fb42a7c537936ec0019, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: b8048474b7599ff48902a5551a2f2a52, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My joints hurt so much, and they swell up.
+    Variable: {fileID: 0}

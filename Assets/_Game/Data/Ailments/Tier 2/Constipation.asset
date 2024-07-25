@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: a618d7096b0d38c4cbc4670ca937db62, type: 2}
-  - {fileID: 11400000, guid: 5c59f70b12bb75940b37f1bfae2a0998, type: 2}
+  - {fileID: 11400000, guid: caaf006fa44f2f8488f548287c37f24e, type: 2}
+  - {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 22d135d825e4b89479997a2dd0fa763f, type: 2}
+    - ingredient: {fileID: 11400000, guid: 5272c5f9d3043b946b18dfa8f710a765, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: b78d724804b5da1459ffc17e13237427, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: 81817208a7e6af74e9604d2e492a8f87, type: 2}
-      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: af71364f898b6844db763098880ba3b7, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I have this abdominal pain and feel so bloated.
+    Variable: {fileID: 0}

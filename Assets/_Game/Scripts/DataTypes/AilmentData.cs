@@ -18,6 +18,12 @@ public class TreatedIngredient : IEquatable<TreatedIngredient>
     public IngredientData ingredient;
     public Temperature temperature;
 
+    public TreatedIngredient(IngredientData ingredient, Temperature temperature)
+    {
+        this.ingredient = ingredient;
+        this.temperature = temperature;
+    }
+
     public static bool operator ==(TreatedIngredient v1, TreatedIngredient v2)
     {
         if(v1 is null)
@@ -129,6 +135,8 @@ public class AilmentData : GenericData
 
     public Cure[] cures = { };
 
+    public StringRef[] complaints = { };
+
     public override DiscoveryTypeIndices getDataIndex(GenericData data)
     {
         switch(data)
@@ -225,6 +233,26 @@ public class AilmentData : GenericData
         }
 
         return null;
+    }
+
+    public string getComplaint()
+    {
+        return getComplaint(0);
+    }
+
+    public string getComplaint(int index)
+    {
+        if(complaints.Length == 0)
+        {
+            throw new System.ArgumentOutOfRangeException($"No complaints for {Name} Ailment.");
+        }
+
+        if(index >= complaints.Length)
+        {
+            return complaints[0];
+        }
+
+        return complaints[index];
     }
 
 #if UNITY_EDITOR

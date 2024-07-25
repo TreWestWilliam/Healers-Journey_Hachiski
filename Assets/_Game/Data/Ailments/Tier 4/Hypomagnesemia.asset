@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Hypomagnesemia
+  m_EditorClassIdentifier: 
+  Name: Hypomagnesemia
+  Description: 
+  UnlockedDescription: 
+  tier: 3
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 0517f0a4cf7e6df4cad7dc4e1946d14b, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: ad7552e6cded2cf4c96a53c17d416f57, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 5272c5f9d3043b946b18dfa8f710a765, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My muscles spasm a lot, and I feel so weak.
+    Variable: {fileID: 0}

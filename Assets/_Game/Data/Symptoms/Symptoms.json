@@ -1,0 +1,242 @@
+[
+    {
+        "NAME": "Cold Hands and Feet",
+        "TIER": 1
+    },
+    {
+        "NAME": "Rapid Heartbeat",
+        "TIER": 1
+    },
+    {
+        "NAME": "Congested Sinuses",
+        "TIER": 1
+    },
+    {
+        "NAME": "Abdominal Pain",
+        "TIER": 1
+    },
+    {
+        "NAME": "Dry Eyes",
+        "TIER": 1
+    },
+    {
+        "NAME": "Ear Pain",
+        "TIER": 1
+    },
+    {
+        "NAME": "Dry Skin",
+        "TIER": 1
+    },
+    {
+        "NAME": "Lack of Energy",
+        "TIER": 1
+    },
+    {
+        "NAME": "Difficulty Sleeping",
+        "TIER": 1
+    },
+    {
+        "NAME": "Headache",
+        "TIER": 1
+    },
+    {
+        "NAME": "Weak Muscles",
+        "TIER": 1
+    },
+    {
+        "NAME": "Muscle Cramps",
+        "TIER": 1
+    },
+    {
+        "NAME": "Dizzy",
+        "TIER": 1
+    },
+    {
+        "NAME": "Fever and Chills",
+        "TIER": 1
+    },
+    {
+        "NAME": "Rash",
+        "TIER": 1
+    },
+    {
+        "NAME": "Bloating",
+        "TIER": 1
+    },
+    {
+        "NAME": "Swelling",
+        "TIER": 1
+    },
+    {
+        "NAME": "Difficulty Seeing at Night",
+        "TIER": 1
+    },
+    {
+        "NAME": "Hearing Loss",
+        "TIER": 1
+    },
+    {
+        "NAME": "Weight Loss",
+        "TIER": 1
+    },
+    {
+        "NAME": "Wounds Take Longer to Heal",
+        "TIER": 1
+    },
+    {
+        "NAME": "Poor Concentration",
+        "TIER": 1
+    },
+    {
+        "NAME": "Blurred Vision",
+        "TIER": 1
+    },
+    {
+        "NAME": "Irritability",
+        "TIER": 1
+    },
+    {
+        "NAME": "Numbness in Extremities",
+        "TIER": 1
+    },
+    {
+        "NAME": "Loss of Appetite",
+        "TIER": 1
+    },
+    {
+        "NAME": "Bleeding Gums",
+        "TIER": 1
+    },
+    {
+        "NAME": "Stomach Pain",
+        "TIER": 1
+    },
+    {
+        "NAME": "Stiff Joints",
+        "TIER": 2
+    },
+    {
+        "NAME": "Strained Breathing",
+        "TIER": 2
+    },
+    {
+        "NAME": "Sinus Pain",
+        "TIER": 2
+    },
+    {
+        "NAME": "Cough",
+        "TIER": 2
+    },
+    {
+        "NAME": "Increased Thirst",
+        "TIER": 2
+    },
+    {
+        "NAME": "Low Mood",
+        "TIER": 2
+    },
+    {
+        "NAME": "Joint Pain",
+        "TIER": 2
+    },
+    {
+        "NAME": "Sneezing",
+        "TIER": 2
+    },
+    {
+        "NAME": "Back Pain",
+        "TIER": 2
+    },
+    {
+        "NAME": "Ringing in Ears",
+        "TIER": 2
+    },
+    {
+        "NAME": "Itchy Skin",
+        "TIER": 2
+    },
+    {
+        "NAME": "Bruising",
+        "TIER": 2
+    },
+    {
+        "NAME": "Wheezing",
+        "TIER": 2
+    },
+    {
+        "NAME": "Sore Throat",
+        "TIER": 2
+    },
+    {
+        "NAME": "Pelvic Pain",
+        "TIER": 2
+    },
+    {
+        "NAME": "Nausea",
+        "TIER": 2
+    },
+    {
+        "NAME": "Hair Loss",
+        "TIER": 3
+    },
+    {
+        "NAME": "Cysts",
+        "TIER": 3
+    },
+    {
+        "NAME": "Chest Pain",
+        "TIER": 3
+    },
+    {
+        "NAME": "Gas",
+        "TIER": 3
+    },
+    {
+        "NAME": "Vomiting",
+        "TIER": 3
+    },
+    {
+        "NAME": "Irregular Heartbeat",
+        "TIER": 3
+    },
+    {
+        "NAME": "Weight Gain",
+        "TIER": 3
+    },
+    {
+        "NAME": "Muscle Paralysis",
+        "TIER": 3
+    },
+    {
+        "NAME": "Intense Pain",
+        "TIER": 3
+    },
+    {
+        "NAME": "Seizures",
+        "TIER": 4
+    },
+    {
+        "NAME": "Muscle Spasms",
+        "TIER": 4
+    },
+    {
+        "NAME": "Shakiness",
+        "TIER": 4
+    },
+    {
+        "NAME": "Confusion",
+        "TIER": 4
+    },
+    {
+        "NAME": "Jaundice",
+        "TIER": 4
+    },
+    {
+        "NAME": "Stiff Muscles",
+        "TIER": 4
+    },
+    {
+        "NAME": "Slow Development",
+        "TIER": 4
+    }
+]

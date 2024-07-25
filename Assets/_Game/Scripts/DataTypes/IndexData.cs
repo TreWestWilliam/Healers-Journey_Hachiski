@@ -41,9 +41,9 @@ public abstract class IndexData : Data
         fullList.Sort();
 
         int tierCount = tiers.Length;
-        if(tierCount < fullList.Last().tier)
+        if(tierCount < fullList.Last().tier + 1)
         {
-            tierCount = fullList.Last().tier;
+            tierCount = fullList.Last().tier + 1;
         }
 
         tiers = new TierIndex[tierCount];

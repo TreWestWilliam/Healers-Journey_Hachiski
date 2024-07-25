@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: blurred vision
+  m_Name: Blurred Vision
   m_EditorClassIdentifier: 
-  Name: Blurred vision
+  Name: Blurred Vision
   Description: 
   UnlockedDescription: 
-  tier: 5
+  tier: 0
   icon:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   ailments:
-  - {fileID: 11400000, guid: c2104e6c2bd3dc345a04239886110c6c, type: 2}
+  - {fileID: 11400000, guid: 3250dc0431c029d43a63bac8361a3c13, type: 2}
+  - {fileID: 11400000, guid: 1c134e412042afb4386f540cb508c945, type: 2}
   ingredients: []
   complaints: []

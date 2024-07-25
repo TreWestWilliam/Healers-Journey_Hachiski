@@ -21,25 +21,30 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 934df4062e415a24f921183314abac4c, type: 2}
-  - {fileID: 11400000, guid: b688b7e4d345f5d4aa7f38f5d7c0dbb1, type: 2}
+  - {fileID: 11400000, guid: 3f30eb5d54fb6644ea0f88efd9b4a0a4, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 71674e5508ca5a74c97283549bf9b0ab, type: 2}
+    - ingredient: {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: cb0494c7562c29442b8921ad14d45603, type: 2}
+    - ingredient: {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: c45da7c9630937743a5282bfb11dd149, type: 2}
-      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I can't seem to catch my breath. My heart races all the time,
+      and my muscles feel so weak.
+    Variable: {fileID: 0}

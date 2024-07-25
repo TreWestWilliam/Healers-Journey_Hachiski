@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: sinus pain
+  m_Name: Sinus Pain
   m_EditorClassIdentifier: 
-  Name: Sinus pain
+  Name: Sinus Pain
   Description: 
   UnlockedDescription: 
-  tier: 0
+  tier: 1
   icon:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 3b350cddd8879fd43b4902f00f1248e9, type: 2}
   ingredients: []
   complaints: []

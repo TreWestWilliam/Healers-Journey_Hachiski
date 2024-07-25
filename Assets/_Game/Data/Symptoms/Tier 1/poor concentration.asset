@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: poor concentration
+  m_Name: Poor Concentration
   m_EditorClassIdentifier: 
-  Name: Poor concentration
+  Name: Poor Concentration
   Description: 
   UnlockedDescription: 
   tier: 0
@@ -20,6 +20,9 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: d22bd85df4d904c48b09da531250b866, type: 2}
+  - {fileID: 11400000, guid: c3b54e5a5e528dc4886ae27b66bf6958, type: 2}
+  - {fileID: 11400000, guid: c828d4e04bf963b43b28a29d95729aaf, type: 2}
   ingredients: []
   complaints: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kwashiorkor
   m_EditorClassIdentifier: 
   Name: Kwashiorkor
-  Description: Also known as Swollen Belly Syndrom.
+  Description: 
   UnlockedDescription: 
   tier: 0
   icon:
@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 5c59f70b12bb75940b37f1bfae2a0998, type: 2}
-  - {fileID: 11400000, guid: 95066c1276e08ab4fad03603acfa1ca6, type: 2}
+  - {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 08af5a55b72cb6e449d247fb0293d1ee, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 973f09d0e1465244dabf8b737c893d3e, type: 2}
+    - ingredient: {fileID: 11400000, guid: 480e9af550f766244a855eb8a9915cd7, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: cb0494c7562c29442b8921ad14d45603, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 35c4525f5c698664cb490a36dffd4bb9, type: 2}
-      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My stomach is bloated, and my whole body feels swollen.
+    Variable: {fileID: 0}

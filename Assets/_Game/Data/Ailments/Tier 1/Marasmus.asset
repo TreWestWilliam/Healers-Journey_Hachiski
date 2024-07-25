@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Marasmus
   m_EditorClassIdentifier: 
   Name: Marasmus
-  Description: Also known as Wasting Disease.
+  Description: 
   UnlockedDescription: 
   tier: 0
   icon:
@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 12756ba0b6b388d49bfaa5eb7a984646, type: 2}
-  - {fileID: 11400000, guid: 7c704ce6097225a419c080a74442d2fb, type: 2}
+  - {fileID: 11400000, guid: dbf335d3f042e4e4398db01b4b0f1c0a, type: 2}
+  - {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 1f60c35974cc00d499ae326be94064de, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: c9773624473e5f444b30c1b5d2d4f8fe, type: 2}
+    - ingredient: {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: b78d724804b5da1459ffc17e13237427, type: 2}
+    - ingredient: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: c45da7c9630937743a5282bfb11dd149, type: 2}
-      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I've lost so much weight, and my skin is very dry.
+    Variable: {fileID: 0}

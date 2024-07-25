@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 95066c1276e08ab4fad03603acfa1ca6, type: 2}
-  - {fileID: 11400000, guid: fc449a43b66a6f449ba67576cae0d80b, type: 2}
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+  - {fileID: 11400000, guid: ec5df0ff7f644ef488c186e6feac2c45, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 177274c86cfa6d1459c2d739b47d3ce8, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: e991b1401cfddcd488df67af30d7d265, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: bece57c7488ebc84c842a5a387d5b826, type: 2}
-      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: ad7552e6cded2cf4c96a53c17d416f57, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: ebaf91e593f54fb4dada9a3edb0a318a, type: 2}
+      temperature: -1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My gums are swollen and bleed easily, and I'm constantly swollen.
+    Variable: {fileID: 0}

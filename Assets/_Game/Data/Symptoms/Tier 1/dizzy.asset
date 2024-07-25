@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: dizzy
+  m_Name: Dizzy
   m_EditorClassIdentifier: 
   Name: Dizzy
   Description: 
@@ -20,6 +20,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 0af8383badafca8478b20f731e6f4e69, type: 2}
   ingredients: []
   complaints: []

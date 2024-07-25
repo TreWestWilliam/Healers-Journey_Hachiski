@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: bloating
+  m_Name: Bloating
   m_EditorClassIdentifier: 
   Name: Bloating
   Description: 
   UnlockedDescription: 
-  tier: 5
+  tier: 0
   icon:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   ailments:
-  - {fileID: 11400000, guid: 788e5b7492e7fbb49a3ca0aac896fe97, type: 2}
-  - {fileID: 11400000, guid: 7481a6afba12bda4887694198e130fa1, type: 2}
-  - {fileID: 11400000, guid: 0f9a53bd701bea6409936c073969043e, type: 2}
+  - {fileID: 11400000, guid: eb1902b6234e00344ba5f3d551a7b5e2, type: 2}
+  - {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
+  - {fileID: 11400000, guid: a286fa535a59bd046a9c4b2529a0db01, type: 2}
+  - {fileID: 11400000, guid: c6dbb32924583344d972abd57b20148d, type: 2}
   ingredients: []
   complaints: []

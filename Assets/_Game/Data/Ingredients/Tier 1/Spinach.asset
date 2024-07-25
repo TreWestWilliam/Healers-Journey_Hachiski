@@ -20,6 +20,8 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: 7354a229217fad04ea465f179180a1d9, type: 2}
+  - {fileID: 11400000, guid: de1ae42794172c14a9d828a7457e8c13, type: 2}
   symptoms: []
   locationsFound: []

@@ -21,25 +21,29 @@ MonoBehaviour:
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
   symptoms:
-  - {fileID: 11400000, guid: 7769d60d977e50247900a4fc6b62e4fe, type: 2}
-  - {fileID: 11400000, guid: 60193084e64041945b7610dcde54524d, type: 2}
+  - {fileID: 11400000, guid: d2675c520804d544487eb98a9cd21c00, type: 2}
+  - {fileID: 11400000, guid: b9aae15cd7c5976479c62d20ba9b8255, type: 2}
   cures:
   - cureName:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
       Variable: {fileID: 0}
     cureSprite:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
     preparation:
-      UseConstant: 0
+      UseConstant: 1
       ConstantValue: 
-      Variable: {fileID: 11400000, guid: 4bf2859233a63e1488e759b788e26e1b, type: 2}
+      Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 535618267ab1c404b9a19def4997826d, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 177274c86cfa6d1459c2d739b47d3ce8, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: 575f1dec0f5fa0a489297c10d8720cfd, type: 2}
+    - ingredient: {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
       temperature: -1
+    - ingredient: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 4fd1d1943e14d484ab39d90ee3ee78a4, type: 2}
+      temperature: -1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I feel so dizzy and have no appetite at all.
+    Variable: {fileID: 0}

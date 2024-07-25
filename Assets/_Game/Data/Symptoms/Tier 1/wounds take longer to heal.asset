@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
-  m_Name: wounds take longer to heal
+  m_Name: Wounds Take Longer to Heal
   m_EditorClassIdentifier: 
-  Name: Wounds take longer to heal
+  Name: Wounds Take Longer to Heal
   Description: 
   UnlockedDescription: 
   tier: 0
@@ -20,6 +20,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
-  ailments: []
+  ailments:
+  - {fileID: 11400000, guid: e5af67fee305e1747bf05388e8145e95, type: 2}
   ingredients: []
   complaints: []
