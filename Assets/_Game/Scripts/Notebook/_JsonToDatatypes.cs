@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -161,9 +162,10 @@ public class _JsonToDatatypes : ScriptableObject
 
             if(!nameToSymptom.ContainsKey(symptomStructs[i].NAME.ToLower()))
             {
-                if(System.IO.File.Exists(filePath))
+                string existingPath = searchAllSubfolders(datafolderPath + "/Symptoms", symptomStructs[i].NAME);
+                if(existingPath != null)
                 {
-                    symptomSOs[i] = AssetDatabase.LoadAssetAtPath<SymptomData>(filePath);
+                    symptomSOs[i] = AssetDatabase.LoadAssetAtPath<SymptomData>(existingPath);
                 }
                 else
                 {
@@ -176,6 +178,10 @@ public class _JsonToDatatypes : ScriptableObject
             else
             {
                 symptomSOs[i] = nameToSymptom[symptomStructs[i].NAME.ToLower()];
+            }
+            if(AssetDatabase.GetAssetPath(symptomSOs[i]) != filePath)
+            {
+                AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(symptomSOs[i]), filePath);
             }
 
             symptomSOs[i].Name = symptomStructs[i].NAME;
@@ -215,9 +221,10 @@ public class _JsonToDatatypes : ScriptableObject
 
             if(!nameToIngredient.ContainsKey(ingredientStructs[i].NAME.ToLower()))
             {
-                if(System.IO.File.Exists(filePath))
+                string existingPath = searchAllSubfolders(datafolderPath + "/Ingredients", ingredientStructs[i].NAME);
+                if(existingPath != null)
                 {
-                    ingredientSOs[i] = AssetDatabase.LoadAssetAtPath<IngredientData>(filePath);
+                    ingredientSOs[i] = AssetDatabase.LoadAssetAtPath<IngredientData>(existingPath);
                 }
                 else
                 {
@@ -230,6 +237,10 @@ public class _JsonToDatatypes : ScriptableObject
             else
             {
                 ingredientSOs[i] = nameToIngredient[ingredientStructs[i].NAME.ToLower()];
+            }
+            if(AssetDatabase.GetAssetPath(ingredientSOs[i]) != filePath)
+            {
+                AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(ingredientSOs[i]), filePath);
             }
 
             ingredientSOs[i].Name = ingredientStructs[i].NAME;
@@ -267,9 +278,10 @@ public class _JsonToDatatypes : ScriptableObject
 
             if(!nameToAilment.ContainsKey(ailmentStructs[i].NAME.ToLower()))
             {
-                if(System.IO.File.Exists(filePath))
+                string existingPath = searchAllSubfolders(datafolderPath + "/Ailments", ailmentStructs[i].NAME);
+                if(existingPath != null)
                 {
-                    ailmentSOs[i] = AssetDatabase.LoadAssetAtPath<AilmentData>(filePath);
+                    ailmentSOs[i] = AssetDatabase.LoadAssetAtPath<AilmentData>(existingPath);
                 }
                 else
                 {
@@ -282,6 +294,10 @@ public class _JsonToDatatypes : ScriptableObject
             else
             {
                 ailmentSOs[i] = nameToAilment[ailmentStructs[i].NAME.ToLower()];
+            }
+            if(AssetDatabase.GetAssetPath(ailmentSOs[i]) != filePath)
+            {
+                AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(ailmentSOs[i]), filePath);
             }
 
             ailmentSOs[i].Name = ailmentStructs[i].NAME;
@@ -315,6 +331,17 @@ public class _JsonToDatatypes : ScriptableObject
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+    }
+
+    private string searchAllSubfolders(string baseFolder, string name)
+    {
+        string[] folders = { baseFolder };
+        string[] paths = AssetDatabase.FindAssets(name, folders);
+        if(paths.Length > 0)
+        {
+            return AssetDatabase.GUIDToAssetPath(paths[0]);
+        }
+        return null;
     }
 }
 
