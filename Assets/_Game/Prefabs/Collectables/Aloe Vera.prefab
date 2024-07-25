@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4356597108389441480}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
@@ -167,7 +167,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: E
+  m_text: 'E
+
+    Pickup'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -295,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.29411766}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -324,6 +326,7 @@ GameObject:
   - component: {fileID: 660362002297242258}
   - component: {fileID: 8230614407311226063}
   - component: {fileID: 5156941863867279999}
+  - component: {fileID: 7598451008624194987}
   - component: {fileID: 5261586166019830878}
   m_Layer: 6
   m_Name: Aloe Vera
@@ -421,6 +424,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7598451008624194987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650578282882909815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8377709c90aceaf4fa6f4192fa1ce9e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectNotif: {fileID: 4356597108389441480}
 --- !u!114 &5261586166019830878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,4 +453,3 @@ MonoBehaviour:
   item: {fileID: 0}
   self: {fileID: 7650578282882909815}
   invManager: {fileID: 0}
-  collectNotif: {fileID: 4356597108389441480}

@@ -87,9 +87,10 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
         {
-            if (hit.transform.CompareTag("Ingredient"))
+            if (hit.transform.CompareTag("Ingredient") || hit.transform.CompareTag("NPC"))
             {
-                hit.transform.GetComponent<Collectable>().SetCollectNotifVisible(true);
+                //Refactor collect notifs to be contained within their own script. This way, they can also be applied to NPCs
+                hit.transform.GetComponent<InteractNotif>().SetCollectNotifVisible(true);
             }
         }
     }
