@@ -6270,7 +6270,7 @@ MonoBehaviour:
     locationsFound: 
   - topic: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
     UnlockDescription: 0
-    ailments: 00000000000000
+    ailments: 0000000000000000
     ingredients: 
     symptoms: 
     cures: 
@@ -6382,14 +6382,14 @@ MonoBehaviour:
     locationsFound: 
   - topic: {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
     UnlockDescription: 0
-    ailments: 000000
+    ailments: 00000000
     ingredients: 
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
     UnlockDescription: 0
-    ailments: 00000000000000
+    ailments: 0000000000000000
     ingredients: 
     symptoms: 
     cures: 
