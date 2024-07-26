@@ -223,8 +223,6 @@ public class _JsonToDatatypes : ScriptableObject
             if(iconPath != null)
             {
                 string expectedIconPath = iconFolder + "/tier " + ingredientStructs[i].TIER + "/" + iconName + ".svg";
-                Debug.Log("IconPath : " + iconPath);
-                Debug.Log("Expected Path : " + expectedIconPath);
                 if(iconPath.ToLower() != expectedIconPath.ToLower())
                 {
                     AssetDatabase.MoveAsset(iconPath, expectedIconPath);

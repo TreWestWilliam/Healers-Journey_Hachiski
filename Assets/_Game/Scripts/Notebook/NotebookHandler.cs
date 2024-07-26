@@ -31,6 +31,9 @@ public class NotebookHandler : MonoBehaviour
     public ColorRef textColor;
     public ColorRef textColorDisabled;
 
+    public ColorRef iconColorDisabled;
+    public Material iconMaterialDisabled;
+
     public Bookmark[] bookmarks;
 
     private GameObject currentPage;

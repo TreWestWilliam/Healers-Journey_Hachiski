@@ -46,6 +46,7 @@ public class IndexPage : MonoBehaviour
         {
             TierIndex tier = chosenIndex.tiers[i];
             IndexTierTile tierEntries = Instantiate(indexTierTilePrefab, entriesSection);
+            tierEntries.name = notebookHandler.repHandler.getTierName(i) + " Index";
             tierEntries.tierLable.text = notebookHandler.repHandler.getTierName(i);
             tierEntries.tierLable.font = tiersFont;
             tierEntries.tierLable.color = tiersColor;

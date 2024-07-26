@@ -49,7 +49,8 @@ public class EntryTile : MonoBehaviour
         else
         {
             button.interactable = false;
-            icon.color = Color.grey;
+            icon.color = notebookHandler.iconColorDisabled;
+            icon.material = notebookHandler.iconMaterialDisabled;
             lable.color = notebookHandler.textColorDisabled;
         }
     }
