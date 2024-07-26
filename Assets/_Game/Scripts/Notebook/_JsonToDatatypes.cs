@@ -9,11 +9,27 @@ class NameAndTier
 {
     public string NAME;
     public int TIER;
+    public string ICON;
+
+    public NameAndTier()
+    {
+        NAME = "";
+        TIER = 0;
+        ICON = "";
+    }
 
     public NameAndTier(string name, int tier)
     {
         NAME = name;
         TIER = tier;
+        ICON = "";
+    }
+
+    public NameAndTier(string name, int tier, string icon)
+    {
+        NAME = name;
+        TIER = tier;
+        ICON = icon;
     }
 }
 
@@ -21,6 +37,7 @@ class AilmentJsonData
 {
     public string NAME;
     public int TIER;
+    public string ICON;
     public string ING1;
     public string TEMP1;
     public string ING2;
@@ -35,6 +52,7 @@ class AilmentJsonData
     {
         NAME = "";
         TIER = 0;
+        ICON = "";
         ING1 = "";
         TEMP1 = "";
         ING2 = "";
@@ -58,6 +76,8 @@ public class _JsonToDatatypes : ScriptableObject
     public IngredientIndex ingredientIndex;
     public SymptomIndex symptomIndex;
 
+    public string iconFolder;
+
     private Temperature stringToTemp(string text)
     {
         switch(text)
@@ -79,60 +99,6 @@ public class _JsonToDatatypes : ScriptableObject
         Dictionary<string, SymptomData> nameToSymptom = new Dictionary<string, SymptomData>();
         Dictionary<string, IngredientData> nameToIngredient = new Dictionary<string, IngredientData>();
         Dictionary<string, AilmentData> nameToAilment = new Dictionary<string, AilmentData>();
-
-        /*if(symptomIndex.tiers != null)
-        {
-            foreach(TierIndex tier in symptomIndex.tiers)
-            {
-                if(tier.data != null)
-                {
-                    foreach(GenericData data in tier.data)
-                    {
-                        if(data != null && !nameToSymptom.ContainsKey(data.Name.ToLower()))
-                        {
-                            string fileName = AssetDatabase.GetAssetPath(data).Split('/').Last().ToLower();
-                            nameToSymptom.Add(fileName.Remove(fileName.Length - 6), data as SymptomData);
-                        }
-                    }
-                }
-            }
-        }
-
-        if(ingredientIndex.tiers != null)
-        {
-            foreach(TierIndex tier in ingredientIndex.tiers)
-            {
-                if(tier.data != null)
-                {
-                    foreach(GenericData data in tier.data)
-                    {
-                        if(data != null && !nameToIngredient.ContainsKey(data.Name.ToLower()))
-                        {
-                            string fileName = AssetDatabase.GetAssetPath(data).Split('/').Last().ToLower();
-                            nameToIngredient.Add(fileName.Remove(fileName.Length - 6), data as IngredientData);
-                        }
-                    }
-                }
-            }
-        }
-
-        if(ailmentIndex.tiers != null)
-        {
-            foreach(TierIndex tier in ailmentIndex.tiers)
-            {
-                if(tier.data != null)
-                {
-                    foreach(GenericData data in tier.data)
-                    {
-                        if(data != null && !nameToAilment.ContainsKey(data.Name.ToLower()))
-                        {
-                            string fileName = AssetDatabase.GetAssetPath(data).Split('/').Last().ToLower();
-                            nameToAilment.Add(fileName.Remove(fileName.Length - 6), data as AilmentData);
-                        }
-                    }
-                }
-            }
-        }*/
 
         string symptomString = symptomsJson.ToString();
         symptomString = symptomString.Remove(0, 3);
@@ -246,6 +212,26 @@ public class _JsonToDatatypes : ScriptableObject
             ingredientSOs[i].Name = ingredientStructs[i].NAME;
             ingredientSOs[i].tier = ingredientStructs[i].TIER - 1;
 
+            string iconName = ingredientStructs[i].ICON;
+            if(iconName == null || iconName == "")
+            {
+                iconName = ingredientStructs[i].NAME;
+            }
+
+            string iconPath = searchAllSubfolders(iconFolder, iconName);
+
+            if(iconPath != null)
+            {
+                string expectedIconPath = iconFolder + "/tier " + ingredientStructs[i].TIER + "/" + iconName + ".svg";
+                Debug.Log("IconPath : " + iconPath);
+                Debug.Log("Expected Path : " + expectedIconPath);
+                if(iconPath.ToLower() != expectedIconPath.ToLower())
+                {
+                    AssetDatabase.MoveAsset(iconPath, expectedIconPath);
+                }
+                ingredientSOs[i].icon.ConstantValue = AssetDatabase.LoadAssetAtPath<Sprite>(expectedIconPath);
+            }
+
             ingredientIndex.tiers[0].data[i] = ingredientSOs[i];
         }
         ingredientIndex.sortIndex();
@@ -335,11 +321,24 @@ public class _JsonToDatatypes : ScriptableObject
 
     private string searchAllSubfolders(string baseFolder, string name)
     {
+        name = name.ToLower();
         string[] folders = { baseFolder };
         string[] paths = AssetDatabase.FindAssets(name, folders);
         if(paths.Length > 0)
         {
-            return AssetDatabase.GUIDToAssetPath(paths[0]);
+            for(int i = 0; i < paths.Length; i++)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(paths[i]);
+                string fileName = path.Split('/').Last();
+                List<String> split = new List<String>(fileName.Split('.'));
+                split.RemoveAt(split.Count - 1);
+                fileName = String.Join('.', split.ToArray()).ToLower();
+                if(fileName == name)
+                {
+                    return AssetDatabase.GUIDToAssetPath(paths[i]);
+                }
+            }
+            return null;
         }
         return null;
     }

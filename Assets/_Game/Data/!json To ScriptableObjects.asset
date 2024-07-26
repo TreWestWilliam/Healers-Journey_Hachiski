@@ -18,3 +18,4 @@ MonoBehaviour:
   ailmentIndex: {fileID: 11400000, guid: 0612ea22cef868c47941f25691fb8a32, type: 2}
   ingredientIndex: {fileID: 11400000, guid: 481a765961251d84ea2f4559f251a983, type: 2}
   symptomIndex: {fileID: 11400000, guid: 1cce858c6810a544fa730ab562fa341f, type: 2}
+  iconFolder: Assets/_Game/ART/Icons

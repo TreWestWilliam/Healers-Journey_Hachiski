@@ -18,7 +18,8 @@ MonoBehaviour:
   tier: 0
   icon:
     UseConstant: 1
-    ConstantValue: {fileID: 0}
+    ConstantValue: {fileID: 3286163911610860551, guid: 5a2ca65c8ab836040ac20c8670b372cb,
+      type: 3}
     Variable: {fileID: 0}
   ailments:
   - {fileID: 11400000, guid: 6f24b93239517634c8f2503c09217380, type: 2}

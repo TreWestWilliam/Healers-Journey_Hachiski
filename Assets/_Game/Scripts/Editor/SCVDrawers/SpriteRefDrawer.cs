@@ -1,3 +1,5 @@
+using System.Security.Policy;
+using Unity.VectorGraphics;
 using UnityEditor;
 using UnityEngine;
 
@@ -53,10 +55,20 @@ public class SpriteRefDrawer : PropertyDrawer
         // Create object field for the sprite.
         spriteRect = new Rect(position.x, position.y, position.height + extraHeight, position.height + extraHeight);
         position.xMin += position.height + extraHeight + 2;
-                
+
         // Skip this if not a repaint or the property is null.
         if(Event.current.type == EventType.Repaint && value != null)
-            DrawTexturePreview(spriteRect, value);
+        {
+            Texture2D texture = value.texture;
+            Rect textureRect = value.textureRect;
+            if(AssetDatabase.GetAssetPath(value).EndsWith(".svg"))
+            {
+                Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
+                texture = VectorUtils.RenderSpriteToTexture2D(value, (int)spriteRect.width, (int)spriteRect.height, mat);
+                textureRect = new Rect(0, 0, spriteRect.width, spriteRect.height);
+            }
+            DrawTexturePreview(spriteRect, textureRect, texture);
+        }
 
         if(useConstant.boolValue)
             EditorGUI.LabelField(position, "Constant:");
@@ -89,12 +101,12 @@ public class SpriteRefDrawer : PropertyDrawer
         return (base.GetPropertyHeight(property, label) * 2) + 2;
     }
 
-    private void DrawTexturePreview(Rect position, Sprite sprite)
+    private void DrawTexturePreview(Rect position, Rect textureRect, Texture2D texture)
     {
-        Vector2 fullSize = new Vector2(sprite.texture.width, sprite.texture.height);
-        Vector2 size = new Vector2(sprite.textureRect.width, sprite.textureRect.height);
+        Vector2 fullSize = new Vector2(texture.width, texture.height);
+        Vector2 size = new Vector2(textureRect.width, textureRect.height);
 
-        Rect coords = sprite.textureRect;
+        Rect coords = textureRect;
         coords.x /= fullSize.x;
         coords.width /= fullSize.x;
         coords.y /= fullSize.y;
@@ -110,6 +122,6 @@ public class SpriteRefDrawer : PropertyDrawer
         position.height = size.y * minRatio;
         position.center = center;
 
-        GUI.DrawTextureWithTexCoords(position, sprite.texture, coords);
+        GUI.DrawTextureWithTexCoords(position, texture, coords);
     }
 }

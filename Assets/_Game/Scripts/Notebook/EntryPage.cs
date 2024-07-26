@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VectorGraphics;
 
 public class EntryPage : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class EntryPage : MonoBehaviour
 
     public TMP_Text title;
     public TMP_Text tier;
-    public Image icon;
+    public SVGImage icon;
 
     public TMP_Text description;
     public TMP_Text unlockedText;

@@ -5,6 +5,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 using Object = UnityEngine.Object;
+using Unity.VectorGraphics;
 
 [CustomEditor(typeof(GenericData), true)]
 [CanEditMultipleObjects]
@@ -16,16 +17,25 @@ public class GenericDataEditor : Editor
     {
         if(genericData.icon.Value != null)
         {
-            Type t = GetType("UnityEditor.SpriteUtility");
-            if(t != null)
+            if(AssetDatabase.GetAssetPath(genericData.icon.Value).EndsWith(".svg"))
             {
-                MethodInfo method = t.GetMethod("RenderStaticPreview", new Type[] { typeof(Sprite), typeof(Color), typeof(int), typeof(int) });
-                if(method != null)
+                Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
+                return VectorUtils.RenderSpriteToTexture2D(genericData.icon.Value, width, height, mat);
+            }
+            else
+            {
+                Type t = GetType("UnityEditor.SpriteUtility");
+                if(t != null)
                 {
-                    object ret = method.Invoke("RenderStaticPreview", new object[] { genericData.icon.Value, Color.white, width, height });
-                    if(ret is Texture2D)
-                        return ret as Texture2D;
+                    MethodInfo method = t.GetMethod("RenderStaticPreview", new Type[] { typeof(Sprite), typeof(Color), typeof(int), typeof(int) });
+                    if(method != null)
+                    {
+                        object ret = method.Invoke("RenderStaticPreview", new object[] { genericData.icon.Value, Color.white, width, height });
+                        if(ret is Texture2D)
+                            return ret as Texture2D;
+                    }
                 }
+
             }
         }
         return base.RenderStaticPreview(assetPath, subAssets, width, height);

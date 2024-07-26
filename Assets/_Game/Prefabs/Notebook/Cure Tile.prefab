@@ -231,9 +231,13 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: {fileID: 0}
       Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
     recipe: []
   notebookHandler: {fileID: 0}
-  icon: {fileID: 5663643266260012190}
+  icon: {fileID: 6636484972410901230}
   lable: {fileID: 978201276595325098}
 --- !u!114 &1275295281595257908
 MonoBehaviour:
@@ -407,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7667479527306281508}
   - component: {fileID: 3529909001673870617}
-  - component: {fileID: 5663643266260012190}
+  - component: {fileID: 6636484972410901230}
   m_Layer: 5
   m_Name: Cure Icon
   m_TagString: Untagged
@@ -442,7 +446,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6187319334841213399}
   m_CullTransparentMesh: 1
---- !u!114 &5663643266260012190
+--- !u!114 &6636484972410901230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,7 +455,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6187319334841213399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: ef8b96895a0ec4ba685178a052544251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -463,12 +467,4 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PreserveAspect: 1

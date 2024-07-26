@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEditor;
 using System;
 using System.Reflection;
 using Object = UnityEngine.Object;
+using UnityEngine.UIElements;
+using Unity.VectorGraphics;
+using System.Security.Policy;
+using UnityEngine.Rendering;
+using NUnit.Framework.Constraints;
 
 [CustomEditor(typeof(SpriteVariable), true)]
 [CanEditMultipleObjects]
@@ -16,15 +22,23 @@ public class SpriteVarEditor : Editor
     {
         if(spriteVar.Value != null)
         {
-            Type t = GetType("UnityEditor.SpriteUtility");
-            if(t != null)
+            if(AssetDatabase.GetAssetPath(spriteVar.Value).EndsWith(".svg"))
             {
-                MethodInfo method = t.GetMethod("RenderStaticPreview", new Type[] { typeof(Sprite), typeof(Color), typeof(int), typeof(int) });
-                if(method != null)
+                Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
+                return VectorUtils.RenderSpriteToTexture2D(spriteVar.Value, width, height, mat);
+            }
+            else
+            {
+                Type t = GetType("UnityEditor.SpriteUtility");
+                if(t != null)
                 {
-                    object ret = method.Invoke("RenderStaticPreview", new object[] { spriteVar.Value, Color.white, width, height });
-                    if(ret is Texture2D)
-                        return ret as Texture2D;
+                    MethodInfo method = t.GetMethod("RenderStaticPreview", new Type[] { typeof(Sprite), typeof(Color), typeof(int), typeof(int) });
+                    if(method != null)
+                    {
+                        object ret = method.Invoke("RenderStaticPreview", new object[] { spriteVar.Value, Color.white, width, height });
+                        if(ret is Texture2D)
+                            return ret as Texture2D;
+                    }
                 }
             }
 
@@ -38,7 +52,18 @@ public class SpriteVarEditor : Editor
         GUI.Label(new Rect(20, 5, 35, EditorGUIUtility.singleLineHeight), "Value");
 
         if(spriteVar.Value != null)
-            DrawTexturePreview(new Rect(67, 5, 60, 60), spriteVar.Value);
+        {
+            Texture2D texture = spriteVar.Value.texture;
+            Rect textureRect = spriteVar.Value.textureRect;
+            if(AssetDatabase.GetAssetPath(spriteVar.Value).EndsWith(".svg"))
+            {
+                Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
+                texture = VectorUtils.RenderSpriteToTexture2D(spriteVar.Value, 60, 60, mat);
+                textureRect = new Rect(0, 0, 60, 60);
+
+            }
+            DrawTexturePreview(new Rect(67, 5, 60, 60), textureRect, texture);
+        }
 
         //Rect rect = new Rect(Screen.width / 2f, 5, (Screen.width / 2f), EditorGUIUtility.singleLineHeight);
 
@@ -47,12 +72,12 @@ public class SpriteVarEditor : Editor
         EditorUtility.SetDirty(spriteVar);
     }
 
-    private void DrawTexturePreview(Rect position, Sprite sprite)
+    private void DrawTexturePreview(Rect position, Rect textureRect, Texture2D texture)
     {
-        Vector2 fullSize = new Vector2(sprite.texture.width, sprite.texture.height);
-        Vector2 size = new Vector2(sprite.textureRect.width, sprite.textureRect.height);
+        Vector2 fullSize = new Vector2(texture.width, texture.height);
+        Vector2 size = new Vector2(textureRect.width, textureRect.height);
 
-        Rect coords = sprite.textureRect;
+        Rect coords = textureRect;
         coords.x /= fullSize.x;
         coords.width /= fullSize.x;
         coords.y /= fullSize.y;
@@ -68,7 +93,7 @@ public class SpriteVarEditor : Editor
         position.height = size.y * minRatio;
         position.center = center;
 
-        GUI.DrawTextureWithTexCoords(position, sprite.texture, coords);
+        GUI.DrawTextureWithTexCoords(position, texture, coords);
     }
 
     private static Type GetType(string TypeName)

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using static UnityEngine.EventSystems.EventTrigger;
+using Unity.VectorGraphics;
 
 public class EntryTile : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class EntryTile : MonoBehaviour
 
     public NotebookHandler notebookHandler;
 
-    public Image icon;
+    public SVGImage icon;
     public TMP_Text lable;
     public Button button;
 

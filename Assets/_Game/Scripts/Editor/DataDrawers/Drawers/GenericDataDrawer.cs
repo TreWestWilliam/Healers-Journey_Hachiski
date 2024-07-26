@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using Codice.CM.SEIDInfo;
+using Unity.VectorGraphics;
 
 [CustomPropertyDrawer(typeof(GenericData))]
 [CustomPropertyDrawer(typeof(AilmentData))]
@@ -45,7 +46,17 @@ public class GenericDataDrawer : PropertyDrawer
 
         // Skip this if not a repaint or the property is null.
         if(Event.current.type == EventType.Repaint && icon != null)
-            DrawTexturePreview(spriteRect, icon);
+        {
+            Texture2D texture = icon.texture;
+            Rect textureRect = icon.textureRect;
+            if(AssetDatabase.GetAssetPath(icon).EndsWith(".svg"))
+            {
+                Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
+                texture = VectorUtils.RenderSpriteToTexture2D(icon, (int)spriteRect.width, (int)spriteRect.height, mat);
+                textureRect = new Rect(0, 0, spriteRect.width, spriteRect.height);
+            }
+            DrawTexturePreview(spriteRect, textureRect, texture);
+        }
 
         Type type = typeof(GenericData);
 
@@ -97,12 +108,12 @@ public class GenericDataDrawer : PropertyDrawer
         return (base.GetPropertyHeight(property, label) * 2) + 2;
     }
 
-    private void DrawTexturePreview(Rect position, Sprite sprite)
+    private void DrawTexturePreview(Rect position, Rect textureRect, Texture2D texture)
     {
-        Vector2 fullSize = new Vector2(sprite.texture.width, sprite.texture.height);
-        Vector2 size = new Vector2(sprite.textureRect.width, sprite.textureRect.height);
+        Vector2 fullSize = new Vector2(texture.width, texture.height);
+        Vector2 size = new Vector2(textureRect.width, textureRect.height);
 
-        Rect coords = sprite.textureRect;
+        Rect coords = textureRect;
         coords.x /= fullSize.x;
         coords.width /= fullSize.x;
         coords.y /= fullSize.y;
@@ -118,6 +129,6 @@ public class GenericDataDrawer : PropertyDrawer
         position.height = size.y * minRatio;
         position.center = center;
 
-        GUI.DrawTextureWithTexCoords(position, sprite.texture, coords);
+        GUI.DrawTextureWithTexCoords(position, texture, coords);
     }
 }

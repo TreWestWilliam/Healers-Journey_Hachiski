@@ -97,7 +97,8 @@
     },
     {
         "NAME": "Peppermint",
-        "TIER": 1
+        "TIER": 1,
+		"ICON": "Mint"
     },
     {
         "NAME": "Pomegranate",
@@ -133,7 +134,8 @@
     },
     {
         "NAME": "Molasses",
-        "TIER": 1
+        "TIER": 1,
+		"ICON": "Blackstrap Molasses"
     },
     {
         "NAME": "St. John's Wort",

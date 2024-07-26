@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Molasses
   m_EditorClassIdentifier: 
   Name: Molasses
-  Description: 
+  Description: Blackstrap Molasses
   UnlockedDescription: 
   tier: 0
   icon:
     UseConstant: 1
-    ConstantValue: {fileID: 0}
+    ConstantValue: {fileID: 3286163911610860551, guid: 2dc267d6e3c1e5b43a998674db770923,
+      type: 3}
     Variable: {fileID: 0}
   ailments:
-  - {fileID: 0}
   - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
   - {fileID: 11400000, guid: d55868ecf3e45a64ca6126cbbf56c111, type: 2}
   - {fileID: 11400000, guid: 76cab7ba666109748bb2320c708ca179, type: 2}
