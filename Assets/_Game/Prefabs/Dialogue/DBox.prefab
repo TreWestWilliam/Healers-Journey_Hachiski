@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe3cce9f4a7e66438032ee59386b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charactersPerSecond: 32
   ButtonPrefab: {fileID: 1304944338461663574, guid: 9442ad591e73eac49b4a2098b9e092a0,
     type: 3}
   textField: {fileID: 5097685732010893823}

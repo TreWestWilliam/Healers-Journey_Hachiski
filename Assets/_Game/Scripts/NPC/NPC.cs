@@ -21,10 +21,10 @@ public class NPC : MonoBehaviour, IInteractable
 	{
 		if (!_dialogueBoxInstance && DialogueBoxPrefab)
 		{
-			_dialogueBoxInstance = 
+			_dialogueBoxInstance =
 				Instantiate(DialogueBoxPrefab.transform.root.gameObject,
-				transform.position + Vector3.up * 1.5f, 
-				Camera.main.transform.rotation,transform);
+				transform.position + Vector3.up * 1.5f,
+				Camera.main.transform.rotation, transform);
 			_dialogueBox = _dialogueBoxInstance.GetComponentInChildren<DialogueBox>();
 		}
 	}
@@ -36,7 +36,7 @@ public class NPC : MonoBehaviour, IInteractable
 	public void Engage()
 	{
 		CreateDialogueBox();
-		_dialogueBox.textField.text = "Hello Player!";
+		_dialogueBox.ReadDialogue("Hello Player!");
 	}
 
 	public void Disengage()
