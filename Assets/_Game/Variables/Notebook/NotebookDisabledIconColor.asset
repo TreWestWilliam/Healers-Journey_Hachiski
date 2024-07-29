@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e930753bc23224b9410f2e1153697a, type: 3}
   m_Name: NotebookDisabledIconColor
   m_EditorClassIdentifier: 
-  Value: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  Value: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}

@@ -5,39 +5,12 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-class NameAndTier
-{
-    public string NAME;
-    public int TIER;
-    public string ICON;
-
-    public NameAndTier()
-    {
-        NAME = "";
-        TIER = 0;
-        ICON = "";
-    }
-
-    public NameAndTier(string name, int tier)
-    {
-        NAME = name;
-        TIER = tier;
-        ICON = "";
-    }
-
-    public NameAndTier(string name, int tier, string icon)
-    {
-        NAME = name;
-        TIER = tier;
-        ICON = icon;
-    }
-}
-
 class AilmentJsonData
 {
     public string NAME;
     public int TIER;
     public string ICON;
+    public string DES;
     public string ING1;
     public string TEMP1;
     public string ING2;
@@ -53,6 +26,7 @@ class AilmentJsonData
         NAME = "";
         TIER = 0;
         ICON = "";
+        DES = "";
         ING1 = "";
         TEMP1 = "";
         ING2 = "";
@@ -61,6 +35,62 @@ class AilmentJsonData
         TEMP3 = "";
         SYMP1 = "";
         SYMP2 = "";
+        COMP = "";
+    }
+}
+
+class IngredientJsonData
+{
+    public string NAME;
+    public int TIER;
+    public string ICON;
+    public string DES;
+    public string SYMP1;
+    public string SYMP2;
+    public string SYMP3;
+    public string SYMP4;
+    public string SYMP5;
+    public string SYMP6;
+
+    public IngredientJsonData()
+    {
+        NAME = "";
+        TIER = 0;
+        ICON = "";
+        DES = "";
+        SYMP1 = "";
+        SYMP2 = "";
+        SYMP3 = "";
+        SYMP4 = "";
+        SYMP5 = "";
+        SYMP6 = "";
+    }
+}
+
+class SymptomJsonData
+{
+    public string NAME;
+    public int TIER;
+    public string ICON;
+    public string DES;
+    public string ING1;
+    public string ING2;
+    public string ING3;
+    public string ING4;
+    public string ING5;
+    public string COMP;
+
+    public SymptomJsonData()
+    {
+        NAME = "";
+        TIER = 0;
+        ICON = "";
+        DES = "";
+        ING1 = "";
+        ING2 = "";
+        ING3 = "";
+        ING4 = "";
+        ING5 = "";
         COMP = "";
     }
 }
@@ -77,6 +107,7 @@ public class _JsonToDatatypes : ScriptableObject
     public SymptomIndex symptomIndex;
 
     public string iconFolder;
+    public string iconList;
 
     private Temperature stringToTemp(string text)
     {
@@ -111,7 +142,7 @@ public class _JsonToDatatypes : ScriptableObject
         }
 
         SymptomData[] symptomSOs = new SymptomData[symptomStrings.Length];
-        NameAndTier[] symptomStructs = new NameAndTier[symptomStrings.Length];
+        SymptomJsonData[] symptomStructs = new SymptomJsonData[symptomStrings.Length];
 
         symptomIndex.tiers = new TierIndex[1];
         symptomIndex.tiers[0] = new TierIndex();
@@ -119,7 +150,7 @@ public class _JsonToDatatypes : ScriptableObject
 
         for(int i = 0; i < symptomStrings.Length; i++)
         {
-            symptomStructs[i] = new NameAndTier("", 0);
+            symptomStructs[i] = new SymptomJsonData();
 
             EditorJsonUtility.FromJsonOverwrite(symptomStrings[i], symptomStructs[i]);
 
@@ -153,7 +184,40 @@ public class _JsonToDatatypes : ScriptableObject
             symptomSOs[i].Name = symptomStructs[i].NAME;
             symptomSOs[i].tier = symptomStructs[i].TIER - 1;
 
-            //Debug.Log(symptomSOs[i].Name + " : Tier " + symptomSOs[i].tier);
+            string iconName = symptomStructs[i].ICON;
+            if(iconName == null || iconName == "")
+            {
+                iconName = symptomStructs[i].NAME;
+            }
+
+            string iconPath = searchAllSubfolders(iconFolder, iconName);
+
+            if(iconPath != null)
+            {
+                string expectedIconPath = iconFolder + "/tier " + symptomStructs[i].TIER + "/" + iconName + ".svg";
+                if(iconPath.ToLower() != expectedIconPath.ToLower())
+                {
+                    AssetDatabase.MoveAsset(iconPath, expectedIconPath);
+                }
+                symptomSOs[i].icon.UseConstant = true;
+                symptomSOs[i].icon.ConstantValue = AssetDatabase.LoadAssetAtPath<Sprite>(expectedIconPath);
+            }
+
+            if(symptomStructs[i].DES != null && symptomStructs[i].DES != "")
+            {
+                symptomSOs[i].Description = symptomStructs[i].DES;
+            }
+
+            symptomSOs[i].ingredients = new IngredientData[0];
+            symptomSOs[i].ailments = new AilmentData[0];
+
+            if(symptomStructs[i].COMP != null && symptomStructs[i].COMP != "")
+            {
+                StringRef[] comps = new StringRef[1];
+                comps[0].UseConstant = true;
+                comps[0].ConstantValue = symptomStructs[i].COMP;
+                symptomSOs[i].complaints = comps;
+            }
 
             symptomIndex.tiers[0].data[i] = symptomSOs[i];
         }
@@ -170,7 +234,7 @@ public class _JsonToDatatypes : ScriptableObject
         }
 
         IngredientData[] ingredientSOs = new IngredientData[ingredientStrings.Length];
-        NameAndTier[] ingredientStructs = new NameAndTier[ingredientStrings.Length];
+        IngredientJsonData[] ingredientStructs = new IngredientJsonData[ingredientStrings.Length];
 
         ingredientIndex.tiers = new TierIndex[1];
         ingredientIndex.tiers[0] = new TierIndex();
@@ -178,7 +242,7 @@ public class _JsonToDatatypes : ScriptableObject
 
         for(int i = 0; i < ingredientStrings.Length; i++)
         {
-            ingredientStructs[i] = new NameAndTier("", 0);
+            ingredientStructs[i] = new IngredientJsonData();
 
             EditorJsonUtility.FromJsonOverwrite(ingredientStrings[i], ingredientStructs[i]);
 
@@ -227,8 +291,59 @@ public class _JsonToDatatypes : ScriptableObject
                 {
                     AssetDatabase.MoveAsset(iconPath, expectedIconPath);
                 }
+                ingredientSOs[i].icon.UseConstant = true;
                 ingredientSOs[i].icon.ConstantValue = AssetDatabase.LoadAssetAtPath<Sprite>(expectedIconPath);
             }
+
+            if(ingredientStructs[i].DES != null && ingredientStructs[i].DES != "")
+            {
+                ingredientSOs[i].Description = ingredientStructs[i].DES;
+            }
+
+            List<SymptomData> ingredientSymptoms = new List<SymptomData>();
+
+            String symptom;
+
+            symptom = ingredientStructs[i].SYMP1.ToLower();
+            if(symptom != null && symptom != "" && nameToSymptom.ContainsKey(symptom))
+            {
+                ingredientSymptoms.Add(nameToSymptom[symptom]);
+            }
+
+            symptom = ingredientStructs[i].SYMP2.ToLower();
+            if(symptom != null && symptom != "" && nameToSymptom.ContainsKey(symptom))
+            {
+                ingredientSymptoms.Add(nameToSymptom[symptom]);
+            }
+
+            symptom = ingredientStructs[i].SYMP3.ToLower();
+            if(symptom != null && symptom != "" && nameToSymptom.ContainsKey(symptom))
+            {
+                ingredientSymptoms.Add(nameToSymptom[symptom]);
+            }
+
+            symptom = ingredientStructs[i].SYMP4.ToLower();
+            if(symptom != null && symptom != "" && nameToSymptom.ContainsKey(symptom))
+            {
+                ingredientSymptoms.Add(nameToSymptom[symptom]);
+            }
+
+            symptom = ingredientStructs[i].SYMP5.ToLower();
+            if(symptom != null && symptom != "" && nameToSymptom.ContainsKey(symptom))
+            {
+                ingredientSymptoms.Add(nameToSymptom[symptom]);
+            }
+
+            symptom = ingredientStructs[i].SYMP6.ToLower();
+            if(symptom != null && symptom != "" && nameToSymptom.ContainsKey(symptom))
+            {
+                ingredientSymptoms.Add(nameToSymptom[symptom]);
+            }
+
+            ingredientSOs[i].symptoms = ingredientSymptoms.ToArray();
+            ingredientSOs[i].ailments = new AilmentData[0];
+
+            ingredientSOs[i].reciprocateData();
 
             ingredientIndex.tiers[0].data[i] = ingredientSOs[i];
         }
@@ -287,6 +402,30 @@ public class _JsonToDatatypes : ScriptableObject
             ailmentSOs[i].Name = ailmentStructs[i].NAME;
             ailmentSOs[i].tier = ailmentStructs[i].TIER - 1;
 
+            string iconName = ailmentStructs[i].ICON;
+            if(iconName == null || iconName == "")
+            {
+                iconName = ailmentStructs[i].NAME;
+            }
+
+            string iconPath = searchAllSubfolders(iconFolder, iconName);
+
+            if(iconPath != null)
+            {
+                string expectedIconPath = iconFolder + "/tier " + ailmentStructs[i].TIER + "/" + iconName + ".svg";
+                if(iconPath.ToLower() != expectedIconPath.ToLower())
+                {
+                    AssetDatabase.MoveAsset(iconPath, expectedIconPath);
+                }
+                ailmentSOs[i].icon.UseConstant = true;
+                ailmentSOs[i].icon.ConstantValue = AssetDatabase.LoadAssetAtPath<Sprite>(expectedIconPath);
+            }
+
+            if(ailmentStructs[i].DES != null && ailmentStructs[i].DES != "")
+            {
+                ailmentSOs[i].Description = ailmentStructs[i].DES;
+            }
+
             ailmentSOs[i].cures = new Cure[1];
             ailmentSOs[i].cures[0] = new Cure();
 
@@ -302,10 +441,13 @@ public class _JsonToDatatypes : ScriptableObject
             ailmentSOs[i].symptoms[0] = nameToSymptom[ailmentStructs[i].SYMP1.ToLower()];
             ailmentSOs[i].symptoms[1] = nameToSymptom[ailmentStructs[i].SYMP2.ToLower()];
 
-            ailmentSOs[i].complaints = new StringRef[1];
-            ailmentSOs[i].complaints[0] = new StringRef();
-            ailmentSOs[i].complaints[0].UseConstant = true;
-            ailmentSOs[i].complaints[0].ConstantValue = ailmentStructs[i].COMP;
+            if(ailmentStructs[i].COMP != null && ailmentStructs[i].COMP != "")
+            {
+                ailmentSOs[i].complaints = new StringRef[1];
+                ailmentSOs[i].complaints[0] = new StringRef();
+                ailmentSOs[i].complaints[0].UseConstant = true;
+                ailmentSOs[i].complaints[0].ConstantValue = ailmentStructs[i].COMP;
+            }
 
             ailmentSOs[i].reciprocateData();
 
@@ -317,11 +459,11 @@ public class _JsonToDatatypes : ScriptableObject
         AssetDatabase.Refresh();
     }
 
-    private string searchAllSubfolders(string baseFolder, string name)
+    private string searchAllSubfolders(string baseFolder, string searchName)
     {
-        name = name.ToLower();
+        searchName = searchName.ToLower();
         string[] folders = { baseFolder };
-        string[] paths = AssetDatabase.FindAssets(name, folders);
+        string[] paths = AssetDatabase.FindAssets(searchName, folders);
         if(paths.Length > 0)
         {
             for(int i = 0; i < paths.Length; i++)
@@ -331,7 +473,7 @@ public class _JsonToDatatypes : ScriptableObject
                 List<String> split = new List<String>(fileName.Split('.'));
                 split.RemoveAt(split.Count - 1);
                 fileName = String.Join('.', split.ToArray()).ToLower();
-                if(fileName == name)
+                if(fileName == searchName)
                 {
                     return AssetDatabase.GUIDToAssetPath(paths[i]);
                 }
@@ -339,6 +481,30 @@ public class _JsonToDatatypes : ScriptableObject
             return null;
         }
         return null;
+    }
+
+    public void listAllIcons()
+    {
+        string[] folders = { iconFolder };
+        string[] paths = AssetDatabase.FindAssets("t:Sprite", folders);
+        if(paths.Length > 0)
+        {
+            string output = "";
+            for(int i = 0; i < paths.Length; i++)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(paths[i]);
+                string fileName = path.Split('/').Last();
+                List<String> split = new List<String>(fileName.Split('.'));
+                split.RemoveAt(split.Count - 1);
+                fileName = String.Join('.', split.ToArray());
+                output += fileName;
+                if(i < paths.Length - 1)
+                {
+                    output += "|";
+                }
+            }
+            iconList = output;
+        }
     }
 }
 
@@ -354,6 +520,10 @@ public class _JsonToDatatypesEditor : Editor
         if(GUILayout.Button("Create ScriptableObjects"))
         {
             jsonToDatatypes.createSOs();
+        }
+        if(GUILayout.Button("List icons"))
+        {
+            jsonToDatatypes.listAllIcons();
         }
         base.OnInspectorGUI();
     }

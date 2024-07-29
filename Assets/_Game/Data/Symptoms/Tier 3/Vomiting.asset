@@ -23,5 +23,9 @@ MonoBehaviour:
   ailments:
   - {fileID: 11400000, guid: 048a2d9dda309564ab81682580f95062, type: 2}
   - {fileID: 11400000, guid: 833b0d3e093349049812828fac0cf08c, type: 2}
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
+  - {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+  - {fileID: 11400000, guid: 49adc3a0d423249479f8979623222ed6, type: 2}
+  - {fileID: 11400000, guid: 19433a7f192545c47a63bcc57c42dcec, type: 2}
   complaints: []

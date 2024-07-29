@@ -1,320 +1,818 @@
 [
     {
         "NAME": "Aloe Vera",
-        "TIER": 1
+        "ICON": "aloe vera",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Dry Skin",
+        "SYMP2": "Increased Thirst",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Calendula",
-        "TIER": 1
+        "ICON": "calendula",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Rash",
+        "SYMP2": "Itchy Skin",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Chamomile",
-        "TIER": 1
+        "ICON": "Chamomile",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Difficulty Sleeping",
+        "SYMP2": "Headache",
+        "SYMP3": "Loss of Appetite",
+        "SYMP4": "Increased Thirst",
+        "SYMP5": "Itchy Skin",
+        "SYMP6": "Numbness in Extremeties"
     },
     {
         "NAME": "Clove",
-        "TIER": 1
+        "ICON": "Clove",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Bleeding Gums",
+        "SYMP2": "Chest Pain",
+        "SYMP3": "Gas",
+        "SYMP4": "Intense Pain",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Dandelion",
-        "TIER": 1
+        "ICON": "Dandelion",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Cold Hands and Feet",
+        "SYMP2": "Swelling",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Echinacea",
-        "TIER": 1
+        "ICON": "Echinacea",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Congested Sinuses",
+        "SYMP2": "Ear Pain",
+        "SYMP3": "Fever and Chills",
+        "SYMP4": "Lack of Energy",
+        "SYMP5": "Slow to Heal",
+        "SYMP6": "Cough"
     },
     {
         "NAME": "Elderberry",
-        "TIER": 1
+        "ICON": "Elderberry",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Dry Eyes",
+        "SYMP2": "Fever and Chills",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Fenugreek",
-        "TIER": 1
+        "ICON": "Fenugreek",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Fever and Chills",
+        "SYMP2": "Loss of Appetite",
+        "SYMP3": "Rapid Heartbeat",
+        "SYMP4": "Vomiting",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Fish Oil",
-        "TIER": 1
+        "ICON": "fish oil",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Cognitive Development",
+        "SYMP2": "Chest Pain",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Garlic",
-        "TIER": 1
+        "ICON": "garlic",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Ear Pain",
+        "SYMP2": "Hearing Loss",
+        "SYMP3": "Lack of Energy",
+        "SYMP4": "Slow to Heal",
+        "SYMP5": "Chest Pain",
+        "SYMP6": ""
     },
     {
         "NAME": "Ginger",
-        "TIER": 1
+        "ICON": "ginger",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Abdominal Pain",
+        "SYMP2": "Bloating",
+        "SYMP3": "Fever and Chills",
+        "SYMP4": "Loss of Appetite",
+        "SYMP5": "Nausea",
+        "SYMP6": "Stiff Joints"
     },
     {
         "NAME": "Ginkgo",
-        "TIER": 1
+        "ICON": "ginko_1",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Blurred Vision",
+        "SYMP2": "Dizziness",
+        "SYMP3": "Poor Concentration",
+        "SYMP4": "Rapid Heartbeat",
+        "SYMP5": "Ringing in Ears",
+        "SYMP6": ""
     },
     {
         "NAME": "Ginseng",
-        "TIER": 1
+        "ICON": "Ginseng",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Irritability",
+        "SYMP2": "Lack of Energy",
+        "SYMP3": "Numbness in Extremeties",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Green Tea",
-        "TIER": 1
+        "ICON": "green tea",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Blurred Vision",
+        "SYMP2": "Poor Concentration",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Honey",
-        "TIER": 1
-    },
-    {
-        "NAME": "Kelp",
-        "TIER": 1
+        "ICON": "honey",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Fever and Chills",
+        "SYMP2": "Weak Muscles",
+        "SYMP3": "Sore Throat",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Lavender",
-        "TIER": 1
+        "ICON": "lavender",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Difficulty Sleeping",
+        "SYMP2": "Headache",
+        "SYMP3": "Irritability",
+        "SYMP4": "Low Mood",
+        "SYMP5": "Shakiness",
+        "SYMP6": ""
     },
     {
         "NAME": "Lemon",
-        "TIER": 1
+        "ICON": "lemon",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Dizziness",
+        "SYMP2": "Muscle Cramps",
+        "SYMP3": "Swelling",
+        "SYMP4": "Increased Thirst",
+        "SYMP5": "Poor Concentration",
+        "SYMP6": ""
     },
     {
         "NAME": "Magnesium",
-        "TIER": 1
+        "ICON": "magnesium",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Muscle Cramps",
+        "SYMP2": "Weak Muscles",
+        "SYMP3": "Muscle Spasms",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Milk Thistle",
-        "TIER": 1
-    },
-    {
-        "NAME": "Nettle",
-        "TIER": 1
-    },
-    {
-        "NAME": "Oatmeal",
-        "TIER": 1
-    },
-    {
-        "NAME": "Olive Oil",
-        "TIER": 1
-    },
-    {
-        "NAME": "Orange",
-        "TIER": 1
-    },
-    {
-        "NAME": "Peppermint",
+        "ICON": "Milk Thistle",
         "TIER": 1,
-		"ICON": "Mint"
-    },
-    {
-        "NAME": "Pomegranate",
-        "TIER": 1
-    },
-    {
-        "NAME": "Prunes",
-        "TIER": 1
-    },
-    {
-        "NAME": "Reishi",
-        "TIER": 1
-    },
-    {
-        "NAME": "Rose",
-        "TIER": 1
-    },
-    {
-        "NAME": "Rose Hips",
-        "TIER": 1
-    },
-    {
-        "NAME": "Salt",
-        "TIER": 1
-    },
-    {
-        "NAME": "Spinach",
-        "TIER": 1
-    },
-    {
-        "NAME": "Willow Bark",
-        "TIER": 1
+        "DES": "",
+        "SYMP1": "Difficulty Seeing at Night",
+        "SYMP2": "Weak Muscles",
+        "SYMP3": "Jaundice",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Molasses",
+        "ICON": "Blackstrap Molasses",
         "TIER": 1,
-		"ICON": "Blackstrap Molasses"
+        "DES": "",
+        "SYMP1": "Weak Muscles",
+        "SYMP2": "Weight Loss",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Nettle",
+        "ICON": "Nettle",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Cold Hands and Feet",
+        "SYMP2": "Muscle Cramps",
+        "SYMP3": "Swelling",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Oatmeal",
+        "ICON": "Oatmeal",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Rash",
+        "SYMP2": "Weight Loss",
+        "SYMP3": "Cognitive Development",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Olive Oil",
+        "ICON": "olive oil",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Dry Skin",
+        "SYMP2": "Ear Pain",
+        "SYMP3": "Hearing Loss",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Orange",
+        "ICON": "orange",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Bleeding Gums",
+        "SYMP2": "Loss of Appetite",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Peppermint",
+        "ICON": "mint",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Abdominal Pain",
+        "SYMP2": "Bloating",
+        "SYMP3": "Dizziness",
+        "SYMP4": "Headache",
+        "SYMP5": "Nausea",
+        "SYMP6": "Vomiting"
+    },
+    {
+        "NAME": "Prunes",
+        "ICON": "pruns",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Bloating",
+        "SYMP2": "Cognitive Development",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Reishi",
+        "ICON": "Reishi",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Difficulty Sleeping",
+        "SYMP2": "Slow to Heal",
+        "SYMP3": "Low Mood",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Rose Hips",
+        "ICON": "rose hips",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Bleeding Gums",
+        "SYMP2": "Difficulty Seeing at Night",
+        "SYMP3": "Dry Eyes",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Salt",
+        "ICON": "salt",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Bleeding Gums",
+        "SYMP2": "Sore Throat",
+        "SYMP3": "Vomiting",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Spinach",
+        "ICON": "spinach",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Difficulty Seeing at Night",
+        "SYMP2": "Dry Eyes",
+        "SYMP3": "Weak Muscles",
+        "SYMP4": "Muscle Spasms",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Willow Bark",
+        "ICON": "Willow Bark",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Muscle Cramps",
+        "SYMP2": "Numbness in Extremeties",
+        "SYMP3": "Back Pain",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "St. John's Wort",
-        "TIER": 1
-    },
-    {
-        "NAME": "Cherry",
-        "TIER": 2
-    },
-    {
-        "NAME": "Cranberry",
-        "TIER": 2
-    },
-    {
-        "NAME": "Elderflower",
-        "TIER": 2
-    },
-    {
-        "NAME": "Eucalyptus",
-        "TIER": 2
-    },
-    {
-        "NAME": "Flax Seeds",
-        "TIER": 2
-    },
-    {
-        "NAME": "Hawthorn",
-        "TIER": 2
-    },
-    {
-        "NAME": "Juniper",
-        "TIER": 2
-    },
-    {
-        "NAME": "Lemon Balm",
-        "TIER": 2
-    },
-    {
-        "NAME": "Sulfur",
-        "TIER": 2
-    },
-    {
-        "NAME": "Turmeric",
-        "TIER": 2
-    },
-    {
-        "NAME": "Water",
-        "TIER": 2
-    },
-    {
-        "NAME": "Yarrow",
-        "TIER": 2
+        "ICON": "St. John_s Wort",
+        "TIER": 1,
+        "DES": "",
+        "SYMP1": "Difficulty Sleeping",
+        "SYMP2": "Irritability",
+        "SYMP3": "Low Mood",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Alfalfa",
-        "TIER": 2
+        "ICON": "Alfalfa",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Swelling",
+        "SYMP2": "Back Pain",
+        "SYMP3": "Joint Pain",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
-        "NAME": "Apple Cider Vinegar",
-        "TIER": 2
+        "NAME": "Cherry",
+        "ICON": "cherry",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Joint Pain",
+        "SYMP2": "Muscle Spasms",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Cranberry",
+        "ICON": "cranberry",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Pelvic Pain",
+        "SYMP2": "Slow to Heal",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Elderflower",
+        "ICON": "elderflower",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Congested Sinuses",
+        "SYMP2": "Sinus Pain",
+        "SYMP3": "Sneezing",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Eucalyptus",
+        "ICON": "Eucalyptus",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Cough",
+        "SYMP2": "Sinus Pain",
+        "SYMP3": "Strained Breathing",
+        "SYMP4": "Wheezing",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Flax Seeds",
+        "ICON": "Flax Seeds",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Abdominal Pain",
+        "SYMP2": "Bloating",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Goldenseal",
-        "TIER": 2
+        "ICON": "Goldenseal",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Congested Sinuses",
+        "SYMP2": "Cough",
+        "SYMP3": "Sinus Pain",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
-        "NAME": "Horse Chestnut",
-        "TIER": 2
+        "NAME": "Hawthorn",
+        "ICON": "Hawthorn_1",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Rapid Heartbeat",
+        "SYMP2": "Strained Breathing",
+        "SYMP3": "Chest Pain",
+        "SYMP4": "Irregular Heartbeat",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Lemon Balm",
+        "ICON": "Lemon Balm",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Irritability",
+        "SYMP2": "Itchy Skin",
+        "SYMP3": "Irregular Heartbeat",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Pomegranate",
+        "ICON": "pomegranat",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Bruising",
+        "SYMP2": "Intense Pain",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Red Clover",
-        "TIER": 2
-    },
-    {
-        "NAME": "Sesame Seeds",
-        "TIER": 2
+        "ICON": "Red Clover",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Bruising",
+        "SYMP2": "Cough",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Thyme",
-        "TIER": 2
+        "ICON": "Thyme",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Back Pain",
+        "SYMP2": "Intense Pain",
+        "SYMP3": "Wheezing",
+        "SYMP4": "Strained Breathing",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
-        "NAME": "Witch Hazel",
-        "TIER": 2
+        "NAME": "Turmeric",
+        "ICON": "Turmeric",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Swelling",
+        "SYMP2": "Back Pain",
+        "SYMP3": "Bruising",
+        "SYMP4": "Stiff Joints",
+        "SYMP5": "Intense Pain",
+        "SYMP6": "Jaundice"
+    },
+    {
+        "NAME": "Water",
+        "ICON": "water",
+        "TIER": 2,
+        "DES": "",
+        "SYMP1": "Bloating",
+        "SYMP2": "Increased Thirst",
+        "SYMP3": "Pelvic Pain",
+        "SYMP4": "Sore Throat",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Arnica",
-        "TIER": 3
+        "ICON": "Arnica",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Bruising",
+        "SYMP2": "Joint Pain",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Ashwagandha",
-        "TIER": 3
+        "ICON": "Ashwagandha",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Lack of Energy",
+        "SYMP2": "Low Mood",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Bitter Melon",
-        "TIER": 3
+        "ICON": "Bitter Melon",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Increased Thirst",
+        "SYMP2": "Numbness in Extremeties",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Bugleweed",
-        "TIER": 3
+        "ICON": "Bugleweed",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Weight Loss",
+        "SYMP2": "Wheezing",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Charcoal",
-        "TIER": 3
+        "ICON": "Charcoal",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Cysts",
+        "SYMP2": "Rash",
+        "SYMP3": "Vomiting",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Cinnamon",
-        "TIER": 3
-    },
-    {
-        "NAME": "Fennel",
-        "TIER": 3
+        "ICON": "Cinnamon",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Nausea",
+        "SYMP2": "Gas",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Guggul",
-        "TIER": 3
+        "ICON": "Guggul",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Weight Gain",
+        "SYMP2": "Cysts",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Jojoba Oil",
-        "TIER": 3
+        "ICON": "Jojoba Oil",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Dry Skin",
+        "SYMP2": "Hair Loss",
+        "SYMP3": "Itchy Skin",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Kelp",
+        "ICON": "kelp",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Weight Gain",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Licorice Root",
-        "TIER": 3
-    },
-    {
-        "NAME": "Motherwort",
-        "TIER": 3
-    },
-    {
-        "NAME": "Rosemary",
-        "TIER": 3
-    },
-    {
-        "NAME": "Tea Tree Oil",
-        "TIER": 3
-    },
-    {
-        "NAME": "Boswellia",
-        "TIER": 3
-    },
-    {
-        "NAME": "Slippery Elm",
-        "TIER": 3
+        "ICON": "Licorice Root",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Rash",
+        "SYMP2": "Nausea",
+        "SYMP3": "Blurred Vision",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Marshmallow Root",
-        "TIER": 3
+        "ICON": "marshmallow root",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Weight Loss",
+        "SYMP2": "Gas",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Motherwort",
+        "ICON": "Motherwort",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Irregular Heartbeat",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Rosemary",
+        "ICON": "Rosemary",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Hair Loss",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Tea Tree Oil",
+        "ICON": "Tea Tree Oil",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Hair Loss",
+        "SYMP2": "Cysts",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Boswellia",
+        "ICON": "Boswellia",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Stiff Joints",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
+    },
+    {
+        "NAME": "Slippery Elm",
+        "ICON": "Slippery Elm",
+        "TIER": 3,
+        "DES": "",
+        "SYMP1": "Abdominal Pain",
+        "SYMP2": "Gas",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Bacopa",
-        "TIER": 4
-    },
-    {
-        "NAME": "Cat's Claw",
-        "TIER": 4
+        "ICON": "Bacopa_1",
+        "TIER": 4,
+        "DES": "",
+        "SYMP1": "Stiff Muscles",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Dong Quai",
-        "TIER": 4
-    },
-    {
-        "NAME": "Japanese Knotweed",
-        "TIER": 4
+        "ICON": "Dong Quai",
+        "TIER": 4,
+        "DES": "",
+        "SYMP1": "Pelvic Pain",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Passionflower",
-        "TIER": 4
+        "ICON": "Passionflower",
+        "TIER": 4,
+        "DES": "",
+        "SYMP1": "Seizures",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Skullcap",
-        "TIER": 4
+        "ICON": "Skullcap",
+        "TIER": 4,
+        "DES": "",
+        "SYMP1": "Muscle Paralysis",
+        "SYMP2": "Seizures",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Valerian",
-        "TIER": 4
+        "ICON": "Valerian",
+        "TIER": 4,
+        "DES": "",
+        "SYMP1": "Confusion",
+        "SYMP2": "",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     },
     {
         "NAME": "Velvet Bean",
-        "TIER": 4
+        "ICON": "Velvet Bean",
+        "TIER": 4,
+        "DES": "",
+        "SYMP1": "Shakiness",
+        "SYMP2": "Stiff Muscles",
+        "SYMP3": "",
+        "SYMP4": "",
+        "SYMP5": "",
+        "SYMP6": ""
     }
 ]

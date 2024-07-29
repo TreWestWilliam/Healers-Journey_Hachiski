@@ -23,5 +23,10 @@ MonoBehaviour:
     Variable: {fileID: 0}
   ailments:
   - {fileID: 11400000, guid: a530ab8e0acee65499ede34ac5e06f39, type: 2}
-  symptoms: []
+  - {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
+  - {fileID: 11400000, guid: de1ae42794172c14a9d828a7457e8c13, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
+  - {fileID: 11400000, guid: 0517f0a4cf7e6df4cad7dc4e1946d14b, type: 2}
   locationsFound: []

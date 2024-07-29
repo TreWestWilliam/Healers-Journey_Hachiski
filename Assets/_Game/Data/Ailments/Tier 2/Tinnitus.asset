@@ -39,9 +39,9 @@ MonoBehaviour:
     recipe:
     - ingredient: {fileID: 11400000, guid: 40b04b0f9534a384b80c65ebb07a5500, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 651c2bea17315624aafe5fd22af67dc5, type: 2}
+    - ingredient: {fileID: 11400000, guid: 48d5e2ef8c7564a40944200aac55c542, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: a7bc994159f748b4185414c9519137e1, type: 2}
+    - ingredient: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
       temperature: 1
   complaints:
   - UseConstant: 1

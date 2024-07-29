@@ -18,11 +18,17 @@ MonoBehaviour:
   tier: 1
   icon:
     UseConstant: 1
-    ConstantValue: {fileID: 0}
+    ConstantValue: {fileID: 3286163911610860551, guid: 4cde2e3306a59c3468cd2888d9c648a2,
+      type: 3}
     Variable: {fileID: 0}
   ailments:
-  - {fileID: 11400000, guid: e7a5c628390b63b44b9db162bed6d8fc, type: 2}
+  - {fileID: 11400000, guid: b78eedb383e2e1e408ca3d6822e5f0a9, type: 2}
+  - {fileID: 11400000, guid: 42805f5367b0e984b9caf33312f5d108, type: 2}
   - {fileID: 11400000, guid: 598413a0d4560bd47b79a567bcb3c364, type: 2}
+  - {fileID: 11400000, guid: ca6a81518f328f943921efc332df4a29, type: 2}
   - {fileID: 11400000, guid: 19b0d2bd72096c843999474682ec1226, type: 2}
-  symptoms: []
+  symptoms:
+  - {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
+  - {fileID: 11400000, guid: 39500973fbb46474da1af15442f38f9d, type: 2}
+  - {fileID: 11400000, guid: 6eecc770095f2014188ece6ac830b145, type: 2}
   locationsFound: []

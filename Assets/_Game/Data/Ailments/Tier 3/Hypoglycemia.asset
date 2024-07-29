@@ -41,7 +41,7 @@ MonoBehaviour:
       temperature: 0
     - ingredient: {fileID: 11400000, guid: 819a85b7f3d3227459a8ed006cb91c02, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+    - ingredient: {fileID: 11400000, guid: 2ff6a36f6e829fb4ba2a4d7312a5e142, type: 2}
       temperature: 1
   complaints:
   - UseConstant: 1

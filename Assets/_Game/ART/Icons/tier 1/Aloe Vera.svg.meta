@@ -39,16 +39,16 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: aloe veraSprite
+      name: 
       originalName: 
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
-      spriteID: f62abab0d0209fe4da152578a724a51f
+        width: 0
+        height: 0
+      spriteID: fedacde7e1838a541ac4ec1ed6ade7c2
     PhysicsOutlines: []

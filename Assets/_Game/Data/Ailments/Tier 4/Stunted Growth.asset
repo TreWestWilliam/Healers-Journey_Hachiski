@@ -22,7 +22,7 @@ MonoBehaviour:
     Variable: {fileID: 0}
   symptoms:
   - {fileID: 11400000, guid: dbf335d3f042e4e4398db01b4b0f1c0a, type: 2}
-  - {fileID: 11400000, guid: e41822095b149524eaf5a851a9c518ff, type: 2}
+  - {fileID: 11400000, guid: e48859e096a1bb24f927503bb6960e22, type: 2}
   cures:
   - cureName:
       UseConstant: 1
@@ -37,9 +37,9 @@ MonoBehaviour:
       ConstantValue: 
       Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
+    - ingredient: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 83f9064110e045b47a4d4ad400b7fbbf, type: 2}
+    - ingredient: {fileID: 11400000, guid: d3b8c552731895c4698504b2d2ac7120, type: 2}
       temperature: -1
     - ingredient: {fileID: 11400000, guid: 480e9af550f766244a855eb8a9915cd7, type: 2}
       temperature: 0

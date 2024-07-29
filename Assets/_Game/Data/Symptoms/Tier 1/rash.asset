@@ -22,9 +22,13 @@ MonoBehaviour:
     Variable: {fileID: 0}
   ailments:
   - {fileID: 11400000, guid: 2b6e4b36e178ea64d8337b588971b075, type: 2}
-  - {fileID: 11400000, guid: 362403503f7e0a64c8f3585bd2d0b2b5, type: 2}
   - {fileID: 11400000, guid: e66db8af75c36614b9ecaf8251e7ad65, type: 2}
+  - {fileID: 11400000, guid: 362403503f7e0a64c8f3585bd2d0b2b5, type: 2}
   - {fileID: 11400000, guid: ba1ad22213a382f4b90f1f8b837b9064, type: 2}
   - {fileID: 11400000, guid: a6972ca6dc69ce541990926360f15fef, type: 2}
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 70842324c1a416e4e8b4d83cfdeeb7b0, type: 2}
+  - {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
+  - {fileID: 11400000, guid: 19433a7f192545c47a63bcc57c42dcec, type: 2}
+  - {fileID: 11400000, guid: bc3f98d9cc857a94b874d9042614c35b, type: 2}
   complaints: []

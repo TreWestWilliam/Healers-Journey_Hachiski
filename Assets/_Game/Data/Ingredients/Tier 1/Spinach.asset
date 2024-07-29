@@ -22,7 +22,13 @@ MonoBehaviour:
       type: 3}
     Variable: {fileID: 0}
   ailments:
+  - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
+  - {fileID: 11400000, guid: 4dec709b7aea0a9438f9c87f3ce4eeb5, type: 2}
   - {fileID: 11400000, guid: 7354a229217fad04ea465f179180a1d9, type: 2}
   - {fileID: 11400000, guid: de1ae42794172c14a9d828a7457e8c13, type: 2}
-  symptoms: []
+  symptoms:
+  - {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
+  - {fileID: 11400000, guid: 0c57c202d1a11d74992e18aa30ef44b8, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
+  - {fileID: 11400000, guid: 0517f0a4cf7e6df4cad7dc4e1946d14b, type: 2}
   locationsFound: []

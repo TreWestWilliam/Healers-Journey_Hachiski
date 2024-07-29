@@ -26,5 +26,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fd7df088c0815164182d03d5497c55d8, type: 2}
   - {fileID: 11400000, guid: ca6a81518f328f943921efc332df4a29, type: 2}
   - {fileID: 11400000, guid: a7d0dbd9762b88540bd19772feeac82e, type: 2}
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
+  - {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+  - {fileID: 11400000, guid: 819a85b7f3d3227459a8ed006cb91c02, type: 2}
+  - {fileID: 11400000, guid: bc3f98d9cc857a94b874d9042614c35b, type: 2}
   complaints: []

@@ -1,242 +1,710 @@
 [
     {
-        "NAME": "Cold Hands and Feet",
-        "TIER": 1
-    },
-    {
-        "NAME": "Rapid Heartbeat",
-        "TIER": 1
-    },
-    {
-        "NAME": "Congested Sinuses",
-        "TIER": 1
-    },
-    {
         "NAME": "Abdominal Pain",
-        "TIER": 1
-    },
-    {
-        "NAME": "Dry Eyes",
-        "TIER": 1
-    },
-    {
-        "NAME": "Ear Pain",
-        "TIER": 1
-    },
-    {
-        "NAME": "Dry Skin",
-        "TIER": 1
-    },
-    {
-        "NAME": "Lack of Energy",
-        "TIER": 1
-    },
-    {
-        "NAME": "Difficulty Sleeping",
-        "TIER": 1
-    },
-    {
-        "NAME": "Headache",
-        "TIER": 1
-    },
-    {
-        "NAME": "Weak Muscles",
-        "TIER": 1
-    },
-    {
-        "NAME": "Muscle Cramps",
-        "TIER": 1
-    },
-    {
-        "NAME": "Dizzy",
-        "TIER": 1
-    },
-    {
-        "NAME": "Fever and Chills",
-        "TIER": 1
-    },
-    {
-        "NAME": "Rash",
-        "TIER": 1
-    },
-    {
-        "NAME": "Bloating",
-        "TIER": 1
-    },
-    {
-        "NAME": "Swelling",
-        "TIER": 1
-    },
-    {
-        "NAME": "Difficulty Seeing at Night",
-        "TIER": 1
-    },
-    {
-        "NAME": "Hearing Loss",
-        "TIER": 1
-    },
-    {
-        "NAME": "Weight Loss",
-        "TIER": 1
-    },
-    {
-        "NAME": "Wounds Take Longer to Heal",
-        "TIER": 1
-    },
-    {
-        "NAME": "Poor Concentration",
-        "TIER": 1
-    },
-    {
-        "NAME": "Blurred Vision",
-        "TIER": 1
-    },
-    {
-        "NAME": "Irritability",
-        "TIER": 1
-    },
-    {
-        "NAME": "Numbness in Extremities",
-        "TIER": 1
-    },
-    {
-        "NAME": "Loss of Appetite",
-        "TIER": 1
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Peppermint",
+        "ING2": "Ginger",
+        "ING3": "Slippery Elm",
+        "ING4": "Flax Seeds",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Bleeding Gums",
-        "TIER": 1
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Rose Hips",
+        "ING2": "Clove",
+        "ING3": "Orange",
+        "ING4": "Salt",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Stomach Pain",
-        "TIER": 1
+        "NAME": "Bloating",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Peppermint",
+        "ING2": "Prunes",
+        "ING3": "Ginger",
+        "ING4": "Flax Seeds",
+        "ING5": "Water",
+        "COMP": ""
     },
     {
-        "NAME": "Stiff Joints",
-        "TIER": 2
+        "NAME": "Blurred Vision",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Green Tea",
+        "ING2": "Licorice Root",
+        "ING3": "Ginkgo",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Strained Breathing",
-        "TIER": 2
+        "NAME": "Cold Hands and Feet",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Nettle",
+        "ING2": "Dandelion",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Sinus Pain",
-        "TIER": 2
+        "NAME": "Congested Sinuses",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Elderflower",
+        "ING2": "Goldenseal",
+        "ING3": "Echinacea",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Cough",
-        "TIER": 2
+        "NAME": "Difficulty Sleeping",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Lavender",
+        "ING2": "Chamomile",
+        "ING3": "St. John's Wort",
+        "ING4": "Reishi",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Increased Thirst",
-        "TIER": 2
+        "NAME": "Difficulty Seeing at Night",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Rose Hips",
+        "ING2": "Spinach",
+        "ING3": "Milk Thistle",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Low Mood",
-        "TIER": 2
+        "NAME": "Dizziness",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Lemon",
+        "ING2": "Peppermint",
+        "ING3": "Ginkgo",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Joint Pain",
-        "TIER": 2
+        "NAME": "Dry Eyes",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Elderberry",
+        "ING2": "Rose Hips",
+        "ING3": "Spinach",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Sneezing",
-        "TIER": 2
+        "NAME": "Dry Skin",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Olive Oil",
+        "ING2": "Aloe Vera",
+        "ING3": "Jojoba Oil",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Ear Pain",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Garlic",
+        "ING2": "Echinacea",
+        "ING3": "Olive Oil",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Fever and Chills",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Echinacea",
+        "ING2": "Elderberry",
+        "ING3": "Ginger",
+        "ING4": "Honey",
+        "ING5": "Fenugreek",
+        "COMP": ""
+    },
+    {
+        "NAME": "Headache",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Chamomile",
+        "ING2": "Peppermint",
+        "ING3": "Lavender",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Hearing Loss",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Olive Oil",
+        "ING2": "Garlic",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Irritability",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Ginseng",
+        "ING2": "Lemon Balm",
+        "ING3": "Lavender",
+        "ING4": "St. John's Wort",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Lack of Energy",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Echinacea",
+        "ING2": "Ashwagandha",
+        "ING3": "Garlic",
+        "ING4": "Ginseng",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Loss of Appetite",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Chamomile",
+        "ING2": "Ginger",
+        "ING3": "Fenugreek",
+        "ING4": "Orange",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Muscle Cramps",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Magnesium",
+        "ING2": "Nettle",
+        "ING3": "Lemon",
+        "ING4": "Willow Bark",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Numbness in Extremeties",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Willow Bark",
+        "ING2": "Ginseng",
+        "ING3": "Chamomile",
+        "ING4": "Bitter Melon",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Poor Concentration",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Lemon",
+        "ING2": "Ginkgo",
+        "ING3": "Green Tea",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Rapid Heartbeat",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Fenugreek",
+        "ING2": "Hawthorn",
+        "ING3": "Ginkgo",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Rash",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Calendula",
+        "ING2": "Charcoal",
+        "ING3": "Oatmeal",
+        "ING4": "Licorice Root",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Swelling",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Lemon",
+        "ING2": "Nettle",
+        "ING3": "Turmeric",
+        "ING4": "Dandelion",
+        "ING5": "Alfalfa",
+        "COMP": ""
+    },
+    {
+        "NAME": "Weak Muscles",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Molasses",
+        "ING2": "Honey",
+        "ING3": "Milk Thistle",
+        "ING4": "Spinach",
+        "ING5": "Magnesium",
+        "COMP": ""
+    },
+    {
+        "NAME": "Weight Loss",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Oatmeal",
+        "ING2": "Marshmallow Root",
+        "ING3": "Bugleweed",
+        "ING4": "Molasses",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Slow to Heal",
+        "ICON": "",
+        "TIER": 1,
+        "DES": "",
+        "ING1": "Reishi",
+        "ING2": "Garlic",
+        "ING3": "Echinacea",
+        "ING4": "Cranberry",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Back Pain",
-        "TIER": 2
-    },
-    {
-        "NAME": "Ringing in Ears",
-        "TIER": 2
-    },
-    {
-        "NAME": "Itchy Skin",
-        "TIER": 2
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Thyme",
+        "ING2": "Willow Bark",
+        "ING3": "Turmeric",
+        "ING4": "Alfalfa",
+        "ING5": "Red Clover",
+        "COMP": ""
     },
     {
         "NAME": "Bruising",
-        "TIER": 2
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Turmeric",
+        "ING2": "Pomegranate",
+        "ING3": "Arnica",
+        "ING4": "Red Clover",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Wheezing",
-        "TIER": 2
-    },
-    {
-        "NAME": "Sore Throat",
-        "TIER": 2
-    },
-    {
-        "NAME": "Pelvic Pain",
-        "TIER": 2
-    },
-    {
-        "NAME": "Nausea",
-        "TIER": 2
+        "NAME": "Cough",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Eucalyptus",
+        "ING2": "Goldenseal",
+        "ING3": "Echinacea",
+        "ING4": "Red Clover",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Hair Loss",
-        "TIER": 3
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Rosemary",
+        "ING2": "Jojoba Oil",
+        "ING3": "Tea Tree Oil",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Cysts",
-        "TIER": 3
+        "NAME": "Increased Thirst",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Chamomile",
+        "ING2": "Bitter Melon",
+        "ING3": "Lemon",
+        "ING4": "Water",
+        "ING5": "Aloe Vera",
+        "COMP": ""
+    },
+    {
+        "NAME": "Itchy Skin",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Chamomile",
+        "ING2": "Lemon Balm",
+        "ING3": "Calendula",
+        "ING4": "Jojoba Oil",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Joint Pain",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Cherry",
+        "ING2": "Arnica",
+        "ING3": "Alfalfa",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Low Mood",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "St. John's Wort",
+        "ING2": "Reishi",
+        "ING3": "Lavender",
+        "ING4": "Ashwagandha",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Nausea",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Ginger",
+        "ING2": "Cinnamon",
+        "ING3": "Licorice Root",
+        "ING4": "Peppermint",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Pelvic Pain",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Cranberry",
+        "ING2": "Dong Quai",
+        "ING3": "Water",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Ringing in Ears",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Ginkgo",
+        "ING2": "",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Sinus Pain",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Elderflower",
+        "ING2": "Eucalyptus",
+        "ING3": "Goldenseal",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Sneezing",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Elderflower",
+        "ING2": "",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Sore Throat",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Honey",
+        "ING2": "Salt",
+        "ING3": "Water",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Stiff Joints",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Ginger",
+        "ING2": "Turmeric",
+        "ING3": "Boswellia",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Strained Breathing",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Eucalyptus",
+        "ING2": "Hawthorn",
+        "ING3": "Thyme",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Wheezing",
+        "ICON": "",
+        "TIER": 2,
+        "DES": "",
+        "ING1": "Eucalyptus",
+        "ING2": "Thyme",
+        "ING3": "Bugleweed",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Chest Pain",
-        "TIER": 3
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Garlic",
+        "ING2": "Hawthorn",
+        "ING3": "Clove",
+        "ING4": "Fish Oil",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Cysts",
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Tea Tree Oil",
+        "ING2": "Charcoal",
+        "ING3": "Guggul",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Gas",
-        "TIER": 3
-    },
-    {
-        "NAME": "Vomiting",
-        "TIER": 3
-    },
-    {
-        "NAME": "Irregular Heartbeat",
-        "TIER": 3
-    },
-    {
-        "NAME": "Weight Gain",
-        "TIER": 3
-    },
-    {
-        "NAME": "Muscle Paralysis",
-        "TIER": 3
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Marshmallow Root",
+        "ING2": "Slippery Elm",
+        "ING3": "Cinnamon",
+        "ING4": "Clove",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Intense Pain",
-        "TIER": 3
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Pomegranate",
+        "ING2": "Turmeric",
+        "ING3": "Clove",
+        "ING4": "Thyme",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Seizures",
-        "TIER": 4
+        "NAME": "Irregular Heartbeat",
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Hawthorn",
+        "ING2": "Lemon Balm",
+        "ING3": "Motherwort",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Muscle Spasms",
-        "TIER": 4
+        "NAME": "Muscle Paralysis",
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Skullcap",
+        "ING2": "",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
-        "NAME": "Shakiness",
-        "TIER": 4
+        "NAME": "Vomiting",
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Charcoal",
+        "ING2": "Peppermint",
+        "ING3": "Fenugreek",
+        "ING4": "Salt",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Weight Gain",
+        "ICON": "",
+        "TIER": 3,
+        "DES": "",
+        "ING1": "Kelp",
+        "ING2": "Guggul",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Confusion",
-        "TIER": 4
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Valerian",
+        "ING2": "",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Jaundice",
-        "TIER": 4
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Turmeric",
+        "ING2": "Milk Thistle",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Muscle Spasms",
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Spinach",
+        "ING2": "Cherry",
+        "ING3": "Magnesium",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Seizures",
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Passionflower",
+        "ING2": "Skullcap",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Shakiness",
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Velvet Bean",
+        "ING2": "Lavender",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
+    },
+    {
+        "NAME": "Cognitive Development",
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Fish Oil",
+        "ING2": "Oatmeal",
+        "ING3": "Prunes",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     },
     {
         "NAME": "Stiff Muscles",
-        "TIER": 4
-    },
-    {
-        "NAME": "Slow Development",
-        "TIER": 4
+        "ICON": "",
+        "TIER": 4,
+        "DES": "",
+        "ING1": "Bacopa",
+        "ING2": "Velvet Bean",
+        "ING3": "",
+        "ING4": "",
+        "ING5": "",
+        "COMP": ""
     }
 ]

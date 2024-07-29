@@ -22,11 +22,16 @@ MonoBehaviour:
       type: 3}
     Variable: {fileID: 0}
   ailments:
+  - {fileID: 11400000, guid: a530ab8e0acee65499ede34ac5e06f39, type: 2}
   - {fileID: 11400000, guid: d22bd85df4d904c48b09da531250b866, type: 2}
-  - {fileID: 11400000, guid: 0af8383badafca8478b20f731e6f4e69, type: 2}
+  - {fileID: 11400000, guid: 3250dc0431c029d43a63bac8361a3c13, type: 2}
   - {fileID: 11400000, guid: 6f24b93239517634c8f2503c09217380, type: 2}
-  - {fileID: 11400000, guid: 7a15966b0a523d24ca16ed36c77ce194, type: 2}
   - {fileID: 11400000, guid: 362403503f7e0a64c8f3585bd2d0b2b5, type: 2}
-  - {fileID: 11400000, guid: 252af44ce7e0f7c488189b087ac4f9f3, type: 2}
-  symptoms: []
+  symptoms:
+  - {fileID: 11400000, guid: 866476ec938120c4dabbb07be8ab907e, type: 2}
+  - {fileID: 11400000, guid: 45cce8cfc9af34c4d9283c1c63163751, type: 2}
+  - {fileID: 11400000, guid: b9aae15cd7c5976479c62d20ba9b8255, type: 2}
+  - {fileID: 11400000, guid: 801e7d25c8be5244cbf6680c9b1b3c71, type: 2}
+  - {fileID: 11400000, guid: 39500973fbb46474da1af15442f38f9d, type: 2}
+  - {fileID: 11400000, guid: e8fe5613f83f35a4facafeb391c25a22, type: 2}
   locationsFound: []

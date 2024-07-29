@@ -19,3 +19,11 @@ MonoBehaviour:
   ingredientIndex: {fileID: 11400000, guid: 481a765961251d84ea2f4559f251a983, type: 2}
   symptomIndex: {fileID: 11400000, guid: 1cce858c6810a544fa730ab562fa341f, type: 2}
   iconFolder: Assets/_Game/ART/Icons
+  iconList: aloe vera|blackstrap molasses|calendula|chamomile|clove|dandelion|echinacea|elderberry|fenugreek|fish
+    oil|garlic|ginger|ginkgo|ginseng|green tea|honey|kelp|lavender|lemon|magnesium|milk
+    thistle|mint|nettle|oatmeal|olive oil|orange|pomegranate|prunes|reishi|rose hips|rose|salt|spinach|st.
+    john's wort|willow bark|alfalfa|cherry|cranberry|elderflower|eucalyptus|flax
+    seeds|horse chestnut|juniper|red clover|sesame seeds|sulfur|thyme|turmeric|water|yarrow|arnica|ashwagandha|bitter
+    melon|boswellia|bugleweed|charcoal|cinnamon|fennel|guggul|jojoba oil|licorice
+    root|motherwort|rosemary|slippery elm|tea tree oil|bacopa|cat's claw|dong quai|japanese
+    knotweed|passionflower|skullcap|valerian|velvet bean

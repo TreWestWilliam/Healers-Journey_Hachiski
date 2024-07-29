@@ -18,9 +18,13 @@ MonoBehaviour:
   tier: 2
   icon:
     UseConstant: 1
-    ConstantValue: {fileID: 0}
+    ConstantValue: {fileID: 3286163911610860551, guid: 6ee6eada5c511fa47b3549ea02257d00,
+      type: 3}
     Variable: {fileID: 0}
   ailments:
   - {fileID: 11400000, guid: 252af44ce7e0f7c488189b087ac4f9f3, type: 2}
-  symptoms: []
+  - {fileID: 11400000, guid: 1595563ee4a59744cb7f07271fa50936, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 7a9adf57f8d7ac8499813f1cb089eb88, type: 2}
+  - {fileID: 11400000, guid: e9721b1417450404e976165d8fd48281, type: 2}
   locationsFound: []

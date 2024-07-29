@@ -6217,6 +6217,12 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: {r: 1, g: 1, b: 1, a: 1}
     Variable: {fileID: 11400000, guid: 22f47db79f282b449a07b286c1a3ef6e, type: 2}
+  iconColorDisabled:
+    UseConstant: 0
+    ConstantValue: {r: 1, g: 1, b: 1, a: 1}
+    Variable: {fileID: 11400000, guid: 342415c86327cae4a8f8a60b83fa58c0, type: 2}
+  iconMaterialDisabled: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385,
+    type: 2}
   bookmarks:
   - {fileID: 345672464}
   - {fileID: 591475053}
@@ -6242,442 +6248,414 @@ MonoBehaviour:
   discoveries:
   - topic: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
     UnlockDescription: 0
-    ailments: 0000000000
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 70842324c1a416e4e8b4d83cfdeeb7b0, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 4fd1d1943e14d484ab39d90ee3ee78a4, type: 2}
     UnlockDescription: 0
-    ailments: 000000000000
+    ailments: 0000000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: ea1b7da6bf928f541950304171b690e9, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 0000
     ingredients: 
-    symptoms: 
+    symptoms: 01010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
     UnlockDescription: 0
-    ailments: 00000000000000
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
     UnlockDescription: 0
-    ailments: 000000000000
+    ailments: 00000000000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
     UnlockDescription: 0
-    ailments: 000000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 01010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 480e9af550f766244a855eb8a9915cd7, type: 2}
     UnlockDescription: 0
-    ailments: 000000
+    ailments: 0000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
     UnlockDescription: 0
-    ailments: 000000000000000000
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
     UnlockDescription: 0
-    ailments: 0000000000000000000000000000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 40b04b0f9534a384b80c65ebb07a5500, type: 2}
     UnlockDescription: 0
-    ailments: 000000
+    ailments: 0000000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 000000000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 48d5e2ef8c7564a40944200aac55c542, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
     UnlockDescription: 0
-    ailments: 00000000000000000000
+    ailments: 000000
     ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 5fff3be1b089c4f4c93ffeda87f8b6e2, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 39a3cec885f651e4db3a9fe4bb7e50e7, type: 2}
     UnlockDescription: 0
-    ailments: 000000000000
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
     UnlockDescription: 0
-    ailments: 000000000000000000000000
+    ailments: 0000000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 574dfb1da3c79b746b76eecaafa1c5bf, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 0000000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
     UnlockDescription: 0
-    ailments: 000000
+    ailments: 0000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
     UnlockDescription: 0
-    ailments: 00000000000000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
     UnlockDescription: 0
-    ailments: 000000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 81423a955cbfc374b80eab8c814fe2cb, type: 2}
     UnlockDescription: 0
-    ailments: 00
+    ailments: 0000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: ad7552e6cded2cf4c96a53c17d416f57, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 00
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
     UnlockDescription: 0
-    ailments: 000000000000
+    ailments: 00000000000000
     ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ddcf3520bffeb4a46b9cd41b85c267f1, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 
+    symptoms: 010101010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 0101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: fa29c6da7df46b74d9ee137c9097d97b, type: 2}
     UnlockDescription: 0
     ailments: 0000
     ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 276e17ede372b35468f9dd789318465c, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: ebaf91e593f54fb4dada9a3edb0a318a, type: 2}
     UnlockDescription: 0
     ailments: 0000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 49adc3a0d423249479f8979623222ed6, type: 2}
     UnlockDescription: 0
     ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 00000000
     ingredients: 
-    symptoms: 
+    symptoms: 01010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: e16f1a2df66475b43b515f4e6bcaa7bc, type: 2}
     UnlockDescription: 0
     ailments: 000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 30ecd8d6e4c49b74faace43cb015f726, type: 2}
     UnlockDescription: 0
-    ailments: 0000
+    ailments: 0000000000
     ingredients: 
-    symptoms: 
+    symptoms: 010101
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: caaf006fa44f2f8488f548287c37f24e, type: 2}
     UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
+    ailments: 01000000
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: ec5df0ff7f644ef488c186e6feac2c45, type: 2}
     UnlockDescription: 0
     ailments: 0101
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}
     UnlockDescription: 0
     ailments: 01010000
-    ingredients: 
+    ingredients: 0101010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 6456ca37605ca6642860e3a4751291b4, type: 2}
     UnlockDescription: 0
     ailments: 0100
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 92af82a2c088894428fed0e72378e3de, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 0101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: c8535b2b5f07edc44a9824af3bb0b918, type: 2}
     UnlockDescription: 0
     ailments: 010000
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
     UnlockDescription: 0
     ailments: 0101
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 866476ec938120c4dabbb07be8ab907e, type: 2}
     UnlockDescription: 0
     ailments: 0100
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: d2675c520804d544487eb98a9cd21c00, type: 2}
+  - topic: {fileID: 11400000, guid: 0e4ba0f4c481dca4bb89d4de7e8ccbe0, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 0c57c202d1a11d74992e18aa30ef44b8, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
     UnlockDescription: 0
-    ailments: 01010100
-    ingredients: 
+    ailments: 010100
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 58587b9e8e8db1d4da294fa38650edbb, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 042a52b91abdf4742b0321c0e4edc71d, type: 2}
     UnlockDescription: 0
     ailments: 010000000000
-    ingredients: 
+    ingredients: 0101010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 45cce8cfc9af34c4d9283c1c63163751, type: 2}
     UnlockDescription: 0
     ailments: 010100
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: ed81b27e1866d234bb94c3926ea32328, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 0101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
     UnlockDescription: 0
-    ailments: 010100000000
-    ingredients: 
+    ailments: 0101010000
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: b9aae15cd7c5976479c62d20ba9b8255, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
     UnlockDescription: 0
     ailments: 01010000
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: c23b5d4538274584ca22fb2c04980972, type: 2}
+  - topic: {fileID: 11400000, guid: e8fe5613f83f35a4facafeb391c25a22, type: 2}
     UnlockDescription: 0
-    ailments: 01000000
-    ingredients: 
+    ailments: 01010000
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 1d967ec43a90dce49b620b96811e931e, type: 2}
     UnlockDescription: 0
     ailments: 010100
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 3f30eb5d54fb6644ea0f88efd9b4a0a4, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: 1f68f93f196838c43aa6852462a50387, type: 2}
     UnlockDescription: 0
-    ailments: 0100000000
-    ingredients: 
+    ailments: 0101000000
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
-  - topic: {fileID: 11400000, guid: ba9149f6751e81f48909e5bba4017480, type: 2}
+  - topic: {fileID: 11400000, guid: 6001746d690ebb94cb2b6a4b4b06ae74, type: 2}
     UnlockDescription: 0
     ailments: 01
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
     UnlockDescription: 0
-    ailments: 01010000000000
-    ingredients: 
+    ailments: 010100000000
+    ingredients: 0101010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
     UnlockDescription: 0
     ailments: 0101010100
-    ingredients: 
+    ingredients: 0101010101
     symptoms: 
     cures: 
     locationsFound: 
   - topic: {fileID: 11400000, guid: dbf335d3f042e4e4398db01b4b0f1c0a, type: 2}
     UnlockDescription: 0
     ailments: 01000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c85e5a459acada74a9542fffeb1781c5, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 
+    ingredients: 01010101
     symptoms: 
     cures: 
     locationsFound: 
@@ -6780,6 +6758,13 @@ MonoBehaviour:
     cures: 00
     locationsFound: 
   - topic: {fileID: 11400000, guid: 0af8383badafca8478b20f731e6f4e69, type: 2}
+    UnlockDescription: 0
+    ailments: 
+    ingredients: 
+    symptoms: 0101
+    cures: 00
+    locationsFound: 
+  - topic: {fileID: 11400000, guid: e66db8af75c36614b9ecaf8251e7ad65, type: 2}
     UnlockDescription: 0
     ailments: 
     ingredients: 

@@ -22,5 +22,9 @@ MonoBehaviour:
     Variable: {fileID: 0}
   ailments:
   - {fileID: 11400000, guid: 8f065eb10e13b3b4382045655b7369b8, type: 2}
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: ea1b7da6bf928f541950304171b690e9, type: 2}
+  - {fileID: 11400000, guid: ddcf3520bffeb4a46b9cd41b85c267f1, type: 2}
+  - {fileID: 11400000, guid: c6a72f937d41a8a499fce9db2984fdc8, type: 2}
+  - {fileID: 11400000, guid: b8048474b7599ff48902a5551a2f2a52, type: 2}
   complaints: []

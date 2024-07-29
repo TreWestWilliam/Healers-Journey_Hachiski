@@ -212,7 +212,7 @@ public class EntryPage : MonoBehaviour
 
         for(int i = 0; i < symptom.ingredients.Length; i++)
         {
-            if(checkDiscoveries(discoveries.symptoms, i))
+            if(checkDiscoveries(discoveries.ingredients, i))
             {
                 notebookHandler.createEntryTile(symptom.ingredients[i], Ingredients.transform);
             }
@@ -245,7 +245,9 @@ public class EntryPage : MonoBehaviour
 
     private bool checkDiscoveries(bool[] list, int index)
     {
-        return !(list.Length <= index || !list[index]);
+        if(list.Length <= index)
+            return false;
+        return list[index];
     }
 
     public void discoverCuresDEBUG()

@@ -25,9 +25,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
   - {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
   - {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
-  - {fileID: 11400000, guid: 92d3033de7b09db4db7b033386866e51, type: 2}
-  - {fileID: 11400000, guid: 99d0c7c12f37c39479f26efc77279ce0, type: 2}
-  - {fileID: 11400000, guid: 874c09f7750eae14bacfee5232a68d3b, type: 2}
   - {fileID: 11400000, guid: cc8cfee6cb4ccc349853ae1d45583301, type: 2}
-  symptoms: []
+  symptoms:
+  - {fileID: 11400000, guid: 92af82a2c088894428fed0e72378e3de, type: 2}
+  - {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
   locationsFound: []
