@@ -7,33 +7,49 @@ public class InventoryManager : MonoBehaviour
     public List<Item> itemList;
     public List<int> itemQuantities;
 
+    [SerializeField] private GameObject self;
+    private List<Item> itemIndex;
+
     // Start is called before the first frame update
     void Start()
     {
         itemList = new List<Item>();
         itemQuantities = new List<int>();
+        itemIndex = new List<Item>();
+
+        // Adds all attached Items to index
+        foreach (Component comp in self.GetComponentsInChildren<Component>())
+        {
+            if (comp.GetType().IsSubclassOf(typeof(Item)))
+            {
+                itemIndex.Add(comp as Item);
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void AddItem(Item item, int num)
+    public void AddItem(string itemName, int num)
     {
         int i = 0;
         foreach (Item currentItem in itemList)
         {
-            if (currentItem.GetItemName() == item.GetItemName())
+            if (currentItem.GetItemName() == itemName)
             {
                 itemQuantities[i] += num;
                 return;
             }
             i++;
         }
-        itemList.Add(item);
-        itemQuantities.Add(num);
+        
+        foreach (Item newItem in itemIndex)
+        {
+            if(newItem.GetItemName() == itemName)
+            {
+                itemList.Add(newItem);
+                itemQuantities.Add(num);
+                return;
+            }
+        }
+        Debug.Log("Item not found");
     }
 
     public void UpdateInventory()

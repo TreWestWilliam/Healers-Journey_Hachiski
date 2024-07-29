@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numIngredients: 1
-  item: {fileID: 0}
+  itemName: Calendula
   self: {fileID: 4142179666936410471}
   invManager: {fileID: 0}
 --- !u!1 &6442611842369788822

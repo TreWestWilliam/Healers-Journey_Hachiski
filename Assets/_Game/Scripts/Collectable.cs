@@ -5,14 +5,14 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
     [SerializeField] private int numIngredients;
-    [SerializeField] private Item item;
+    [SerializeField] private string itemName;
     [SerializeField] private GameObject self;
     public GameObject invManager;
 
     public void Collect()
     {
         InventoryManager inv = invManager.GetComponent<InventoryManager>();
-        inv.AddItem(item, numIngredients);
+        inv.AddItem(itemName, numIngredients);
         self.SetActive(false);
     }
 

@@ -450,6 +450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numIngredients: 1
-  item: {fileID: 0}
+  itemName: Aloe Vera
   self: {fileID: 7650578282882909815}
   invManager: {fileID: 0}
