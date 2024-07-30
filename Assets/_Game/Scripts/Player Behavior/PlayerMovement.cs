@@ -13,21 +13,21 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private float interactRange = 2f;
 	[SerializeField] private CharacterController cc;
 	private Vector3 movement;
-	private Vector3 gravity = new Vector3 (0, -9.8f, 0);;
+	private Vector3 gravity = new Vector3(0, -9.8f, 0);
 	[SerializeField] private LayerMask NPCMask;
 
 	private IInteractable currentInteraction;
 	private Transform interactionTransform;
 	//The original distance to the interacted object.
 	private float interactionDist;
-    [SerializeField] private GameObject inventory;
-    [SerializeField] private InventoryManager inventoryManager;
-    private bool canMove;
+	[SerializeField] private GameObject inventory;
+	[SerializeField] private InventoryManager inventoryManager;
+	private bool canMove;
 
-    private void Awake()
-    {
-        canMove = true;
-    }
+	private void Awake()
+	{
+		canMove = true;
+	}
 
 	// Update is called once per frame
 	void Update()
@@ -36,25 +36,25 @@ public class PlayerMovement : MonoBehaviour
 		movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 		movement.Normalize();
 		movement *= Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
-        if(Input.GetKeyDown(KeyCode.E) ) Interact();
+		if (Input.GetKeyDown(KeyCode.E)) Interact();
 
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            if(canMove)
-            {
-                canMove = false;
-                inventory.SetActive(true);
-                inventoryManager.UpdateInventory();
-            }
-            else
-            {
-                canMove = true;
-                inventory.SetActive(false);
-            }
-        }
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			if (canMove)
+			{
+				canMove = false;
+				inventory.SetActive(true);
+				inventoryManager.UpdateInventory();
+			}
+			else
+			{
+				canMove = true;
+				inventory.SetActive(false);
+			}
+		}
 
-        HandleInteractNotifs();
-    }
+		HandleInteractNotifs();
+	}
 
 	void FixedUpdate()
 	{
@@ -117,15 +117,18 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-    private void HandleInteractNotifs() {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
-        {
-            if (hit.transform.CompareTag("Ingredient") || hit.transform.CompareTag("NPC"))
-            {
-                //Refactor collect notifs to be contained within their own script. This way, they can also be applied to NPCs
-                hit.transform.GetComponent<InteractNotif>().SetCollectNotifVisible(true);
-            }
-        }
-    }
+	private void HandleInteractNotifs()
+	{
+		//Needs to be rewritten.
+		/*
+		RaycastHit hit;
+		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
+		{
+			if (hit.transform.CompareTag("Ingredient") || hit.transform.CompareTag("NPC"))
+			{
+				//Refactor collect notifs to be contained within their own script. This way, they can also be applied to NPCs
+				hit.transform.GetComponent<InteractNotif>().SetCollectNotifVisible(true);
+			}
+		}*/
+	}
 }
