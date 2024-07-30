@@ -4097,7 +4097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699749a899122f54296458702fcbc042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterPosition: {fileID: 1872359094}
+  characterObject: {fileID: 1872359094}
   offset: {x: 0, y: 5, z: -5}
 --- !u!1 &582337387
 GameObject:
@@ -13438,12 +13438,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  interactDist: 2
+  sprintMultiplier: 2
+  walkMultiplier: 0.5
+  interactRange: 2
   cc: {fileID: 1872359102}
-  inventory: {fileID: 917926194}
   NPCMask:
     serializedVersion: 2
     m_Bits: 64
+  inventory: {fileID: 917926194}
   inventoryManager: {fileID: 798038558}
 --- !u!136 &1872359101
 CapsuleCollider:
