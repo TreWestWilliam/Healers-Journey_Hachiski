@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Fever and Chills
+  m_EditorClassIdentifier: 
+  Name: Fever and Chills
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 3ce46e6168eeecd42a383644d894473c, type: 2}
+  - {fileID: 11400000, guid: 5f9031588bc6bb744b620d388f1d33f8, type: 2}
+  - {fileID: 11400000, guid: 3209df677de454a4eab62c1319c70e08, type: 2}
+  - {fileID: 11400000, guid: 39fa598cab803d5499ee9f222d7d721e, type: 2}
+  - {fileID: 11400000, guid: 6c15ff395c49e2340abd951063992846, type: 2}
+  - {fileID: 11400000, guid: 3f8fde6526cf64840aba237383341134, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
+  - {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
+  - {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
+  - {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
+  - {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+  complaints: []

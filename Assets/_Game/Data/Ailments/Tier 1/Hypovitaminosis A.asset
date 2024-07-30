@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Hypovitaminosis A
+  m_EditorClassIdentifier: 
+  Name: Hypovitaminosis A
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
+  - {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 81423a955cbfc374b80eab8c814fe2cb, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My skin is really dry, and I struggle to see at night.
+    Variable: {fileID: 0}

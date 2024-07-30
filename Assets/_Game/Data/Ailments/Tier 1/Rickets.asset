@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Rickets
+  m_EditorClassIdentifier: 
+  Name: Rickets
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+  - {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 574dfb1da3c79b746b76eecaafa1c5bf, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I get muscle cramps often, and my muscles are weak.
+    Variable: {fileID: 0}

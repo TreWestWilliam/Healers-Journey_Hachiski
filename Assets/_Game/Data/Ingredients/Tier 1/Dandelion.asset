@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Dandelion
+  m_EditorClassIdentifier: 
+  Name: Dandelion
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 392e92951ed94194b8a96d6ec5c7a066,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
+  - {fileID: 11400000, guid: 8e1b0792d46b3b643a3e70fd20d04b81, type: 2}
+  - {fileID: 11400000, guid: 6c15ff395c49e2340abd951063992846, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 92af82a2c088894428fed0e72378e3de, type: 2}
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+  locationsFound: []

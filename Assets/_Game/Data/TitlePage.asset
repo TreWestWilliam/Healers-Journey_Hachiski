@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ee087fb9a40974db2a8201a7211112, type: 3}
+  m_Name: TitlePage
+  m_EditorClassIdentifier: 
+  Name: Title
+  credits:
+  - UseConstant: 1
+    ConstantValue: Team Lion - YSL
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Sidret - Leader / Producer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Lance Eisele @IntrepidNeon - Lead Programmer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Christian Visaya @Nelu - Programmer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Garret @Garrett - Programmer Trainee
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Devin @Dealees - Programmer Trainee
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Emmanuel @Kazhu75 - Level Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Julius @jujubeez - Level Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Allison @allisondw - Junior Game Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Aditya Gopal @MysticMe - Game Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Linden Killam @HeadMooseInCharge - Sound Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Jay Rothman @Jay - Sound Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Furkan Guder @FURKAN - Game Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Sams @TheSamsOWN - 3D Game Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Jonathan Hernandez @BozosBros - 3D Game Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Melissa Cerrato @Melissa_Cerrato - UI Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Tingella @tingella - 2D Game Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Emily Young @Slug - Art Trainee
+    Variable: {fileID: 0}

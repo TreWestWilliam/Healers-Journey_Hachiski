@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Ginkgo
+  m_EditorClassIdentifier: 
+  Name: Ginkgo
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 0edfe149186fd0a44abe54a9c93fe40e,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: d55868ecf3e45a64ca6126cbbf56c111, type: 2}
+  - {fileID: 11400000, guid: d22bd85df4d904c48b09da531250b866, type: 2}
+  - {fileID: 11400000, guid: c3b54e5a5e528dc4886ae27b66bf6958, type: 2}
+  - {fileID: 11400000, guid: c828d4e04bf963b43b28a29d95729aaf, type: 2}
+  - {fileID: 11400000, guid: 9a8e048032812d34b93fe25cc0198980, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 6456ca37605ca6642860e3a4751291b4, type: 2}
+  - {fileID: 11400000, guid: 0e4ba0f4c481dca4bb89d4de7e8ccbe0, type: 2}
+  - {fileID: 11400000, guid: 1d967ec43a90dce49b620b96811e931e, type: 2}
+  - {fileID: 11400000, guid: 3f30eb5d54fb6644ea0f88efd9b4a0a4, type: 2}
+  - {fileID: 11400000, guid: 886c33c2ea67f69449259b115517619b, type: 2}
+  locationsFound: []

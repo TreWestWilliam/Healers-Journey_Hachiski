@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Fish Oil
+  m_EditorClassIdentifier: 
+  Name: Fish Oil
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 78e6e1ce57c7f6840b7ce3f15e86ecfd,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 82b50c71b8718394eb0a12726ce6533a, type: 2}
+  - {fileID: 11400000, guid: ca3d412d1bb9e474e8fa338b72b7862d, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: e48859e096a1bb24f927503bb6960e22, type: 2}
+  - {fileID: 11400000, guid: d76cabdfe7b71bc45a18297730d858c8, type: 2}
+  locationsFound: []

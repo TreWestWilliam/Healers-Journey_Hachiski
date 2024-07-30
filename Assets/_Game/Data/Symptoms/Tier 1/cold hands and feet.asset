@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Cold Hands and Feet
+  m_EditorClassIdentifier: 
+  Name: Cold Hands and Feet
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+  - {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+  complaints: []

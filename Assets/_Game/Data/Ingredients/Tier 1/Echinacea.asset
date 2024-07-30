@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Echinacea
+  m_EditorClassIdentifier: 
+  Name: Echinacea
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 7dbe9711657f29d42817751f7f3d1462,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 3ce46e6168eeecd42a383644d894473c, type: 2}
+  - {fileID: 11400000, guid: 2f10a1fa09031f14a99ea0f1262fe369, type: 2}
+  - {fileID: 11400000, guid: 4dec709b7aea0a9438f9c87f3ce4eeb5, type: 2}
+  - {fileID: 11400000, guid: e5af67fee305e1747bf05388e8145e95, type: 2}
+  - {fileID: 11400000, guid: 5f9031588bc6bb744b620d388f1d33f8, type: 2}
+  - {fileID: 11400000, guid: 99d0c7c12f37c39479f26efc77279ce0, type: 2}
+  - {fileID: 11400000, guid: 787ea70fe801d5f49a6d3dc36a430405, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: c8535b2b5f07edc44a9824af3bb0b918, type: 2}
+  - {fileID: 11400000, guid: 58587b9e8e8db1d4da294fa38650edbb, type: 2}
+  - {fileID: 11400000, guid: 042a52b91abdf4742b0321c0e4edc71d, type: 2}
+  - {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
+  - {fileID: 11400000, guid: 6001746d690ebb94cb2b6a4b4b06ae74, type: 2}
+  - {fileID: 11400000, guid: 923ed5541e0e4234299d1dc26beb8c88, type: 2}
+  locationsFound: []

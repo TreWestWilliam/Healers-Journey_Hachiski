@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Nettle
+  m_EditorClassIdentifier: 
+  Name: Nettle
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: dec8914d29822464f9eb0f453a779ff8,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
+  - {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
+  - {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
+  - {fileID: 11400000, guid: cc8cfee6cb4ccc349853ae1d45583301, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 92af82a2c088894428fed0e72378e3de, type: 2}
+  - {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+  locationsFound: []

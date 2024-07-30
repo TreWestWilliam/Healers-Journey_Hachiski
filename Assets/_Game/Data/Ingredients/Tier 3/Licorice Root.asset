@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Licorice Root
+  m_EditorClassIdentifier: 
+  Name: Licorice Root
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 00079e462b7c6844d8515f46343df0e6,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: ba1ad22213a382f4b90f1f8b837b9064, type: 2}
+  - {fileID: 11400000, guid: ca6a81518f328f943921efc332df4a29, type: 2}
+  - {fileID: 11400000, guid: a6972ca6dc69ce541990926360f15fef, type: 2}
+  - {fileID: 11400000, guid: a7d0dbd9762b88540bd19772feeac82e, type: 2}
+  - {fileID: 11400000, guid: 1c134e412042afb4386f540cb508c945, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 1f68f93f196838c43aa6852462a50387, type: 2}
+  - {fileID: 11400000, guid: 93ac3a8fd827b1846803f1dab90eb237, type: 2}
+  - {fileID: 11400000, guid: 6456ca37605ca6642860e3a4751291b4, type: 2}
+  locationsFound: []

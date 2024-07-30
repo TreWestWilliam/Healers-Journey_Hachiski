@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Willow Bark
+  m_EditorClassIdentifier: 
+  Name: Willow Bark
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 3d122c4f4187bf04eb89e2122d0ae6b6,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: a530ab8e0acee65499ede34ac5e06f39, type: 2}
+  - {fileID: 11400000, guid: e66db8af75c36614b9ecaf8251e7ad65, type: 2}
+  - {fileID: 11400000, guid: 7a15966b0a523d24ca16ed36c77ce194, type: 2}
+  - {fileID: 11400000, guid: 24b14e4009a683441a34f46fc177859c, type: 2}
+  - {fileID: 11400000, guid: 252af44ce7e0f7c488189b087ac4f9f3, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
+  - {fileID: 11400000, guid: e8fe5613f83f35a4facafeb391c25a22, type: 2}
+  - {fileID: 11400000, guid: f8e03047ca2050a40ae30a12b94bb912, type: 2}
+  locationsFound: []

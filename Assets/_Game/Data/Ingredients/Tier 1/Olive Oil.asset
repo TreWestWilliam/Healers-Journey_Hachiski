@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Olive Oil
+  m_EditorClassIdentifier: 
+  Name: Olive Oil
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 8995f22326feb5b4cafd7e5cfea4c4e0,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 2f10a1fa09031f14a99ea0f1262fe369, type: 2}
+  - {fileID: 11400000, guid: 7354a229217fad04ea465f179180a1d9, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
+  - {fileID: 11400000, guid: 58587b9e8e8db1d4da294fa38650edbb, type: 2}
+  - {fileID: 11400000, guid: ed81b27e1866d234bb94c3926ea32328, type: 2}
+  locationsFound: []

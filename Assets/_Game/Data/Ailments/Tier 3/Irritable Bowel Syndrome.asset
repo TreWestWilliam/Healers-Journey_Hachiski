@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Irritable Bowel Syndrome
+  m_EditorClassIdentifier: 
+  Name: Irritable Bowel Syndrome
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 4c0f4b750a14cf3498cb0897f2e93c6c, type: 2}
+  - {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 24cce1cd83b884b4f9cde368351cecf2, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 5272c5f9d3043b946b18dfa8f710a765, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 55321782c1df72e438944aa05a46444c, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I get a lot of abdominal pain and feel bloated.
+    Variable: {fileID: 0}

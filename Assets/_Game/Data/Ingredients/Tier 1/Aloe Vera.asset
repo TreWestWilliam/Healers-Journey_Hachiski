@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Aloe Vera
+  m_EditorClassIdentifier: 
+  Name: Aloe Vera
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 9a90c09a1a7c7bb4b9c5a12d4df887cb,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 2b6e4b36e178ea64d8337b588971b075, type: 2}
+  - {fileID: 11400000, guid: b78eedb383e2e1e408ca3d6822e5f0a9, type: 2}
+  - {fileID: 11400000, guid: fd7df088c0815164182d03d5497c55d8, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
+  - {fileID: 11400000, guid: 801e7d25c8be5244cbf6680c9b1b3c71, type: 2}
+  locationsFound: []

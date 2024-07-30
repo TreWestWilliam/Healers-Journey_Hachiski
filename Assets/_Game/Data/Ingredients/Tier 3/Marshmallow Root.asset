@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Marshmallow Root
+  m_EditorClassIdentifier: 
+  Name: Marshmallow Root
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: d15584c50a935ac43a8627291124a94f,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: a70a1016b34056f40ab5584d06229312, type: 2}
+  - {fileID: 11400000, guid: c6dbb32924583344d972abd57b20148d, type: 2}
+  - {fileID: 11400000, guid: 830baa3e3309bc14fb9307a232aea3e3, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: dbf335d3f042e4e4398db01b4b0f1c0a, type: 2}
+  - {fileID: 11400000, guid: 4c0f4b750a14cf3498cb0897f2e93c6c, type: 2}
+  locationsFound: []

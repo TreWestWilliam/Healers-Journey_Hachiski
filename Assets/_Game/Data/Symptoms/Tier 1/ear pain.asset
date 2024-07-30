@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Ear Pain
+  m_EditorClassIdentifier: 
+  Name: Ear Pain
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 2f10a1fa09031f14a99ea0f1262fe369, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
+  - {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
+  - {fileID: 11400000, guid: 81423a955cbfc374b80eab8c814fe2cb, type: 2}
+  complaints: []

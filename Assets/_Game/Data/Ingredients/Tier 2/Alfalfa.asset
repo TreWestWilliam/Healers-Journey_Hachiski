@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Alfalfa
+  m_EditorClassIdentifier: 
+  Name: Alfalfa
+  Description: 
+  UnlockedDescription: 
+  tier: 1
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: a6952aa8579a2254f9432171a0575513,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 8e1b0792d46b3b643a3e70fd20d04b81, type: 2}
+  - {fileID: 11400000, guid: 92d3033de7b09db4db7b033386866e51, type: 2}
+  - {fileID: 11400000, guid: f4fb666aec5665143b34f7e16df0d73b, type: 2}
+  - {fileID: 11400000, guid: 1595563ee4a59744cb7f07271fa50936, type: 2}
+  - {fileID: 11400000, guid: cc8cfee6cb4ccc349853ae1d45583301, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+  - {fileID: 11400000, guid: f8e03047ca2050a40ae30a12b94bb912, type: 2}
+  - {fileID: 11400000, guid: e9721b1417450404e976165d8fd48281, type: 2}
+  locationsFound: []

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Hypothyroidism
+  m_EditorClassIdentifier: 
+  Name: Hypothyroidism
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 6d47851cba40fba4c9b719ce8a696a0b, type: 2}
+  - {fileID: 11400000, guid: d049168cd64ace54fa5c75519f9828c4, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 5fff3be1b089c4f4c93ffeda87f8b6e2, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 3eaa9e1bf3edac847961061230b3e339, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: deb6d9e5b0f187d4a83c5367dac3bdf1, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I've gained weight, and I feel so tired all the time.
+    Variable: {fileID: 0}

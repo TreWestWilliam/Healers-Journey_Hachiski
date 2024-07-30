@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Clove
+  m_EditorClassIdentifier: 
+  Name: Clove
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 6851cdbd3b811f44f9ebfbbf0e158f32,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 6f24b93239517634c8f2503c09217380, type: 2}
+  - {fileID: 11400000, guid: 618dfa24c05efb74d91904a1c9b2fdd7, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: ec5df0ff7f644ef488c186e6feac2c45, type: 2}
+  - {fileID: 11400000, guid: d76cabdfe7b71bc45a18297730d858c8, type: 2}
+  - {fileID: 11400000, guid: 4c0f4b750a14cf3498cb0897f2e93c6c, type: 2}
+  - {fileID: 11400000, guid: 1b01c2200a3b3624bb081b2464eebf9b, type: 2}
+  locationsFound: []

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Wound Infection
+  m_EditorClassIdentifier: 
+  Name: Wound Infection
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
+  - {fileID: 11400000, guid: 042a52b91abdf4742b0321c0e4edc71d, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+      temperature: 1
+    - ingredient: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My wound is swollen, and I have a fever and chills.
+    Variable: {fileID: 0}

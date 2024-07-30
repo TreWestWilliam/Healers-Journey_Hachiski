@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Ginseng
+  m_EditorClassIdentifier: 
+  Name: Ginseng
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: e182c42bf68cedb46a6429b173f23438,
+      type: 3}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 4dec709b7aea0a9438f9c87f3ce4eeb5, type: 2}
+  - {fileID: 11400000, guid: 76cab7ba666109748bb2320c708ca179, type: 2}
+  - {fileID: 11400000, guid: c3b54e5a5e528dc4886ae27b66bf6958, type: 2}
+  - {fileID: 11400000, guid: e66db8af75c36614b9ecaf8251e7ad65, type: 2}
+  - {fileID: 11400000, guid: 24b14e4009a683441a34f46fc177859c, type: 2}
+  - {fileID: 11400000, guid: a6972ca6dc69ce541990926360f15fef, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
+  - {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
+  - {fileID: 11400000, guid: e8fe5613f83f35a4facafeb391c25a22, type: 2}
+  locationsFound: []

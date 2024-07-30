@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Weight Loss
+  m_EditorClassIdentifier: 
+  Name: Weight Loss
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 76cab7ba666109748bb2320c708ca179, type: 2}
+  - {fileID: 11400000, guid: a70a1016b34056f40ab5584d06229312, type: 2}
+  - {fileID: 11400000, guid: 598413a0d4560bd47b79a567bcb3c364, type: 2}
+  - {fileID: 11400000, guid: ca3d412d1bb9e474e8fa338b72b7862d, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
+  - {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
+  - {fileID: 11400000, guid: d3b8c552731895c4698504b2d2ac7120, type: 2}
+  - {fileID: 11400000, guid: 55321782c1df72e438944aa05a46444c, type: 2}
+  complaints: []
