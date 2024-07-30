@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -12,36 +13,53 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private float interactRange = 2f;
 	[SerializeField] private CharacterController cc;
 	private Vector3 movement;
-	private Vector3 gravity;
+	private Vector3 gravity = new Vector3 (0, -9.8f, 0);;
 	[SerializeField] private LayerMask NPCMask;
 
 	private IInteractable currentInteraction;
 	private Transform interactionTransform;
 	//The original distance to the interacted object.
 	private float interactionDist;
+    [SerializeField] private GameObject inventory;
+    [SerializeField] private InventoryManager inventoryManager;
+    private bool canMove;
 
-	private void Awake()
-	{
-		gravity = new Vector3(0, -9.8f, 0);
-	}
+    private void Awake()
+    {
+        canMove = true;
+    }
 
 	// Update is called once per frame
 	void Update()
 	{
 		// Check for input every frame
 		movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-
 		movement.Normalize();
-
 		movement *= Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
+        if(Input.GetKeyDown(KeyCode.E) ) Interact();
 
-		if (Input.GetKeyDown(KeyCode.E)) Interact();
-	}
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(canMove)
+            {
+                canMove = false;
+                inventory.SetActive(true);
+                inventoryManager.UpdateInventory();
+            }
+            else
+            {
+                canMove = true;
+                inventory.SetActive(false);
+            }
+        }
+
+        HandleInteractNotifs();
+    }
 
 	void FixedUpdate()
 	{
 		// Check if need to move this update
-		if (movement != Vector3.zero)
+		if (canMove && movement != Vector3.zero)
 		{
 			// Rotate and move
 			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
@@ -97,21 +115,17 @@ public class PlayerMovement : MonoBehaviour
 			interactionTransform = targetTransform;
 			interactionDist = shortestDist;
 		}
-
-		/*
-		// Check if object in Interactable layer in front of player
-		RaycastHit hit;
-		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
-		{
-			// Check whether object is NPC or Ingredient using tags
-			if (hit.transform.CompareTag("NPC"))
-			{
-				Debug.Log("NPC: " + hit.transform.name);
-			}
-			else if (hit.transform.CompareTag("Ingredient"))
-			{
-				Debug.Log("Ingredient: " + hit.transform.name);
-			}
-		}*/
 	}
+
+    private void HandleInteractNotifs() {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
+        {
+            if (hit.transform.CompareTag("Ingredient") || hit.transform.CompareTag("NPC"))
+            {
+                //Refactor collect notifs to be contained within their own script. This way, they can also be applied to NPCs
+                hit.transform.GetComponent<InteractNotif>().SetCollectNotifVisible(true);
+            }
+        }
+    }
 }
