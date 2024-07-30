@@ -52,6 +52,28 @@ public class InventoryManager : MonoBehaviour
         Debug.Log("Item not found");
     }
 
+    // Returns true if item successfully removed, false if not enough of item or if not in inventory
+    public bool RemoveItem(string itemName, int num)
+    {
+        int i = 0;
+        foreach (Item currentItem in itemList)
+        {
+            if(currentItem.GetItemName() == itemName)
+            {
+                if (itemQuantities[i] < num) return false;
+
+                itemQuantities[i] -= num;
+                if (itemQuantities[i] <= 0)
+                {
+                    itemList.RemoveAt(i);
+                    itemQuantities.RemoveAt(i);
+                }
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void UpdateInventory()
     {
         GameObject[] itemSlots = GameObject.FindGameObjectsWithTag("Item Slot");
