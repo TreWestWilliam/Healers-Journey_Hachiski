@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8e8721ee8ff6d479bdbe2881afcfae, type: 3}
+  m_Name: LockedFirst
+  m_EditorClassIdentifier: 
+  dialoguePool:
+  - Hmph, you're new here, aren't you?
+  - What do you want? Haven't seen you before.
+  - Who let you in here?
+  - A new face... what are you doing here?
+  - You're not from around here, are you?
+  - I've never seen you before. What's your business here?
+  - Who are you, and why are you here?
+  - A new arrival, eh? What's your purpose here?
+  branch:
+    ButtonText: 
+    nextBlock: {fileID: 0}
