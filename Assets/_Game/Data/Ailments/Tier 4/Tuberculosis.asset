@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Tuberculosis
   m_EditorClassIdentifier: 
   Name: Tuberculosis
-  Description: 
+  Description: A bacterial infection that primarily affects the lungs, causing cough,
+    fever, and weight loss.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I can't stop coughing, and my chest hurts.
+    ConstantValue: I have a persistent cough and pain in my chest.
     Variable: {fileID: 0}

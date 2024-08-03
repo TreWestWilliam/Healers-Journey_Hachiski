@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Tinnitus
   m_EditorClassIdentifier: 
   Name: Tinnitus
-  Description: 
+  Description: The perception of noise or ringing in the ears caused by inner ear
+    issues.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: There's this constant ringing in my ears, and I can't concentrate.
+    ConstantValue: There's this constant ringing in my ears, I can't concentrate.
     Variable: {fileID: 0}

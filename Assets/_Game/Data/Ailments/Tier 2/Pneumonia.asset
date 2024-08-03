@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pneumonia
   m_EditorClassIdentifier: 
   Name: Pneumonia
-  Description: 
+  Description: An infection that inflames the air sacs in one or both lungs.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +45,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: It's so hard to breathe, and I'm wheezing all the time.
+    ConstantValue: It's so hard to breathe, and my lungs feel wheezy.
     Variable: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hypothyroidism
   m_EditorClassIdentifier: 
   Name: Hypothyroidism
-  Description: 
+  Description: An underactive thyroid gland producing insufficient thyroid hormones.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +45,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I've gained weight, and I feel so tired all the time.
+    ConstantValue: I've gained so much weight, and I feel tired all the time.
     Variable: {fileID: 0}

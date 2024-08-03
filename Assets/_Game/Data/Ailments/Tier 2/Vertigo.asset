@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Vertigo
   m_EditorClassIdentifier: 
   Name: Vertigo
-  Description: 
+  Description: Nausea and a sensation of spinning or dizziness often caused by problems
+    in the inner ear.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: My ears are ringing, and I feel so nauseous.
+    ConstantValue: My ears are ringing, and I feel extremely nauseous.
     Variable: {fileID: 0}

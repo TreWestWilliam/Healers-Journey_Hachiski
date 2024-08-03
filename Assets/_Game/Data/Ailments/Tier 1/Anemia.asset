@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Anemia
   m_EditorClassIdentifier: 
   Name: Anemia
-  Description: 
+  Description: A lack of iron and other essential nutrients leads to a deficiency
+    of red blood cells, causing fatigue and weakness.
   UnlockedDescription: 
   tier: 0
   icon:

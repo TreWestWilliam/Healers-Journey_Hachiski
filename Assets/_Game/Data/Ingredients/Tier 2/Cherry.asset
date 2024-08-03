@@ -21,10 +21,10 @@ MonoBehaviour:
     ConstantValue: {fileID: 3286163911610860551, guid: c50aea40e05bf7843a487eb2cc7bc1bf,
       type: 3}
     Variable: {fileID: 0}
+  locationsFound: []
   ailments:
   - {fileID: 11400000, guid: 92d3033de7b09db4db7b033386866e51, type: 2}
   - {fileID: 11400000, guid: 1c134e412042afb4386f540cb508c945, type: 2}
   symptoms:
   - {fileID: 11400000, guid: e9721b1417450404e976165d8fd48281, type: 2}
   - {fileID: 11400000, guid: 0517f0a4cf7e6df4cad7dc4e1946d14b, type: 2}
-  locationsFound: []

@@ -20,7 +20,8 @@ public class GenericDataEditor : Editor
             if(AssetDatabase.GetAssetPath(genericData.icon.Value).EndsWith(".svg"))
             {
                 Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
-                return VectorUtils.RenderSpriteToTexture2D(genericData.icon.Value, width, height, mat);
+                Vector2 size = GetDrawingDimensions(genericData.icon.Value, width, height);
+                return VectorUtils.RenderSpriteToTexture2D(genericData.icon.Value, (int)size.x, (int)size.y, mat);
             }
             else
             {
@@ -52,6 +53,29 @@ public class GenericDataEditor : Editor
             genericData.reciprocateData();
         }
         base.OnInspectorGUI();
+    }
+
+    private Vector2 GetDrawingDimensions(Sprite sprite, int width, int height)
+    {
+        var size = new Vector2(sprite.rect.width, sprite.rect.height);
+
+        int spriteW = Mathf.RoundToInt(size.x);
+        int spriteH = Mathf.RoundToInt(size.y);
+
+        Vector2 r = new Vector2(width, height);
+
+        if(size.sqrMagnitude > 0.0f)
+        {
+            var spriteRatio = size.x / size.y;
+            var rectRatio = width / height;
+
+            if(spriteRatio > rectRatio)
+                r.y = width * (1.0f / spriteRatio);
+            else
+                r.x = height * spriteRatio;
+        }
+
+        return r;
     }
 
     private static Type GetType(string TypeName)

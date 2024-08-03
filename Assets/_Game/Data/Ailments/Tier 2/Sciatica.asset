@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Sciatica
   m_EditorClassIdentifier: 
   Name: Sciatica
-  Description: 
+  Description: Pain radiating along the sciatic nerve, which runs down one or both
+    legs from the lower back.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: My back hurts, and my legs feel numb.
+    ConstantValue: My back hurts, and my legs feel a bit numb and tingly.
     Variable: {fileID: 0}

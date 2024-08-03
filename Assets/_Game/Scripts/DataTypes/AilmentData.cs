@@ -45,6 +45,18 @@ public class TreatedIngredient : IEquatable<TreatedIngredient>
     public bool Equals(TreatedIngredient other)
     {
         if(other == null) return false;
+        if(ingredient is null)
+        {
+            if(other.ingredient is null)
+            {
+                return temperature.Equals(other.temperature);
+            }
+            return false;
+        }
+        if(other.ingredient is null)
+        {
+            return false;
+        }
 
         return ingredient.Equals(other.ingredient) && temperature.Equals(other.temperature);
     }

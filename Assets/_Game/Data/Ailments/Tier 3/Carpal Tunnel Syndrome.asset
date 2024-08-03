@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Carpal Tunnel Syndrome
   m_EditorClassIdentifier: 
   Name: Carpal Tunnel Syndrome
-  Description: 
+  Description: A condition caused by compression of the median nerve in the wrist,
+    leading to pain and numbness.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: My joints hurt, and my hands and feet go numb.
+    ConstantValue: My wrist hurts and my fingers are going numb.
     Variable: {fileID: 0}

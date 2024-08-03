@@ -19,8 +19,27 @@ public class FloatRef : IEquatable<FloatRef>, IComparable<FloatRef>
         }
     }
 
+    public FloatRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public FloatRef(float value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public FloatRef(FloatVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator float(FloatRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -32,6 +51,10 @@ public class FloatRef : IEquatable<FloatRef>, IComparable<FloatRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

@@ -19,8 +19,27 @@ public class BoolRef : IEquatable<BoolRef>, IComparable<BoolRef>
         }
     }
 
+    public BoolRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public BoolRef(bool value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public BoolRef(BoolVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator bool(BoolRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -32,6 +51,10 @@ public class BoolRef : IEquatable<BoolRef>, IComparable<BoolRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

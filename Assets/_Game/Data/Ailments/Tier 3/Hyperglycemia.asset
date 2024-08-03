@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Hyperglycemia
   m_EditorClassIdentifier: 
   Name: Hyperglycemia
-  Description: 
+  Description: High blood sugar levels, often associated with diabetes or an improper
+    diet.
   UnlockedDescription: 
   tier: 2
   icon:

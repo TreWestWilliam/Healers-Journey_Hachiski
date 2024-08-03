@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wound Infection
   m_EditorClassIdentifier: 
   Name: Wound Infection
-  Description: 
+  Description: An infection in an open wound, causing redness, swelling, and pus.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +45,6 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: My wound is swollen, and I have a fever and chills.
+    ConstantValue: "I\u2019ve had a fever and the chills ever since this wound started
+      swelling up."
     Variable: {fileID: 0}

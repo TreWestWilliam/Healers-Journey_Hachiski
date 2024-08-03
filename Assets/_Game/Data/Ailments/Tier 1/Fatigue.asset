@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Fatigue
   m_EditorClassIdentifier: 
   Name: Fatigue
-  Description: 
+  Description: Lack of essential nutrients from a poor diet results in extreme tiredness
+    and a persistent lack of energy.
   UnlockedDescription: 
   tier: 0
   icon:

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Migraine
   m_EditorClassIdentifier: 
   Name: Migraine
-  Description: 
+  Description: Deficiencies in key nutrients like magnesium can trigger severe headaches
+    and migraines.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,6 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I have these terrible headaches, and sometimes my vision gets
-      blurry.
+    ConstantValue: "I\u2019m having such bad headaches that my vision gets blurry."
     Variable: {fileID: 0}

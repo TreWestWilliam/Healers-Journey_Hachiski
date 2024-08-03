@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Gout
   m_EditorClassIdentifier: 
   Name: Gout
-  Description: 
+  Description: A concentration of uric acid in the joints, particularly in the big
+    toes of the feet, causing pain and swelling.
   UnlockedDescription: 
   tier: 1
   icon:

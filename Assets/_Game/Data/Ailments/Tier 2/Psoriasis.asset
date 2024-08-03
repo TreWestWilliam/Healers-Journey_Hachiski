@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Psoriasis
   m_EditorClassIdentifier: 
   Name: Psoriasis
-  Description: 
+  Description: A skin disease marked by red, itchy, scaly patches.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +45,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: My skin is really dry and itchy, and it gets worse sometimes.
+    ConstantValue: "My skin is really dry and itchy, it\u2019s sometimes unbearable."
     Variable: {fileID: 0}

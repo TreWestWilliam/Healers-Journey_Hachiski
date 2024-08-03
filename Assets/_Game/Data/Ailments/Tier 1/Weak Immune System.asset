@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Weak Immune System
   m_EditorClassIdentifier: 
   Name: Weak Immune System
-  Description: 
+  Description: Malnutrition weakens the immune system, increasing susceptibility
+    to infections and diseases.
   UnlockedDescription: 
   tier: 0
   icon:

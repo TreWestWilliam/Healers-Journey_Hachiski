@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 
 [Serializable]
 public class IntRef : IEquatable<IntRef>, IComparable<IntRef>
@@ -19,8 +20,27 @@ public class IntRef : IEquatable<IntRef>, IComparable<IntRef>
         }
     }
 
+    public IntRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public IntRef(int value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public IntRef(IntVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator int(IntRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -32,6 +52,10 @@ public class IntRef : IEquatable<IntRef>, IComparable<IntRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

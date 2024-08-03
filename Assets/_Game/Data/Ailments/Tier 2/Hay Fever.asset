@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hay Fever
   m_EditorClassIdentifier: 
   Name: Hay Fever
-  Description: 
+  Description: An allergic reaction to airborne substances like pollen.
   UnlockedDescription: 
   tier: 1
   icon:

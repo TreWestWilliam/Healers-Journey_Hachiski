@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Xerophthalmia
   m_EditorClassIdentifier: 
   Name: Xerophthalmia
-  Description: 
+  Description: Severe vitamin A deficiency due to poor diet leads to dry, thickened,
+    and inflamed eyes, risking blindness.
   UnlockedDescription: 
   tier: 0
   icon:

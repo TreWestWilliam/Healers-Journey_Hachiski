@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Beriberi
   m_EditorClassIdentifier: 
   Name: Beriberi
-  Description: 
+  Description: Inadequate intake of vitamin B1 (thiamine) results in severe cardiovascular
+    and nervous system complications.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -46,5 +47,5 @@ MonoBehaviour:
   complaints:
   - UseConstant: 1
     ConstantValue: I can't seem to catch my breath. My heart races all the time,
-      and my muscles feel so weak.
+      and my muscles feel so weak
     Variable: {fileID: 0}

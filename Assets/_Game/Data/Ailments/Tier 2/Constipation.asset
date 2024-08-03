@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Constipation
   m_EditorClassIdentifier: 
   Name: Constipation
-  Description: 
+  Description: A diet lacking in fiber and essential nutrients can lead to digestive
+    issues like constipation.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I have this abdominal pain and feel so bloated.
+    ConstantValue: My stomach is killing me and I feel so bloated.
     Variable: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Hypocalcemia
   m_EditorClassIdentifier: 
   Name: Hypocalcemia
-  Description: 
+  Description: Insufficient calcium intake from a poor diet leads to low blood calcium
+    levels, causing muscle cramps and spasms.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: My muscles keep cramping up, and my hands and feet feel numb.
+    ConstantValue: My muscles keep cramping up, and my fingers and toes feel numb.
     Variable: {fileID: 0}

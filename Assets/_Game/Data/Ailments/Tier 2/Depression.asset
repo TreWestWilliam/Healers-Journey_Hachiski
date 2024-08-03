@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Depression
   m_EditorClassIdentifier: 
   Name: Depression
-  Description: 
+  Description: Nutrient deficiencies can impact brain health and contribute to mental
+    health disorders such as depression.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I feel so low all the time, and I can't sleep.
+    ConstantValue: "I feel so drained of happiness and energy, but I can\u2019t get
+      any sleep."
     Variable: {fileID: 0}

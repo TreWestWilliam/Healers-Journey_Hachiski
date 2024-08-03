@@ -20,8 +20,27 @@ public class ColorRef : IEquatable<ColorRef>
         }
     }
 
+    public ColorRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public ColorRef(Color value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public ColorRef(ColorVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator Color(ColorRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -33,6 +52,10 @@ public class ColorRef : IEquatable<ColorRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

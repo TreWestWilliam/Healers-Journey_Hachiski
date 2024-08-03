@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rheumatoid Arthritis
   m_EditorClassIdentifier: 
   Name: Rheumatoid Arthritis
-  Description: 
+  Description: An autoimmune disorder causing chronic inflammation of the joints.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +45,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: My joints hurt so much, and they swell up.
+    ConstantValue: My joints are always so stiff and painful.
     Variable: {fileID: 0}

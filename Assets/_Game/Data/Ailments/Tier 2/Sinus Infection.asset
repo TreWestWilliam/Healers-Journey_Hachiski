@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Sinus Infection
   m_EditorClassIdentifier: 
   Name: Sinus Infection
-  Description: 
+  Description: Inadequate nutrition weakens the immune system, increasing the risk
+    of sinus infections.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: My sinuses are completely blocked, and my face hurts.
+    ConstantValue: "My sinuses are completely blocked, and it\u2019s making my face
+      hurt."
     Variable: {fileID: 0}

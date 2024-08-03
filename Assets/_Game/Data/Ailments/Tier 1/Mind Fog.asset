@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Mind Fog
   m_EditorClassIdentifier: 
   Name: Mind Fog
-  Description: 
+  Description: Inadequate intake of vital nutrients impairs cognitive function, leading
+    to confusion and difficulty concentrating.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,6 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I can't seem to focus on anything, and I'm getting irritable over
-      small things.
+    ConstantValue: I can't seem to focus on anything, and I feel so cranky
     Variable: {fileID: 0}

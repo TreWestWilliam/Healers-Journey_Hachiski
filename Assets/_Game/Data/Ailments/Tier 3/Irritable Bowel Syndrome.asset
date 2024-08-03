@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Irritable Bowel Syndrome
   m_EditorClassIdentifier: 
   Name: Irritable Bowel Syndrome
-  Description: 
+  Description: A gastrointestinal disorder causing abdominal pain, bloating, and
+    altered bowel habits.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I get a lot of abdominal pain and feel bloated.
+    ConstantValue: I get a lot of abdominal pain and feel bloated after I eat.
     Variable: {fileID: 0}

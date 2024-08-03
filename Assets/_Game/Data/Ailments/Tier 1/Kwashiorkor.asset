@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Kwashiorkor
   m_EditorClassIdentifier: 
   Name: Kwashiorkor
-  Description: 
+  Description: Severe protein malnutrition leads to symptoms such as edema, irritability,
+    and an enlarged liver.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: My stomach is bloated, and my whole body feels swollen.
+    ConstantValue: My stomach is bloated, and my whole body feels painfully swollen.
     Variable: {fileID: 0}

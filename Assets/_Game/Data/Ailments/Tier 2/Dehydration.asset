@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Dehydration
   m_EditorClassIdentifier: 
   Name: Dehydration
-  Description: 
+  Description: Malnutrition often includes inadequate fluid intake, leading to dehydration
+    and its associated health issues.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I'm always thirsty, and my muscles cramp up.
+    ConstantValue: "I'm so thirsty, I think it\u2019s making my muscles cramp up."
     Variable: {fileID: 0}

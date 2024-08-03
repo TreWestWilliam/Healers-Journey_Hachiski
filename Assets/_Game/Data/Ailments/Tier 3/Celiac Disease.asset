@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Celiac Disease
   m_EditorClassIdentifier: 
   Name: Celiac Disease
-  Description: 
+  Description: An immune reaction to eating gluten, leading to damage in the small
+    intestine.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I get a lot of gas, and I've been losing weight.
+    ConstantValue: I get a lot of gas when I eat, and I've been losing weight without
+      trying.
     Variable: {fileID: 0}

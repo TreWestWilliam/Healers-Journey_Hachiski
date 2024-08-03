@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Acne
   m_EditorClassIdentifier: 
   Name: Acne
-  Description: 
+  Description: A condition where the skin reacts to poor hygiene, hormonal changes,
+    or a diet lacking in proper nutrients, leading to pimples and cysts.
   UnlockedDescription: 
   tier: 2
   icon:

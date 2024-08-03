@@ -176,6 +176,10 @@ public class _JsonToDatatypes : ScriptableObject
             {
                 symptomSOs[i] = nameToSymptom[symptomStructs[i].NAME.ToLower()];
             }
+            if(getFileName(AssetDatabase.GetAssetPath(symptomSOs[i])) != symptomStructs[i].NAME)
+            {
+                replaceFileName(AssetDatabase.GetAssetPath(symptomSOs[i]), symptomStructs[i].NAME);
+            }
             if(AssetDatabase.GetAssetPath(symptomSOs[i]) != filePath)
             {
                 AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(symptomSOs[i]), filePath);
@@ -267,6 +271,10 @@ public class _JsonToDatatypes : ScriptableObject
             else
             {
                 ingredientSOs[i] = nameToIngredient[ingredientStructs[i].NAME.ToLower()];
+            }
+            if(getFileName(AssetDatabase.GetAssetPath(ingredientSOs[i])) != ingredientStructs[i].NAME)
+            {
+                replaceFileName(AssetDatabase.GetAssetPath(ingredientSOs[i]), ingredientStructs[i].NAME);
             }
             if(AssetDatabase.GetAssetPath(ingredientSOs[i]) != filePath)
             {
@@ -394,6 +402,10 @@ public class _JsonToDatatypes : ScriptableObject
             {
                 ailmentSOs[i] = nameToAilment[ailmentStructs[i].NAME.ToLower()];
             }
+            if(getFileName(AssetDatabase.GetAssetPath(ailmentSOs[i])) != ailmentStructs[i].NAME)
+            {
+                replaceFileName(AssetDatabase.GetAssetPath(ailmentSOs[i]), ailmentStructs[i].NAME);
+            }
             if(AssetDatabase.GetAssetPath(ailmentSOs[i]) != filePath)
             {
                 AssetDatabase.MoveAsset(AssetDatabase.GetAssetPath(ailmentSOs[i]), filePath);
@@ -469,10 +481,7 @@ public class _JsonToDatatypes : ScriptableObject
             for(int i = 0; i < paths.Length; i++)
             {
                 string path = AssetDatabase.GUIDToAssetPath(paths[i]);
-                string fileName = path.Split('/').Last();
-                List<String> split = new List<String>(fileName.Split('.'));
-                split.RemoveAt(split.Count - 1);
-                fileName = String.Join('.', split.ToArray()).ToLower();
+                string fileName = getFileName(path).ToLower();
                 if(fileName == searchName)
                 {
                     return AssetDatabase.GUIDToAssetPath(paths[i]);
@@ -481,6 +490,24 @@ public class _JsonToDatatypes : ScriptableObject
             return null;
         }
         return null;
+    }
+
+    private string getFileName(string path)
+    {
+        string fileName = path.Split('/').Last();
+        List<string> split = new List<string>(fileName.Split('.'));
+        split.RemoveAt(split.Count - 1);
+        fileName = String.Join('.', split.ToArray());
+        return fileName;
+    }
+
+    private void replaceFileName(string path, string newName)
+    {
+        string[] splitPath = path.Split('/');
+        string extension = splitPath.Last().Split('.').Last();
+        string fileName = String.Join('.', newName, extension);
+        splitPath[splitPath.Length - 1] = fileName;
+        AssetDatabase.RenameAsset(path, String.Join('/', splitPath));
     }
 
     public void listAllIcons()

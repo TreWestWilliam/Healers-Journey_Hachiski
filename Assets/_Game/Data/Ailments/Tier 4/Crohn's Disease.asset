@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Crohn's Disease
   m_EditorClassIdentifier: 
   Name: Crohn's Disease
-  Description: 
+  Description: A chronic inflammatory bowel disease affecting the lining of the digestive
+    tract.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I get terrible abdominal pain, and I have no energy.
+    ConstantValue: I get terrible abdominal pain after eating, and I feel absolutely
+      drained of energy.
     Variable: {fileID: 0}

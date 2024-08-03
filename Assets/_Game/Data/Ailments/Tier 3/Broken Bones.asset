@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Broken Bones
   m_EditorClassIdentifier: 
   Name: Broken Bones
-  Description: 
+  Description: Fractures in the bones due to injury or trauma.
   UnlockedDescription: 
   tier: 2
   icon:

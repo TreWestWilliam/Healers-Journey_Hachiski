@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Food Poisoning
   m_EditorClassIdentifier: 
   Name: Food Poisoning
-  Description: 
+  Description: Illness caused by consuming contaminated food, leading to nausea,
+    vomiting, and diarrhea.
   UnlockedDescription: 
   tier: 2
   icon:

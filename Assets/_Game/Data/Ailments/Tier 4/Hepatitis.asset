@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hepatitis
   m_EditorClassIdentifier: 
   Name: Hepatitis
-  Description: 
+  Description: Inflammation of the liver, often caused by viral infection.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +45,6 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: My abdomen hurts, and my skin looks yellow.
+    ConstantValue: My abdomen hurts, and my skin and eyes are starting to look a
+      little yellow.
     Variable: {fileID: 0}

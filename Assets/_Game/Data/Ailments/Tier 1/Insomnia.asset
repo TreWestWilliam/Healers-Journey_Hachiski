@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Insomnia
   m_EditorClassIdentifier: 
   Name: Insomnia
-  Description: 
+  Description: Poor nutrition affects brain function and sleep patterns, contributing
+    to difficulty in falling and staying asleep.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,6 +46,6 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I can't sleep at night, and during the day, I can't concentrate
-      on anything.
+    ConstantValue: "I can't sleep at night, and during the day, I\u2019m too tired
+      and weak to do anything."
     Variable: {fileID: 0}

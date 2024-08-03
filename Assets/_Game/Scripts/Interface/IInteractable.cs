@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IInteractable
 {
-	public abstract void Engage();
-	public abstract void Disengage();
+	public abstract void Engage(PlayerMovement player);
+	public abstract void Disengage(PlayerMovement player);
 }

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Pellagra
   m_EditorClassIdentifier: 
   Name: Pellagra
-  Description: 
+  Description: Deficiency of niacin (vitamin B3) from inadequate diet leads to dermatitis,
+    diarrhea, and dementia.
   UnlockedDescription: 
   tier: 0
   icon:

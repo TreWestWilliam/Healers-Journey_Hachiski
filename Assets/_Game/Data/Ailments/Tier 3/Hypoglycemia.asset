@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hypoglycemia
   m_EditorClassIdentifier: 
   Name: Hypoglycemia
-  Description: 
+  Description: Extremely low blood sugar levels.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +45,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I feel nauseous, and my heart beats irregularly.
+    ConstantValue: I feel nauseous, and my heart is beating in a weird way.
     Variable: {fileID: 0}

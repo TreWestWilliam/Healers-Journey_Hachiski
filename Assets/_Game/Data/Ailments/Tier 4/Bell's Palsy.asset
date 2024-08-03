@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bell's Palsy
   m_EditorClassIdentifier: 
   Name: Bell's Palsy
-  Description: 
+  Description: Sudden weakness or paralysis of the muscles on one side of the face.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +45,6 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: One side of my face is paralyzed, and I have a headache.
+    ConstantValue: "One side of my face doesn\u2019t move when I smile, and I\u2019ve
+      been struggling with a bad headache."
     Variable: {fileID: 0}

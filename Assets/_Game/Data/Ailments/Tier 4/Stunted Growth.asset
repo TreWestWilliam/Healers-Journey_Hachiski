@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Stunted Growth
   m_EditorClassIdentifier: 
   Name: Stunted Growth
-  Description: 
+  Description: Impaired growth and development in children due to malnutrition or
+    chronic illness.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I'm not growing like I should, and I've lost weight.
+    ConstantValue: "I don\u2019t think I'm growing like I should- in fact I've lost
+      weight."
     Variable: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Epilepsy
   m_EditorClassIdentifier: 
   Name: Epilepsy
-  Description: 
+  Description: A neurological disorder characterized by recurrent seizures.
   UnlockedDescription: 
   tier: 3
   icon:

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Toothache
   m_EditorClassIdentifier: 
   Name: Toothache
-  Description: 
+  Description: Lack of essential nutrients can lead to dental problems, including
+    tooth decay and pain.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I have a terrible headache, and my gums are bleeding.
+    ConstantValue: I have a terrible headache, and my gums are sensitive and bleeding.
     Variable: {fileID: 0}

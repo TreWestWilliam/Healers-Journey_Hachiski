@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Bronchitis
   m_EditorClassIdentifier: 
   Name: Bronchitis
-  Description: 
+  Description: A weakened immune system due to malnutrition makes the body more prone
+    to respiratory infections like bronchitis.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I can't stop coughing, and it's hard to breathe.
+    ConstantValue: I can't stop coughing, it's hard to breathe.
     Variable: {fileID: 0}

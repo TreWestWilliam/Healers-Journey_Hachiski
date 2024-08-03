@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hypomagnesemia
   m_EditorClassIdentifier: 
   Name: Hypomagnesemia
-  Description: 
+  Description: Low levels of magnesium in the blood, causing muscle cramps and weakness.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +45,6 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: My muscles spasm a lot, and I feel so weak.
+    ConstantValue: My muscles are weak and have been having spasms every now and
+      then
     Variable: {fileID: 0}

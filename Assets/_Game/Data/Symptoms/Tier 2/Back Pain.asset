@@ -26,6 +26,7 @@ MonoBehaviour:
   ingredients:
   - {fileID: 11400000, guid: 30ecd8d6e4c49b74faace43cb015f726, type: 2}
   - {fileID: 11400000, guid: 72cbb71ee9833d04782b53bb91c33551, type: 2}
+  - {fileID: 11400000, guid: 013e78dbd57e02042a7c188155ef8374, type: 2}
   - {fileID: 11400000, guid: c6a72f937d41a8a499fce9db2984fdc8, type: 2}
   - {fileID: 11400000, guid: b8048474b7599ff48902a5551a2f2a52, type: 2}
   complaints: []

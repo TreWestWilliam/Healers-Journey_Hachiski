@@ -15,8 +15,7 @@ public abstract class IndexData : Data
     public string title;
     public TierIndex[] tiers;
 
-#if UNITY_EDITOR
-    public void sortIndex()
+    public GenericData[] getContents()
     {
         List<GenericData> fullList = new List<GenericData>();
 
@@ -26,19 +25,45 @@ public abstract class IndexData : Data
             {
                 tiers[i] = new TierIndex();
             }
-            if(tiers[i].data == null) 
+            if(tiers[i].data == null)
             {
                 tiers[i].data = new GenericData[0];
             }
             foreach(GenericData data in tiers[i].data)
             {
-                if(!fullList.Contains(data))
+                if(data != null && !fullList.Contains(data))
                 {
                     fullList.Add(data);
                 }
             }
         }
         fullList.Sort();
+
+        return fullList.ToArray();
+    }
+
+    public bool contains(GenericData data)
+    {
+        for(int i = 0; i < tiers.Length; i++)
+        {
+            if(tiers[i] != null && tiers[i].data != null)
+            {
+                foreach(GenericData checkData in tiers[i].data)
+                {
+                    if(data == checkData)
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+#if UNITY_EDITOR
+    public void sortIndex()
+    {
+        GenericData[] fullList = getContents();
 
         int tierCount = tiers.Length;
         if(tierCount < fullList.Last().tier + 1)

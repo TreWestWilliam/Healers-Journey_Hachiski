@@ -8,6 +8,7 @@ using Unity.VectorGraphics;
 
 [CustomPropertyDrawer(typeof(GenericData))]
 [CustomPropertyDrawer(typeof(AilmentData))]
+[CustomPropertyDrawer(typeof(ItemData))]
 [CustomPropertyDrawer(typeof(IngredientData))]
 [CustomPropertyDrawer(typeof(SymptomData))]
 public class GenericDataDrawer : PropertyDrawer
@@ -52,8 +53,9 @@ public class GenericDataDrawer : PropertyDrawer
             if(AssetDatabase.GetAssetPath(icon).EndsWith(".svg"))
             {
                 Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
-                texture = VectorUtils.RenderSpriteToTexture2D(icon, (int)spriteRect.width, (int)spriteRect.height, mat);
-                textureRect = new Rect(0, 0, spriteRect.width, spriteRect.height);
+                Vector2 size = GetDrawingDimensions(icon, (int)spriteRect.width, (int)spriteRect.height);
+                texture = VectorUtils.RenderSpriteToTexture2D(icon, (int)size.x, (int)size.y, mat);
+                textureRect = new Rect(0, 0, (int)size.x, (int)size.y);
             }
             DrawTexturePreview(spriteRect, textureRect, texture);
         }
@@ -130,5 +132,28 @@ public class GenericDataDrawer : PropertyDrawer
         position.center = center;
 
         GUI.DrawTextureWithTexCoords(position, texture, coords);
+    }
+
+    private Vector2 GetDrawingDimensions(Sprite sprite, int width, int height)
+    {
+        var size = new Vector2(sprite.rect.width, sprite.rect.height);
+
+        int spriteW = Mathf.RoundToInt(size.x);
+        int spriteH = Mathf.RoundToInt(size.y);
+
+        Vector2 r = new Vector2(width, height);
+
+        if(size.sqrMagnitude > 0.0f)
+        {
+            var spriteRatio = size.x / size.y;
+            var rectRatio = width / height;
+
+            if(spriteRatio > rectRatio)
+                r.y = width * (1.0f / spriteRatio);
+            else
+                r.x = height * spriteRatio;
+        }
+
+        return r;
     }
 }

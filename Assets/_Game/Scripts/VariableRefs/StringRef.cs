@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 
 [Serializable]
 public class StringRef : IEquatable<StringRef>, IComparable<StringRef>
@@ -19,8 +20,27 @@ public class StringRef : IEquatable<StringRef>, IComparable<StringRef>
         }
     }
 
+    public StringRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public StringRef(string value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public StringRef(StringVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator string(StringRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -32,6 +52,10 @@ public class StringRef : IEquatable<StringRef>, IComparable<StringRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

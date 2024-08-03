@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Arthritis
   m_EditorClassIdentifier: 
   Name: Arthritis
-  Description: 
+  Description: Poor nutrition can exacerbate joint inflammation and pain associated
+    with arthritis.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -43,4 +44,7 @@ MonoBehaviour:
       temperature: 0
     - ingredient: {fileID: 11400000, guid: 72cbb71ee9833d04782b53bb91c33551, type: 2}
       temperature: -1
-  complaints: []
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My joints are swollen, and they feel so stiff and painful.
+    Variable: {fileID: 0}

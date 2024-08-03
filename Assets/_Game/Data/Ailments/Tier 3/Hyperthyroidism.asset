@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hyperthyroidism
   m_EditorClassIdentifier: 
   Name: Hyperthyroidism
-  Description: 
+  Description: An overactive thyroid gland producing excessive thyroid hormones.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +45,6 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I've been losing weight quickly, and my heart beats irregularly.
+    ConstantValue: I've been losing weight quickly, and my hair is so brittle, it
+      just starts falling out when I touch it.
     Variable: {fileID: 0}

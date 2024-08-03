@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Poisoning
   m_EditorClassIdentifier: 
   Name: Poisoning
-  Description: 
+  Description: Illness caused by ingesting, inhaling, or coming into contact with
+    toxic substances.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: My abdomen hurts so much, and I keep vomiting.
+    ConstantValue: "I have serious stomach pain, and I can\u2019t stop vomiting."
     Variable: {fileID: 0}

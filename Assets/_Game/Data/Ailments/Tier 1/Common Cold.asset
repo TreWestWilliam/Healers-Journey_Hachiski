@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Common Cold
   m_EditorClassIdentifier: 
   Name: Common Cold
-  Description: 
+  Description: Poor nutrition weakens the immune system, making the body more susceptible
+    to frequent and prolonged respiratory infections.
   UnlockedDescription: 
   tier: 0
   icon:

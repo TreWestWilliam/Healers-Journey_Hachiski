@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Multiple Sclerosis
   m_EditorClassIdentifier: 
   Name: Multiple Sclerosis
-  Description: 
+  Description: An autoimmune disease affecting the central nervous system, leading
+    to physical and cognitive impairments.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: My vision gets blurry, and my muscles spasm.
+    ConstantValue: I have intense muscle spasms and sometimes my vision blurs.
     Variable: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Rickets
   m_EditorClassIdentifier: 
   Name: Rickets
-  Description: 
+  Description: Insufficient vitamin D, calcium, or phosphate intake causes soft bones,
+    muscles cramps, and weakness.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I get muscle cramps often, and my muscles are weak.
+    ConstantValue: "My muscles feel so weak, and they\u2019ve started cramping up."
     Variable: {fileID: 0}

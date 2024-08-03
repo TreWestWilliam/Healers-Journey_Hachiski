@@ -20,8 +20,27 @@ public class Vector3Ref : IEquatable<Vector3Ref>
         }
     }
 
+    public Vector3Ref()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public Vector3Ref(Vector3 value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public Vector3Ref(Vector3Variable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator Vector3(Vector3Ref v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -33,6 +52,10 @@ public class Vector3Ref : IEquatable<Vector3Ref>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

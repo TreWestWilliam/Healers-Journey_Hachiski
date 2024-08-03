@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Shingles
   m_EditorClassIdentifier: 
   Name: Shingles
-  Description: 
+  Description: A viral infection causing a painful rash, typically on one side of
+    the body.
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I've got these painful cysts and itchy skin.
+    ConstantValue: "I've got these painful cysts and bumps, they\u2019re so itchy."
     Variable: {fileID: 0}

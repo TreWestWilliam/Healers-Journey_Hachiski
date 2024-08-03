@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Parkinson's Disease
   m_EditorClassIdentifier: 
   Name: Parkinson's Disease
-  Description: 
+  Description: A neurodegenerative disorder affecting movement and causing tremors
+    and stiffness.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I shake a lot, and my muscles feel stiff.
+    ConstantValue: My hands and arms shake uncontrollably, while my muscles are uncomfortably
+      stiff.
     Variable: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Flu
   m_EditorClassIdentifier: 
   Name: Flu
-  Description: 
+  Description: Malnutrition compromises the immune system, making individuals more
+    susceptible to severe influenza infections.
   UnlockedDescription: 
   tier: 1
   icon:

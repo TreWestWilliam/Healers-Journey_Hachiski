@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ear Infection
   m_EditorClassIdentifier: 
   Name: Ear Infection
-  Description: 
+  Description: Malnutrition weakens the immune system, increasing vulnerability to
+    infections such as those affecting the ear.
   UnlockedDescription: 
   tier: 0
   icon:

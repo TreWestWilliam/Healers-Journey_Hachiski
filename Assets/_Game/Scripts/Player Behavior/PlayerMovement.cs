@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using Unity.Burst.CompilerServices;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -20,14 +21,26 @@ public class PlayerMovement : MonoBehaviour
 	private Transform interactionTransform;
 	//The original distance to the interacted object.
 	private float interactionDist;
-	[SerializeField] private GameObject inventory;
+    [SerializeField] private EscapeMenu escapeMenu;
+    [SerializeField] private GameObject inventory;
 	[SerializeField] private InventoryManager inventoryManager;
-	private bool canMove;
+    [SerializeField] private NotebookHandler notebookHandler;
+	public Reputation reputation;
+    public PuzzleHandler puzzleHandler;
 
-	private void Awake()
+    private bool canMove;
+    private bool escMenu;
+    private bool invOpen;
+    private bool interacting;
+    private bool reading;
+
+    private void Awake()
 	{
-		canMove = true;
-	}
+        canMove = true;
+		invOpen = false;
+        interacting = false;
+        reading = false;
+    }
 
 	// Update is called once per frame
 	void Update()
@@ -36,27 +49,77 @@ public class PlayerMovement : MonoBehaviour
 		movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 		movement.Normalize();
 		movement *= Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
-		if (Input.GetKeyDown(KeyCode.E)) Interact();
+        movement *= Input.GetKey(KeyCode.LeftControl) ? walkMultiplier : 1f;
+
+        if (canMove && Input.GetKeyDown(KeyCode.E)) Interact();
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (canMove)
 			{
-				canMove = false;
-				inventory.SetActive(true);
-				inventoryManager.UpdateInventory();
-			}
-			else
+				openEscapeMenu();
+            }
+            else if(escMenu)
+            {
+				closeEscapeMenu();
+            }
+            else if(invOpen)
 			{
+				invOpen = false;
 				canMove = true;
 				inventory.SetActive(false);
-			}
-		}
+            }
+            else if(reading)
+            {
+                reading = false;
+                canMove = true;
+                notebookHandler.closeNotebook();
+            }
+            else if(interacting)
+            {
+                interacting = false;
+                canMove = true;
+                currentInteraction.Disengage(this);
+            }
+        }
 
-		HandleInteractNotifs();
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            if(canMove)
+            {
+                canMove = false;
+                invOpen = true;
+                inventory.SetActive(true);
+				inventoryManager.UpdateInventory();
+            }
+            else if(invOpen)
+            {
+                invOpen = false;
+                canMove = true;
+                inventory.SetActive(false);
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            if(canMove)
+            {
+                canMove = false;
+                reading = true;
+                notebookHandler.openNotebook();
+            }
+            else if(reading)
+            {
+                reading = false;
+                canMove = true;
+                notebookHandler.closeNotebook();
+            }
+        }
+
+        //HandleInteractNotifs();
 	}
 
-	void FixedUpdate()
+	private void FixedUpdate()
 	{
 		// Check if need to move this update
 		if (canMove && movement != Vector3.zero)
@@ -78,17 +141,48 @@ public class PlayerMovement : MonoBehaviour
 
 		if ((interactionTransform.position - transform.position).magnitude >= interactionDist + 3f)
 		{
-			currentInteraction.Disengage();
+			currentInteraction.Disengage(this);
 			interactionTransform = null;
 			currentInteraction = null;
 		}
 	}
 
+	public void beginInteracting()
+	{
+		canMove = false;
+		interacting = true;
+	}
+
+	public void endInteracting()
+	{
+		if(interacting)
+		{
+			interacting = false;
+			canMove = true;
+			interactionTransform = null;
+            currentInteraction = null;
+        }
+	}
+
+	private void openEscapeMenu()
+    {
+        canMove = false;
+        escMenu = true;
+		escapeMenu.openMenu();
+    }
+
+	public void closeEscapeMenu()
+    {
+        escMenu = false;
+        canMove = true;
+		escapeMenu.closeMenu();
+    }
+
 	private void Interact()
 	{
-		Debug.Log("Interact Invoked");
+		//Debug.Log("Interact Invoked");
 
-		Collider[] ineractionColliders = Physics.OverlapSphere(transform.position, interactRange);
+		Collider[] ineractionColliders = Physics.OverlapSphere(transform.position, interactRange, 1 << 6);
 
 		IInteractable target = null;
 		Transform targetTransform = null;
@@ -96,12 +190,12 @@ public class PlayerMovement : MonoBehaviour
 
 		foreach (Collider c in ineractionColliders)
 		{
-			Debug.Log("Collider Found");
+			//Debug.Log("Collider Found " + c.name);
 			float dist = (c.transform.position - transform.position).magnitude;
 			IInteractable interactable = c.transform.root.GetComponentInChildren<IInteractable>();
 			if (interactable != null && dist < shortestDist)
 			{
-				Debug.Log("Interactable found");
+				//Debug.Log("Interactable found");
 				shortestDist = dist;
 				target = interactable;
 				targetTransform = c.transform;
@@ -111,7 +205,7 @@ public class PlayerMovement : MonoBehaviour
 		if (target != null)
 		{
 			currentInteraction = target;
-			currentInteraction.Engage();
+			currentInteraction.Engage(this);
 			interactionTransform = targetTransform;
 			interactionDist = shortestDist;
 		}
@@ -119,8 +213,8 @@ public class PlayerMovement : MonoBehaviour
 
 	private void HandleInteractNotifs()
 	{
-		//Needs to be rewritten.
-		/*
+        //Needs to be rewritten.
+        /*
 		RaycastHit hit;
 		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
 		{
@@ -130,5 +224,5 @@ public class PlayerMovement : MonoBehaviour
 				hit.transform.GetComponent<InteractNotif>().SetCollectNotifVisible(true);
 			}
 		}*/
-	}
+    }
 }

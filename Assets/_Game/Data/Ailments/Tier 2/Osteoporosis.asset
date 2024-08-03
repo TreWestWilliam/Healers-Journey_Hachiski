@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Osteoporosis
   m_EditorClassIdentifier: 
   Name: Osteoporosis
-  Description: 
+  Description: A condition where bones become weak and brittle from loss of tissue,
+    due to insufficient calcium and vitamin D intake from a poor diet.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -43,4 +44,7 @@ MonoBehaviour:
       temperature: -1
     - ingredient: {fileID: 11400000, guid: 013e78dbd57e02042a7c188155ef8374, type: 2}
       temperature: 0
-  complaints: []
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My back hurts a lot, and I bruise so easily.
+    Variable: {fileID: 0}

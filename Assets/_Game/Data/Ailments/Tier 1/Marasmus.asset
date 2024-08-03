@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Marasmus
   m_EditorClassIdentifier: 
   Name: Marasmus
-  Description: 
+  Description: Extreme malnutrition from inadequate caloric intake leads to severe
+    weight loss and muscle wasting.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I've lost so much weight, and my skin is very dry.
+    ConstantValue: "I've lost so much weight, and I can\u2019t find the energy to
+      do anything."
     Variable: {fileID: 0}

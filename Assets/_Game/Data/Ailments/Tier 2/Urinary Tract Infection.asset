@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Urinary Tract Infection
   m_EditorClassIdentifier: 
   Name: Urinary Tract Infection
-  Description: 
+  Description: An infection in any part of the urinary system.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,6 +45,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I've got this pain in my pelvis, and I keep getting fevers and
-      chills.
+    ConstantValue: I've got this pain in my pelvis, and I think I have a slight fever.
     Variable: {fileID: 0}

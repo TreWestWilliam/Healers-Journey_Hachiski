@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Endometriosis
   m_EditorClassIdentifier: 
   Name: Endometriosis
-  Description: 
+  Description: A condition where tissue similar to the lining of the uterus grows
+    outside the uterus, causing pain and infertility.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 1
   complaints:
   - UseConstant: 1
-    ConstantValue: I have a lot of pelvic pain, and I feel nauseous.
+    ConstantValue: I have so much pain in my pelvis it makes me nauseous.
     Variable: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Nausea
   m_EditorClassIdentifier: 
   Name: Nausea
-  Description: 
+  Description: Malnutrition and nutrient imbalances can cause gastrointestinal distress
+    and frequent feelings of nausea.
   UnlockedDescription: 
   tier: 0
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I feel so dizzy and have no appetite at all.
+    ConstantValue: "I feel so dizzy I\u2019m not even hungry anymore."
     Variable: {fileID: 0}

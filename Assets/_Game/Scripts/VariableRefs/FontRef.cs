@@ -20,8 +20,27 @@ public class FontRef : IEquatable<FontRef>
         }
     }
 
+    public FontRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public FontRef(TMP_FontAsset value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public FontRef(FontVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator TMP_FontAsset(FontRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -33,6 +52,10 @@ public class FontRef : IEquatable<FontRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

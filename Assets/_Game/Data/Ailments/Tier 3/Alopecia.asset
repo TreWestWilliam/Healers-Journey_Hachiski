@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Alopecia
   m_EditorClassIdentifier: 
   Name: Alopecia
-  Description: 
+  Description: Hair loss from the scalp or other parts of the body.
   UnlockedDescription: 
   tier: 2
   icon:

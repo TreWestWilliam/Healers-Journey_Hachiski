@@ -20,8 +20,27 @@ public class SpriteRef : IEquatable<SpriteRef>
         }
     }
 
+    public SpriteRef()
+    {
+        UseConstant = true;
+        ConstantValue = default;
+    }
+
+    public SpriteRef(Sprite value)
+    {
+        UseConstant = true;
+        ConstantValue = value;
+    }
+
+    public SpriteRef(SpriteVariable value)
+    {
+        UseConstant = false;
+        Variable = value;
+    }
+
     public static implicit operator Sprite(SpriteRef v)
     {
+        if(v == null) return default;
         return v.Value;
     }
 
@@ -33,6 +52,10 @@ public class SpriteRef : IEquatable<SpriteRef>
             {
                 return true;
             }
+            return false;
+        }
+        else if(v2 is null)
+        {
             return false;
         }
         return v1.Value == v2.Value;

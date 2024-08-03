@@ -5,12 +5,10 @@ using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Ingredient", menuName = "Data/Ingredient", order = 1)]
-public class IngredientData : GenericData
+public class IngredientData : ItemData
 {
     public AilmentData[] ailments = { };
     public SymptomData[] symptoms = { };
-
-    public StringRef[] locationsFound = { };
 
     public override DiscoveryTypeIndices getDataIndex(GenericData data)
     {

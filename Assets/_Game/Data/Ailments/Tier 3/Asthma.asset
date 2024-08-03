@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Asthma
   m_EditorClassIdentifier: 
   Name: Asthma
-  Description: 
+  Description: A respiratory condition marked by spasms in the bronchi, causing difficulty
+    breathing
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: -1
   complaints:
   - UseConstant: 1
-    ConstantValue: I get wheezy a lot, and my chest hurts sometimes.
+    ConstantValue: I get really wheezy, and my chest hurts sometimes.
     Variable: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Eczema
   m_EditorClassIdentifier: 
   Name: Eczema
-  Description: 
+  Description: Nutrient deficiencies can exacerbate skin conditions, leading to inflamed,
+    itchy, and cracked skin.
   UnlockedDescription: 
   tier: 0
   icon:

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Tonsillitis
   m_EditorClassIdentifier: 
   Name: Tonsillitis
-  Description: 
+  Description: Inflammation of the tonsils, causing sore throat, difficulty swallowing,
+    and fever.
   UnlockedDescription: 
   tier: 1
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: There's this constant ringing in my ears, and I can't concentrate.
+    ConstantValue: My throat is killing me, and I think I have a fever.
     Variable: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: High Blood Pressure
   m_EditorClassIdentifier: 
   Name: High Blood Pressure
-  Description: 
+  Description: A condition in which the force of the blood against the artery walls
+    is too high
   UnlockedDescription: 
   tier: 2
   icon:
@@ -45,5 +46,6 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: My chest hurts, and it's hard to breathe sometimes.
+    ConstantValue: Every so often my chest starts to hurt and it becomes hard to
+      breathe.
     Variable: {fileID: 0}

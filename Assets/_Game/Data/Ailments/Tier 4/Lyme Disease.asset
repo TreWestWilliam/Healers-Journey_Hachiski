@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Lyme Disease
   m_EditorClassIdentifier: 
   Name: Lyme Disease
-  Description: 
+  Description: An infectious disease transmitted by ticks, causing fever, headache,
+    and a characteristic skin rash.
   UnlockedDescription: 
   tier: 3
   icon:
@@ -45,5 +46,5 @@ MonoBehaviour:
       temperature: 0
   complaints:
   - UseConstant: 1
-    ConstantValue: I get fevers and chills, and my heart beats irregularly.
+    ConstantValue: I get fevers and chills, and my heart beats uncontrollably.
     Variable: {fileID: 0}

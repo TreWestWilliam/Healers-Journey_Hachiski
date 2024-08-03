@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Hives
   m_EditorClassIdentifier: 
   Name: Hives
-  Description: 
+  Description: A skin condition characterized by red, itchy welts caused by an allergic
+    reaction.
   UnlockedDescription: 
   tier: 1
   icon:

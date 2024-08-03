@@ -37,6 +37,13 @@ public class DiscoveryTypeIndices
         this.discoveryType = discoveryType;
         this.indices = indices;
     }
+
+    public DiscoveryTypeIndices(DiscoveryType discoveryType, int index)
+    {
+        this.discoveryType = discoveryType;
+        this.indices = new int[1];
+        this.indices[0] = index;
+    }
 }
 
 public class Records : MonoBehaviour
@@ -197,6 +204,29 @@ public class Records : MonoBehaviour
         discover(ailment, new DiscoveryTypeIndices(DiscoveryType.Symptom, symptomIndices));
     }
 
+    public void discoverAilmentSymptomsIngredients(AilmentData ailment)
+    {
+        int[] symptomIndices = new int[ailment.symptoms.Length];
+        for(int i = 0; i < symptomIndices.Length; i++)
+        {
+            symptomIndices[i] = i;
+
+            DiscoveryTypeIndices ailmentIndex = ailment.symptoms[i].getDataIndex(ailment);
+            if(ailmentIndex != null)
+            {
+                int[] ingredientIndices = new int[ailment.symptoms[i].ingredients.Length];
+                for(int j = 0; j < ingredientIndices.Length; j++)
+                {
+                    ingredientIndices[j] = j;
+                }
+                DiscoveryTypeIndices[] ailmentAndIngredients = { ailmentIndex, new DiscoveryTypeIndices(DiscoveryType.Ingredient, ingredientIndices) };
+                discover(ailment.symptoms[i], ailmentAndIngredients);
+            }
+        }
+
+        discover(ailment, new DiscoveryTypeIndices(DiscoveryType.Symptom, symptomIndices));
+    }
+
     public void discoverIngredientSymptoms(IngredientData ingredient)
     {
         int[] symptomIndices = new int[ingredient.symptoms.Length];
@@ -206,6 +236,19 @@ public class Records : MonoBehaviour
         }
 
         discover(ingredient, new DiscoveryTypeIndices(DiscoveryType.Symptom, symptomIndices));
+    }
+
+    public void discoverIngredientSymptoms(IngredientData ingredient, int locationIndex)
+    {
+        int[] symptomIndices = new int[ingredient.symptoms.Length];
+        for(int i = 0; i < symptomIndices.Length; i++)
+        {
+            symptomIndices[i] = i;
+        }
+
+        DiscoveryTypeIndices[] types = { new DiscoveryTypeIndices(DiscoveryType.Symptom, symptomIndices), new DiscoveryTypeIndices(DiscoveryType.Location, locationIndex) };
+
+        discover(ingredient, types);
     }
 
     public void discoverSymptomIngredients(SymptomData symptom)

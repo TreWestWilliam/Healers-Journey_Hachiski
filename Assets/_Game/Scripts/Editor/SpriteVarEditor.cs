@@ -25,7 +25,8 @@ public class SpriteVarEditor : Editor
             if(AssetDatabase.GetAssetPath(spriteVar.Value).EndsWith(".svg"))
             {
                 Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
-                return VectorUtils.RenderSpriteToTexture2D(spriteVar.Value, width, height, mat);
+                Vector2 size = GetDrawingDimensions(spriteVar.Value, width, height);
+                return VectorUtils.RenderSpriteToTexture2D(spriteVar.Value, (int)size.x, (int)size.y, mat);
             }
             else
             {
@@ -58,8 +59,9 @@ public class SpriteVarEditor : Editor
             if(AssetDatabase.GetAssetPath(spriteVar.Value).EndsWith(".svg"))
             {
                 Material mat = AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat");
-                texture = VectorUtils.RenderSpriteToTexture2D(spriteVar.Value, 60, 60, mat);
-                textureRect = new Rect(0, 0, 60, 60);
+                Vector2 size = GetDrawingDimensions(spriteVar.Value, 60, 60);
+                texture = VectorUtils.RenderSpriteToTexture2D(spriteVar.Value, (int)size.x, (int)size.y, mat);
+                textureRect = new Rect(0, 0, (int)size.x, (int)size.y);
 
             }
             DrawTexturePreview(new Rect(67, 5, 60, 60), textureRect, texture);
@@ -94,6 +96,29 @@ public class SpriteVarEditor : Editor
         position.center = center;
 
         GUI.DrawTextureWithTexCoords(position, texture, coords);
+    }
+
+    private Vector2 GetDrawingDimensions(Sprite sprite, int width, int height)
+    {
+        var size = new Vector2(sprite.rect.width, sprite.rect.height);
+
+        int spriteW = Mathf.RoundToInt(size.x);
+        int spriteH = Mathf.RoundToInt(size.y);
+
+        Vector2 r = new Vector2(width, height);
+
+        if(size.sqrMagnitude > 0.0f)
+        {
+            var spriteRatio = size.x / size.y;
+            var rectRatio = width / height;
+
+            if(spriteRatio > rectRatio)
+                r.y = width * (1.0f / spriteRatio);
+            else
+                r.x = height * spriteRatio;
+        }
+
+        return r;
     }
 
     private static Type GetType(string TypeName)
