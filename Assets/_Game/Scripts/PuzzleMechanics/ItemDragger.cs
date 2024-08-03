@@ -12,6 +12,8 @@ public class ItemDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     [SerializeField] private RecipeIngredientSlot fromSlot;
 
+    private bool disableAfterDrag = false;
+
     Transform parentAfterDrag;
     private Vector3 mouseOffset;
 
@@ -28,7 +30,26 @@ public class ItemDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             name = "Dragger : " + itemData.Name;
             icon.sprite = itemData.icon;
-            gameObject.SetActive(true);
+            gameObject.SetActive(!disableAfterDrag);
+        }
+    }
+
+    public void setDisableAfterDrag(bool disable)
+    {
+        disableAfterDrag = disable;
+        if(disable)
+        {
+            if(icon.raycastTarget)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            if(itemData != null)
+            {
+                gameObject.SetActive(true);
+            }
         }
     }
 
@@ -82,5 +103,9 @@ public class ItemDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.SetParent(parentAfterDrag);
         //Debug.Log("Parent is now " + transform.parent.name);
         icon.raycastTarget = true;
+        if(disableAfterDrag)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

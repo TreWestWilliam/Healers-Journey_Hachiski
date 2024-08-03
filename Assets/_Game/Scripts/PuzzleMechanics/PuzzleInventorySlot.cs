@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VectorGraphics;
 using UnityEngine;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 
 public class PuzzleInventorySlot : MonoBehaviour
 {
@@ -25,11 +26,11 @@ public class PuzzleInventorySlot : MonoBehaviour
         quantityText.text = quantity.ToString();
         if(quantity > 0)
         {
-            dragger.gameObject.SetActive(true);
+            dragger.setDisableAfterDrag(false);
         }
         else
         {
-            dragger.gameObject.SetActive(false);
+            dragger.setDisableAfterDrag(true);
         }
     }
 }
