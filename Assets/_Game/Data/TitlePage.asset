@@ -18,22 +18,19 @@ MonoBehaviour:
     ConstantValue: Team Lion - YSL
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Sidret - Leader / Producer
+    ConstantValue: Sidret Mangan @Sidret Mangan - Leader / Producer
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Lance Eisele @IntrepidNeon - Lead Programmer
+    ConstantValue: Lance Eisele @IntrepidNeon   - Lead Programmer
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Christian Visaya @Nelu - Programmer
+    ConstantValue: Christian Visaya @nelucchi - Programmer
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Garret @Garrett - Programmer Trainee
+    ConstantValue: Garret @Garrett - Programmer Shadowing
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Devin @Dealees - Programmer Trainee
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Emmanuel @Kazhu75 - Level Designer
+    ConstantValue: Devin @Dealees  - Programmer
     Variable: {fileID: 0}
   - UseConstant: 1
     ConstantValue: Julius @jujubeez - Level Designer
@@ -42,19 +39,19 @@ MonoBehaviour:
     ConstantValue: Allison @allisondw - Junior Game Designer
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Aditya Gopal @MysticMe - Game Designer
+    ConstantValue: Aditya Gopal @adityagopal - Game Designer
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Linden Killam @HeadMooseInCharge - Sound Artist
+    ConstantValue: Linden Killam @HeadMooseInCharge    - Sound Artist
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Jay Rothman @Jay - Sound Artist
+    ConstantValue: Jay Rothman @Jay   - Sound Artist
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Furkan Guder @FURKAN - Game Artist
+    ConstantValue: Furkan Guder @furkanguder - Game Artist Shadowing
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Sams @TheSamsOWN - 3D Game Artist
+    ConstantValue: Sams @thesamsown - 3D Game Artist Shadowing
     Variable: {fileID: 0}
   - UseConstant: 1
     ConstantValue: Jonathan Hernandez @BozosBros - 3D Game Artist
@@ -66,5 +63,5 @@ MonoBehaviour:
     ConstantValue: Tingella @tingella - 2D Game Artist
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Emily Young @Slug - Art Trainee
+    ConstantValue: Emily @Slug - 2D Game Artist Shadowing
     Variable: {fileID: 0}

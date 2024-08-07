@@ -202,7 +202,7 @@ public class PlayerMovement : MonoBehaviour
 			}
 		}
 
-		if (target != null)
+		if(target != null)
 		{
 			currentInteraction = target;
 			currentInteraction.Engage(this);

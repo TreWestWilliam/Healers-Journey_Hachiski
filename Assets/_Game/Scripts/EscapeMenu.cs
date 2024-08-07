@@ -4,12 +4,14 @@ public class EscapeMenu : MonoBehaviour
 {
     public void openMenu()
     {
+        Time.timeScale = 0f;
         gameObject.SetActive(true);
     }
 
     public void closeMenu()
     {
         gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void quitGame()

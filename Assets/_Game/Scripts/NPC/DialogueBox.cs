@@ -14,6 +14,8 @@ public class DialogueBox : MonoBehaviour
 
 	public Text textField;
 
+	public int charTillNewLine = 30;
+
 
 	public void ReadDialogue(string s)
 	{
@@ -22,9 +24,20 @@ public class DialogueBox : MonoBehaviour
 	private IEnumerator ReaderEnumerator(string s)
 	{
 		textField.text = "";
+		int charCount = 0;
 		foreach (char c in s)
 		{
-			textField.text += c;
+			charCount++;
+			char ch = c;
+			if(charCount >= charTillNewLine && ch == ' ')
+			{
+				ch = '\n';
+			}
+			textField.text += ch;
+			if(ch == '\n')
+			{
+				charCount = 0;
+			}
 			yield return new WaitForSeconds(1f / charactersPerSecond);
 		}
 

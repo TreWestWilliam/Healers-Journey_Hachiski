@@ -15,7 +15,12 @@ public class NPC : MonoBehaviour, IInteractable
 
 	private bool cureMenu = false;
 
-	private void Awake()
+	[SerializeField] private InteractNotif notif;
+	[SerializeField] private MeshRenderer _renderer;
+	[SerializeField] private Material healthyMaterial;
+    [SerializeField] private Material sickMaterial;
+
+    private void Awake()
 	{
 	}
 
@@ -41,11 +46,26 @@ public class NPC : MonoBehaviour, IInteractable
 
 	public void Engage(PlayerMovement player)
 	{
-		if(ailment != null && player.reputation.CurrentTierRep >= ailment.tier)
+		if(_dialogueBox != null)
 		{
-			player.beginInteracting();
-			player.puzzleHandler.openInteraction(this);
-			cureMenu = true;
+			Disengage(player);
+			return;
+		}
+		notif.setHidden(true);
+		if(ailment != null)
+		{
+			if(player.reputation.RepTier >= ailment.tier)
+			{
+				player.beginInteracting();
+				player.puzzleHandler.openInteraction(this);
+				cureMenu = true;
+			}
+			else
+            {
+                CreateDialogueBox();
+				string complaint = ailment.getComplaint() + "\nI don't trust that you can help me though.";
+                _dialogueBox.ReadDialogue(complaint);
+            }
 		}
 		else
 		{
@@ -56,12 +76,15 @@ public class NPC : MonoBehaviour, IInteractable
 
 	public void recieveCure()
 	{
-		StartCoroutine(delayedAilment(ailment, 30f));
+		//StartCoroutine(delayedAilment(ailment, 30f));
+		_renderer.material = healthyMaterial;
+		AilmentInflicter.Instance.curedNPC(this, ailment);
 		ailment = null;
     }
 
     public void developeAilment(AilmentData problem)
     {
+        _renderer.material = sickMaterial;
         ailment = problem;
     }
 
@@ -73,8 +96,9 @@ public class NPC : MonoBehaviour, IInteractable
 	}
 
     public void Disengage(PlayerMovement player)
-	{
-		if(cureMenu)
+    {
+        notif.setHidden(false);
+        if(cureMenu)
 		{
 			cureMenu = false;
 			player.puzzleHandler.closeInteraction();

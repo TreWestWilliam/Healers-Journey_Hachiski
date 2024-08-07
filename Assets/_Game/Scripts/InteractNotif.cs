@@ -6,6 +6,8 @@ public class InteractNotif : MonoBehaviour
 {
     [SerializeField] private GameObject collectNotif;
     [SerializeField] private Collider notifCollider;
+    private bool active;
+    private bool hidden;
 
     private void Awake()
     {
@@ -19,7 +21,8 @@ public class InteractNotif : MonoBehaviour
 
     public void SetCollectNotifVisible(bool visible) {
         //Debug.Log(gameObject.name + " setting interact visible " +  visible);
-        collectNotif.SetActive(visible);
+        active = visible;
+        collectNotif.SetActive(visible && !hidden);
     }
 
     public void checkNotification()
@@ -28,6 +31,12 @@ public class InteractNotif : MonoBehaviour
         {
             Physics.Area
         }*/
+    }
+
+    public void setHidden(bool hide)
+    {
+        hidden = hide;
+        SetCollectNotifVisible(active);
     }
 
     private void OnTriggerEnter(Collider other)

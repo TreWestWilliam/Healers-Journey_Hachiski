@@ -66,6 +66,7 @@ public class PuzzleHandler : MonoBehaviour
         {
             clearTemp(i);
             removeIngredient(i);
+            ingredientSlots[i].clearFeedback();
         }
         clearPuzzleInventory();
         feedbackKey.SetActive(false);
@@ -240,47 +241,54 @@ public class PuzzleHandler : MonoBehaviour
         if(npc.ailment != null)
         {
             int tier = npc.ailment.tier;
-            if(compareRecipes(npc.ailment.cures[0].recipe))
+            if(tier > reputation.RepTier)
             {
-                if(tier >= repPerCureByTier.Length)
-                {
-                    tier = repPerCureByTier.Length - 1;
-                }
-                if(tier >= 0)
-                {
-                    reputation.adjustRep(repPerCureByTier[tier]);
-                }
-
-                for(int i = 0; i < recipe.Length; i++)
-                {
-                    ingredientSlots[i].clearFeedback();
-                    emptySlot(i);
-                }
-                records.discoverCure(npc.ailment, 0);
-                feedbackKey.SetActive(false);
-
-                dialogue.text = "Thank you!  That worked!";
-                npc.recieveCure();
+                dialogue.text = "I don't trust you to treat this right now.";
             }
             else
             {
-                if(tier >= repPerFailByTier.Length)
+                if(compareRecipes(npc.ailment.cures[0].recipe))
                 {
-                    tier = repPerFailByTier.Length - 1;
+                    if(tier >= repPerCureByTier.Length)
+                    {
+                        tier = repPerCureByTier.Length - 1;
+                    }
+                    if(tier >= 0)
+                    {
+                        reputation.adjustRep(repPerCureByTier[tier]);
+                    }
+
+                    for(int i = 0; i < recipe.Length; i++)
+                    {
+                        ingredientSlots[i].clearFeedback();
+                        emptySlot(i);
+                    }
+                    records.discoverCure(npc.ailment, 0);
+                    feedbackKey.SetActive(false);
+
+                    dialogue.text = "Thank you!  That worked!";
+                    npc.recieveCure();
                 }
-                if(tier >= 0)
+                else
                 {
-                    reputation.adjustRep(repPerFailByTier[tier]);
+                    if(tier >= repPerFailByTier.Length)
+                    {
+                        tier = repPerFailByTier.Length - 1;
+                    }
+                    if(tier >= 0)
+                    {
+                        reputation.adjustRep(repPerFailByTier[tier]);
+                    }
+
+                    for(int i = 0; i < recipe.Length; i++)
+                    {
+                        emptyAndRefillSlot(i);
+                    }
+
+                    feedbackKey.SetActive(true);
+
+                    dialogue.text = "That didn't help!";
                 }
-
-                for(int i = 0; i < recipe.Length; i++)
-                {
-                    emptyAndRefillSlot(i);
-                }
-
-                feedbackKey.SetActive(true);
-
-                dialogue.text = "That didn't help!";
             }
         }
     }
