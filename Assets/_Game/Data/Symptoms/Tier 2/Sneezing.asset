@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Sneezing
+  m_EditorClassIdentifier: 
+  Name: Sneezing
+  Description: 
+  UnlockedDescription: 
+  tier: 1
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 99d0c7c12f37c39479f26efc77279ce0, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: ce9521da0a111ef419dd27ebd55ab6ea, type: 2}
+  complaints: []

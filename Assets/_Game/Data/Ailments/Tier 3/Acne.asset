@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Acne
+  m_EditorClassIdentifier: 
+  Name: Acne
+  Description: A condition where the skin reacts to poor hygiene, hormonal changes,
+    or a diet lacking in proper nutrients, leading to pimples and cysts.
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 18465243e7e665848b09ac4305060ce1, type: 2}
+  - {fileID: 11400000, guid: 1f68f93f196838c43aa6852462a50387, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 8dff931be7b42b04ebf8069fd2d54791, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: deb6d9e5b0f187d4a83c5367dac3bdf1, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: bc3f98d9cc857a94b874d9042614c35b, type: 2}
+      temperature: 1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I've got these painful cysts and a rash that won't go away.
+    Variable: {fileID: 0}

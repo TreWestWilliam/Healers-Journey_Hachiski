@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Osteoporosis
+  m_EditorClassIdentifier: 
+  Name: Osteoporosis
+  Description: A condition where bones become weak and brittle from loss of tissue,
+    due to insufficient calcium and vitamin D intake from a poor diet.
+  UnlockedDescription: 
+  tier: 1
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: f8e03047ca2050a40ae30a12b94bb912, type: 2}
+  - {fileID: 11400000, guid: 7a9adf57f8d7ac8499813f1cb089eb88, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: ddcf3520bffeb4a46b9cd41b85c267f1, type: 2}
+      temperature: 0
+    - ingredient: {fileID: 11400000, guid: 72cbb71ee9833d04782b53bb91c33551, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 013e78dbd57e02042a7c188155ef8374, type: 2}
+      temperature: 0
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My back hurts a lot, and I bruise so easily.
+    Variable: {fileID: 0}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Lavender
+  m_EditorClassIdentifier: 
+  Name: Lavender
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 0f6455414b261784f9f4e8395da62fff,
+      type: 3}
+    Variable: {fileID: 0}
+  locationsFound: []
+  ailments:
+  - {fileID: 11400000, guid: e7a5c628390b63b44b9db162bed6d8fc, type: 2}
+  - {fileID: 11400000, guid: 9bdc13df529d22c42af30c079b2ce702, type: 2}
+  - {fileID: 11400000, guid: cd7d614a86c4288448d2f5038417a19b, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 866476ec938120c4dabbb07be8ab907e, type: 2}
+  - {fileID: 11400000, guid: 45cce8cfc9af34c4d9283c1c63163751, type: 2}
+  - {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
+  - {fileID: 11400000, guid: e93407b60198cf14baadb3e2ea563db7, type: 2}
+  - {fileID: 11400000, guid: e5ab1a59fe170b64caa654d2e14a4210, type: 2}

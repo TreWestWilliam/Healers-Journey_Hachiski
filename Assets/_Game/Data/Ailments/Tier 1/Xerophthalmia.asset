@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
+  m_Name: Xerophthalmia
+  m_EditorClassIdentifier: 
+  Name: Xerophthalmia
+  Description: Severe vitamin A deficiency due to poor diet leads to dry, thickened,
+    and inflamed eyes, risking blindness.
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  symptoms:
+  - {fileID: 11400000, guid: 0c57c202d1a11d74992e18aa30ef44b8, type: 2}
+  - {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
+  cures:
+  - cureName:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 1
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: ebaf91e593f54fb4dada9a3edb0a318a, type: 2}
+      temperature: -1
+    - ingredient: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
+      temperature: -1
+  complaints:
+  - UseConstant: 1
+    ConstantValue: My eyes are always dry, and I have a hard time seeing at night.
+    Variable: {fileID: 0}

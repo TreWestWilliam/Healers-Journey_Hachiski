@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Flax Seeds
+  m_EditorClassIdentifier: 
+  Name: Flax Seeds
+  Description: 
+  UnlockedDescription: 
+  tier: 1
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: ea2ea24db4a1b344a8093811ad19489d,
+      type: 3}
+    Variable: {fileID: 0}
+  locationsFound: []
+  ailments:
+  - {fileID: 11400000, guid: a286fa535a59bd046a9c4b2529a0db01, type: 2}
+  - {fileID: 11400000, guid: c6dbb32924583344d972abd57b20148d, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: caaf006fa44f2f8488f548287c37f24e, type: 2}
+  - {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}

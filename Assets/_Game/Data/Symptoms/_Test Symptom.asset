@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: _Test Symptom
+  m_EditorClassIdentifier: 
+  Name: Test Symptom
+  Description: When a person finds themself uncontrolably performing that strange
+    action that can only be described as Test Symptoming.
+  UnlockedDescription: Most often seen in sufferers of the dreaded Test Ailment.
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 8ef4182addfcecf4598d27de9c44877d, type: 2}
+  - {fileID: 11400000, guid: 4827cae6f0c7bfc4ba1ed53d5dfd12ec, type: 2}
+  - {fileID: 11400000, guid: 1e651a5113ba6cf49a167d82b6061f67, type: 2}
+  - {fileID: 11400000, guid: db472cfd5acdef04ba7419ce2109aaa4, type: 2}
+  - {fileID: 11400000, guid: 8fcdbe7f1f8bd1e43879decb4007d7de, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: 65f2cc66c82f6ab4385ab2e6d39db7b2, type: 2}
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I keep on Test Symptoming no matter what I do.  It's dreadful!
+    Variable: {fileID: 0}

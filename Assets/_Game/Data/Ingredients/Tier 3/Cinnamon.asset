@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Cinnamon
+  m_EditorClassIdentifier: 
+  Name: Cinnamon
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: e961e4e76eadc9949b51d2361176183f,
+      type: 3}
+    Variable: {fileID: 0}
+  locationsFound: []
+  ailments:
+  - {fileID: 11400000, guid: a70a1016b34056f40ab5584d06229312, type: 2}
+  - {fileID: 11400000, guid: fd7df088c0815164182d03d5497c55d8, type: 2}
+  - {fileID: 11400000, guid: ca6a81518f328f943921efc332df4a29, type: 2}
+  - {fileID: 11400000, guid: a7d0dbd9762b88540bd19772feeac82e, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 93ac3a8fd827b1846803f1dab90eb237, type: 2}
+  - {fileID: 11400000, guid: 4c0f4b750a14cf3498cb0897f2e93c6c, type: 2}

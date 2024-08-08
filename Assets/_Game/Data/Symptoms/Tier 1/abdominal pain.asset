@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Abdominal Pain
+  m_EditorClassIdentifier: 
+  Name: Abdominal Pain
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: eb1902b6234e00344ba5f3d551a7b5e2, type: 2}
+  - {fileID: 11400000, guid: a286fa535a59bd046a9c4b2529a0db01, type: 2}
+  - {fileID: 11400000, guid: 6703411292fdd5f4c99ea0a3d7b8cd1c, type: 2}
+  - {fileID: 11400000, guid: 833b0d3e093349049812828fac0cf08c, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
+  - {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+  - {fileID: 11400000, guid: 5272c5f9d3043b946b18dfa8f710a765, type: 2}
+  - {fileID: 11400000, guid: 24cce1cd83b884b4f9cde368351cecf2, type: 2}
+  complaints: []

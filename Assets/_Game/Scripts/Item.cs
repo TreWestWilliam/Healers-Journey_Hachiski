@@ -6,6 +6,30 @@ using UnityEngine.UI;
 public class Item : MonoBehaviour
 {
     //CLARIFY: What other properties does an Item need?
-    protected string itemName;
-    protected Image inventoryIcon;
+    [SerializeField] protected ItemData item;
+
+    private void Awake()
+    {
+    }
+
+    public void setIngredient(ItemData itemType)
+    {
+        item = itemType;
+    }
+
+    public string GetItemName()
+    {
+        return item.Name;
+    }
+
+    public bool checkItem(ItemData ingredientType)
+    {
+        return item == ingredientType;
+    }
+
+    public Sprite GetIcon()
+    {
+        if (item == null) return null;
+        return item.icon;
+    }
 }

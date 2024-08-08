@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d8a0d3cd2fdb041b57563291e42b31, type: 3}
+  m_Name: Boswellia
+  m_EditorClassIdentifier: 
+  Name: Boswellia
+  Description: 
+  UnlockedDescription: 
+  tier: 2
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 3286163911610860551, guid: 549dee17bba98784b99a3deb89a81866,
+      type: 3}
+    Variable: {fileID: 0}
+  locationsFound: []
+  ailments:
+  - {fileID: 11400000, guid: 1595563ee4a59744cb7f07271fa50936, type: 2}
+  symptoms:
+  - {fileID: 11400000, guid: 845bc5fe59490b94d956fef2a5e83795, type: 2}
