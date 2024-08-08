@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Swelling
+  m_EditorClassIdentifier: 
+  Name: Swelling
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
+  - {fileID: 11400000, guid: f947d5ee2b79cad49bf1b42ed105c441, type: 2}
+  - {fileID: 11400000, guid: 8e1b0792d46b3b643a3e70fd20d04b81, type: 2}
+  - {fileID: 11400000, guid: 92d3033de7b09db4db7b033386866e51, type: 2}
+  - {fileID: 11400000, guid: 6c15ff395c49e2340abd951063992846, type: 2}
+  - {fileID: 11400000, guid: cc8cfee6cb4ccc349853ae1d45583301, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
+  - {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
+  - {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+  - {fileID: 11400000, guid: 72cbb71ee9833d04782b53bb91c33551, type: 2}
+  - {fileID: 11400000, guid: b8048474b7599ff48902a5551a2f2a52, type: 2}
+  complaints: []

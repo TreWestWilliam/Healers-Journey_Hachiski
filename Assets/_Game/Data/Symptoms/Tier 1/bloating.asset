@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1caa68dc3861b744b9c14fd385ad31d, type: 3}
+  m_Name: Bloating
+  m_EditorClassIdentifier: 
+  Name: Bloating
+  Description: 
+  UnlockedDescription: 
+  tier: 0
+  icon:
+    UseConstant: 1
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  ailments:
+  - {fileID: 11400000, guid: eb1902b6234e00344ba5f3d551a7b5e2, type: 2}
+  - {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
+  - {fileID: 11400000, guid: a286fa535a59bd046a9c4b2529a0db01, type: 2}
+  - {fileID: 11400000, guid: c6dbb32924583344d972abd57b20148d, type: 2}
+  ingredients:
+  - {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
+  - {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+  - {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
+  - {fileID: 11400000, guid: 5272c5f9d3043b946b18dfa8f710a765, type: 2}
+  - {fileID: 11400000, guid: af71364f898b6844db763098880ba3b7, type: 2}
+  complaints: []
