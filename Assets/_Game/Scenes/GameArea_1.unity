@@ -6062,7 +6062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1698658206}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: closeEscapeMenu
         m_Mode: 1
@@ -16157,7 +16157,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -15, y: 0}
-  m_SizeDelta: {x: -315, y: 60}
+  m_SizeDelta: {x: -242.3, y: 60}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &698111899
 MonoBehaviour:
@@ -39575,6 +39575,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 356903930}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1698658206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 700623446378148774, guid: a72de757e355f91468ff1e7d223cfc76,
+    type: 3}
+  m_PrefabInstance: {fileID: 356903930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698658205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3bd79025e5001043a0e13c5263fd77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1700729062
 GameObject:
   m_ObjectHideFlags: 0
