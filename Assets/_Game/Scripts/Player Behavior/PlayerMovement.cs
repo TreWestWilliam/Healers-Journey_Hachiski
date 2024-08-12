@@ -14,8 +14,9 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private float interactRange = 2f;
 	[SerializeField] private CharacterController cc;
 	private Vector3 movement;
-	private Vector3 gravity = new Vector3(0, -9.8f, 0);
-	[SerializeField] private LayerMask NPCMask;
+	private Vector3 gravity = new Vector3(0, -1f, 0);
+    private Vector3 velocity = Vector3.zero;
+    [SerializeField] private LayerMask NPCMask;
 
 	private IInteractable currentInteraction;
 	private Transform interactionTransform;
@@ -130,8 +131,9 @@ public class PlayerMovement : MonoBehaviour
 			cc.Move(movement * moveSpeed * Time.fixedDeltaTime);
 		}
 
-		// Apply gravity so slopes work correctly
-		cc.Move(gravity * Time.fixedDeltaTime);
+		if(cc.isGrounded) velocity = Vector3.zero;
+		velocity += gravity * Time.fixedDeltaTime;
+		cc.Move(velocity);
 		ControlInteractions();
 	}
 
