@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VectorGraphics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,9 +13,29 @@ public class Collectable : MonoBehaviour, IInteractable
     [SerializeField] private GameObject self;
     [SerializeField] private InteractNotif notif;
     [SerializeField] private float respawnDelay = 5f;
+    [SerializeField] private StringRef LocationString;
 
+    [SerializeField] private SVGImage icon;
 
     public GameObject invManager;
+
+    private void Awake()
+    {
+        if(icon != null)
+        {
+            icon.sprite = item.icon;
+        }
+        if(LocationString != null && LocationString.Value != null && LocationString.Value != "")
+        {
+            for(int i = 0; i < item.locationsFound.Length; i++)
+            {
+                if(LocationString.Value == item.locationsFound[i].Value)
+                {
+                    locationIndex = i;
+                }
+            }
+        }
+    }
 
     public void Engage(PlayerMovement player)
     {

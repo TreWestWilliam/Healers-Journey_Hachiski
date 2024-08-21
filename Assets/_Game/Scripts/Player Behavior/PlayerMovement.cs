@@ -194,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			//Debug.Log("Collider Found " + c.name);
 			float dist = (c.transform.position - transform.position).magnitude;
-			IInteractable interactable = c.transform.root.GetComponentInChildren<IInteractable>();
+			IInteractable interactable = c.transform.GetComponent<IInteractable>();//transform.root.GetComponentInChildren<IInteractable>();
 			if (interactable != null && dist < shortestDist)
 			{
 				//Debug.Log("Interactable found");
@@ -213,10 +213,10 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	private void HandleInteractNotifs()
+	/*private void HandleInteractNotifs()
 	{
         //Needs to be rewritten.
-        /*
+        
 		RaycastHit hit;
 		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactDist, NPCMask))
 		{
@@ -225,6 +225,6 @@ public class PlayerMovement : MonoBehaviour
 				//Refactor collect notifs to be contained within their own script. This way, they can also be applied to NPCs
 				hit.transform.GetComponent<InteractNotif>().SetCollectNotifVisible(true);
 			}
-		}*/
-    }
+		}
+    }*/
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   ailmentsJson: {fileID: 4900000, guid: 6859c39585ef6c64da6aa19ef219d774, type: 3}
   ingredientsJson: {fileID: 4900000, guid: 5ce85daa26d52f143b2c29c0c8ee0c48, type: 3}
   symptomsJson: {fileID: 4900000, guid: dc17834410a32c8428d044626c0a1776, type: 3}
-  ailmentIndex: {fileID: 11400000, guid: 0612ea22cef868c47941f25691fb8a32, type: 2}
+  ailmentIndex: {fileID: 11400000, guid: cc121e4bd44852c40a47a895863dec6c, type: 2}
   ingredientIndex: {fileID: 11400000, guid: 481a765961251d84ea2f4559f251a983, type: 2}
   symptomIndex: {fileID: 11400000, guid: 1cce858c6810a544fa730ab562fa341f, type: 2}
   iconFolder: Assets/_Game/ART/Icons
