@@ -10144,7 +10144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2839657550879148704, guid: a72de757e355f91468ff1e7d223cfc76,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065106030}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72de757e355f91468ff1e7d223cfc76, type: 3}
 --- !u!1001 &357000257
@@ -12973,7 +12977,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1888984348}
+    m_TransformParent: {fileID: 1698658211}
     m_Modifications:
     - target: {fileID: 3604426581128108498, guid: 171663373c547a645b22bfd9cedcfd08,
         type: 3}
@@ -12993,17 +12997,17 @@ PrefabInstance:
     - target: {fileID: 3604426581128108498, guid: 171663373c547a645b22bfd9cedcfd08,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -87.721
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604426581128108498, guid: 171663373c547a645b22bfd9cedcfd08,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 99.2952
+      value: -0.927
       objectReference: {fileID: 0}
     - target: {fileID: 3604426581128108498, guid: 171663373c547a645b22bfd9cedcfd08,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.76
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604426581128108498, guid: 171663373c547a645b22bfd9cedcfd08,
         type: 3}
@@ -43173,6 +43177,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3bd79025e5001043a0e13c5263fd77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1698658211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2839657550879148704, guid: a72de757e355f91468ff1e7d223cfc76,
+    type: 3}
+  m_PrefabInstance: {fileID: 356903930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1700729062
 GameObject:
   m_ObjectHideFlags: 0
@@ -48626,7 +48636,6 @@ Transform:
   - {fileID: 970145155}
   - {fileID: 1422352781}
   - {fileID: 2034274719}
-  - {fileID: 1065106030}
   - {fileID: 1422626083}
   - {fileID: 1256588430}
   - {fileID: 3882847}
@@ -49240,7 +49249,7 @@ PrefabInstance:
     - target: {fileID: 7531842783167574689, guid: 1c82d485b48395e4990d91d8bb5b91c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 35.709663
+      value: 36.039
       objectReference: {fileID: 0}
     - target: {fileID: 7531842783167574689, guid: 1c82d485b48395e4990d91d8bb5b91c3,
         type: 3}
