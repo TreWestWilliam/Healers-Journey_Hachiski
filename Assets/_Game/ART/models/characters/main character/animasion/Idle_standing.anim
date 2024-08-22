@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mixamo.com 7
+  m_Name: Idle_standing
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -419,8 +419,10 @@ AnimationClip:
       - serializedVersion: 3
         time: 14.333334
         value: {x: 0.03894945, y: 0.0071949363, z: -0.001965657, w: 0.9992134}
-        inSlope: {x: -0.00000033528124, y: -0.00000025146093, z: -0.000000027940104, w: 0}
-        outSlope: {x: -0.00000033528124, y: -0.00000025146093, z: -0.000000027940104, w: 0}
+        inSlope: {x: -0.00000033528124, y: -0.00000025146093, z: -0.000000027940104,
+          w: 0}
+        outSlope: {x: -0.00000033528124, y: -0.00000025146093, z: -0.000000027940104,
+          w: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
@@ -516,8 +518,10 @@ AnimationClip:
       - serializedVersion: 3
         time: 14.333334
         value: {x: 0.009406538, y: 0.007936544, z: -0.001996733, w: 0.9999223}
-        inSlope: {x: -0.00000008382031, y: 0.00000036322135, z: -0.0000001606556, w: 0}
-        outSlope: {x: -0.00000008382031, y: 0.00000036322135, z: -0.0000001606556, w: 0}
+        inSlope: {x: -0.00000008382031, y: 0.00000036322135, z: -0.0000001606556,
+          w: 0}
+        outSlope: {x: -0.00000008382031, y: 0.00000036322135, z: -0.0000001606556,
+          w: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
