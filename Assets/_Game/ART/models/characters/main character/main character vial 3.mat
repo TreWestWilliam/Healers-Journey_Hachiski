@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material 6
+  m_Name: main character vial 3
   m_Shader: {fileID: 4800000, guid: 3f6c46dab5e1783438e561a7929b8d8c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -145,8 +145,8 @@ Material:
     - _ZWrite: 1
     - __dummy__: 0
     m_Colors:
-    - _BaseColor: {r: 0.24310696, g: 1, b: 0, a: 1}
-    - _Color: {r: 0.24310693, g: 1, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 0, b: 0.25703573, a: 1}
+    - _Color: {r: 1, g: 0, b: 0.2570357, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}

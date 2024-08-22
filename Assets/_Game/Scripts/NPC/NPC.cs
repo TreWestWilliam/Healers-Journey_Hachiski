@@ -16,9 +16,12 @@ public class NPC : MonoBehaviour, IInteractable
 	private bool cureMenu = false;
 
 	[SerializeField] private InteractNotif notif;
-	[SerializeField] private MeshRenderer _renderer;
+	[SerializeField] private SkinnedMeshRenderer _renderer;
 	[SerializeField] private Material healthyMaterial;
     [SerializeField] private Material sickMaterial;
+	[SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sickSound;
+    [SerializeField] private AudioClip healthySound;
 
     private void Awake()
 	{
@@ -46,6 +49,7 @@ public class NPC : MonoBehaviour, IInteractable
 
 	public void Engage(PlayerMovement player)
 	{
+		//Debug.Log("Player interacted with " + npcName);
 		if(_dialogueBox != null)
 		{
 			Disengage(player);
@@ -75,16 +79,27 @@ public class NPC : MonoBehaviour, IInteractable
 	}
 
 	public void recieveCure()
-	{
-		//StartCoroutine(delayedAilment(ailment, 30f));
-		_renderer.material = healthyMaterial;
-		AilmentInflicter.Instance.curedNPC(this, ailment);
+    {
+        audioSource.Stop();
+        _renderer.material = healthyMaterial;
+        if(healthySound != null)
+        {
+            audioSource.clip = healthySound;
+            audioSource.Play();
+        }
+        AilmentInflicter.Instance.curedNPC(this, ailment);
 		ailment = null;
     }
 
     public void developeAilment(AilmentData problem)
     {
+        audioSource.Stop();
         _renderer.material = sickMaterial;
+		if(sickSound != null)
+		{
+			audioSource.clip = sickSound;
+			audioSource.Play();
+		}
         ailment = problem;
     }
 

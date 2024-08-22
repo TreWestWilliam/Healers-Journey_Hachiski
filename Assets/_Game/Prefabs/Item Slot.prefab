@@ -155,7 +155,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
 --- !u!1 &5368018804926724264
 GameObject:
   m_ObjectHideFlags: 0
