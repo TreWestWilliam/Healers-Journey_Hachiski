@@ -60,10 +60,11 @@ public class PlayerMovement : MonoBehaviour
 		}
 		movement *= Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
         movement *= Input.GetKey(KeyCode.LeftControl) ? walkMultiplier : 1f;
-		float MoveSpeed = Mathf.Abs(movement.magnitude);
+		float MoveSpeed = movement.magnitude;
 		bool IsWalking = (MoveSpeed > 0.1);
 		animator.SetFloat("MoveSpeed", MoveSpeed);
 		animator.SetBool("IsWalking", IsWalking);
+		animator.SetBool("IsSprinting", Input.GetKey(KeyCode.LeftShift)); // If we ever change the controls above please change this with it.
 
 		if (canMove && Input.GetKeyDown(KeyCode.E)) Interact();
 
