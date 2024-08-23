@@ -8,6 +8,7 @@ using Unity.Burst.CompilerServices;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
+	[Header("Movement Variables")]
 	[SerializeField] private float moveSpeed = 5f;
 	[SerializeField] private float sprintMultiplier = 2f;
 	[SerializeField] private float walkMultiplier = 0.5f;
@@ -29,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
 	public Reputation reputation;
     public PuzzleHandler puzzleHandler;
 
+	[Space]
+	[Header("Animation")]
+	public Animator animator;
+
     private bool canMove;
     private bool escMenu;
     private bool invOpen;
@@ -49,10 +54,19 @@ public class PlayerMovement : MonoBehaviour
 		// Check for input every frame
 		movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 		movement.Normalize();
+		if (movement.x + movement.z > 0.1) 
+		{
+			
+		}
 		movement *= Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
         movement *= Input.GetKey(KeyCode.LeftControl) ? walkMultiplier : 1f;
+		float MoveSpeed = movement.magnitude;
+		bool IsWalking = (MoveSpeed > 0.1);
+		animator.SetFloat("MoveSpeed", MoveSpeed);
+		animator.SetBool("IsWalking", IsWalking);
+		animator.SetBool("IsSprinting", Input.GetKey(KeyCode.LeftShift)); // If we ever change the controls above please change this with it.
 
-        if (canMove && Input.GetKeyDown(KeyCode.E)) Interact();
+		if (canMove && Input.GetKeyDown(KeyCode.E)) Interact();
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{

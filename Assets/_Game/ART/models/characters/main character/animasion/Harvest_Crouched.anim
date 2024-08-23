@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mixamo.com 3
+  m_Name: Harvest_Crouched
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -4474,7 +4474,8 @@ AnimationClip:
         time: 3.0666668
         value: {x: 0.13494146, y: -0.0071741706, z: 0.047915198, w: 0.98966837}
         inSlope: {x: 0.0000020116586, y: -0.00000012572866, z: -0.0000010617089, w: 0}
-        outSlope: {x: 0.0000020116586, y: -0.00000012572866, z: -0.0000010617089, w: 0}
+        outSlope: {x: 0.0000020116586, y: -0.00000012572866, z: -0.0000010617089,
+          w: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
