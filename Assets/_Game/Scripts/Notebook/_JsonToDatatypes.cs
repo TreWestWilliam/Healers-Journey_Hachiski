@@ -122,6 +122,7 @@ public class _JsonToDatatypes : ScriptableObject
         }
     }
 
+#if UNITY_EDITOR
     public void createSOs()
     {
 
@@ -533,10 +534,10 @@ public class _JsonToDatatypes : ScriptableObject
             iconList = output;
         }
     }
+#endif
 }
 
-
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(_JsonToDatatypes), true)]
 [CanEditMultipleObjects]
 public class _JsonToDatatypesEditor : Editor
@@ -555,3 +556,4 @@ public class _JsonToDatatypesEditor : Editor
         base.OnInspectorGUI();
     }
 }
+#endif
