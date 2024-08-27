@@ -43,6 +43,7 @@ public class Collectable : MonoBehaviour, IInteractable
         inv.AddItem(item, numIngredients);
         if(item is IngredientData)
         {
+            player.PickupObjectLow();
             if(locationIndex >= 0 && item.locationsFound != null && locationIndex < item.locationsFound.Length)
             {
                 inv.records.discoverIngredientSymptoms(item as IngredientData, locationIndex);

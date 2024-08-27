@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 	private Transform interactionTransform;
 	//The original distance to the interacted object.
 	private float interactionDist;
+	[Header("Manager Scripts")]
     [SerializeField] private EscapeMenu escapeMenu;
     [SerializeField] private GameObject inventory;
 	[SerializeField] private InventoryManager inventoryManager;
@@ -54,15 +55,15 @@ public class PlayerMovement : MonoBehaviour
 		// Check for input every frame
 		movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 		movement.Normalize();
-		if (movement.x + movement.z > 0.1) 
-		{
-			
-		}
 		movement *= Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f;
         movement *= Input.GetKey(KeyCode.LeftControl) ? walkMultiplier : 1f;
-		float MoveSpeed = movement.magnitude;
-		bool IsWalking = (MoveSpeed > 0.1);
+
+		// Movement Animation
+		float MoveSpeed = movement.magnitude; // Movespeed is applied as a multiplier while walking
+		bool IsWalking = (MoveSpeed > 0.1); // Is walking is a bool we pass to the animation controller to begin animating the walk cycle
+		//0.1 is probably a bit high of a gate for animation, if anyone wants to test with a controller to find a more suitable number feel free
 		animator.SetFloat("MoveSpeed", MoveSpeed);
+		if (!canMove) { animator.SetFloat("MoveSpeed", 1); } // Sometimes animations can get stuck waiting if this is set to 0 so instead we set it to 1 to ensure other animations can play
 		animator.SetBool("IsWalking", IsWalking);
 		animator.SetBool("IsSprinting", Input.GetKey(KeyCode.LeftShift)); // If we ever change the controls above please change this with it.
 
@@ -241,4 +242,22 @@ public class PlayerMovement : MonoBehaviour
 			}
 		}
     }*/
+	/// <summary>
+	/// This is a function to make the player stop and pick up an object on the ground when interacting.
+	/// </summary>
+	public void PickupObjectLow() 
+	{
+		canMove = false;
+		animator.SetBool("IsWalking", false);
+		animator.SetBool("isSprinting", false);
+		animator.SetFloat("MoveSpeed", 1);
+		animator.SetTrigger("PickupLow");
+		
+	}
+
+	public void EndPickupObjectLow() 
+	{
+		canMove = true;
+	}
+
 }
