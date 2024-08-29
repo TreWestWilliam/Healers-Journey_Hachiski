@@ -35,6 +35,9 @@ public class Collectable : MonoBehaviour, IInteractable
                 }
             }
         }
+        //Try to make sure we have invmanager set
+        invManager = invManager != null ? invManager : FindObjectOfType<InventoryManager>().gameObject;
+
     }
 
     public void Engage(PlayerMovement player)

@@ -13,6 +13,7 @@ public class AilmentInflicter : MonoBehaviour
 
     [SerializeField] private float minDelayBetweenAilments;
     [SerializeField] private float maxDelayBetweenAilments;
+    [SerializeField] private int TotalCured = 0;
 
     private List<AilmentData>[] inflictedAilments;
     private AilmentData[] lastInflictedAilment;
@@ -59,6 +60,7 @@ public class AilmentInflicter : MonoBehaviour
 
     public void curedNPC(NPC npc, AilmentData ailment)
     {
+        TotalCured++;
         inflictedAilments[ailment.tier].Remove(ailment);
         ailNPCAfterDelay(npc);
 
@@ -115,6 +117,8 @@ public class AilmentInflicter : MonoBehaviour
 
         StartCoroutine(delayedAilment(npc, delay));
     }
+
+    public int GetTotalCured() { return TotalCured; }
 
     public IEnumerator delayedAilment(NPC npc, float delay)
     {

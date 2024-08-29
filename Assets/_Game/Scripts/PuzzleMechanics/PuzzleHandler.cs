@@ -48,12 +48,45 @@ public class PuzzleHandler : MonoBehaviour
         records.discoverAilmentSymptomsIngredients(npc.ailment);
 
         npcName.text = npc.npcName + ":";
-        dialogue.text = npc.ailment.complaints[0];
+        try
+        {
+            dialogue.text = npc.ailment.complaints[0];
+        }
+        catch (IndexOutOfRangeException IO) 
+        {
+            Debug.LogWarning($"NPC ailment lacks complaint, giving default.  {IO.Message}",npc.gameObject);
+            dialogue.text = "I feel really sick!";
+        }
+        
 
         /*for(int i = 0; i < npc.ailment.cures[0].recipe.Length; i++)
         {
             setIngredient(i, npc.ailment.cures[0].recipe[i].ingredient);
         }*/
+
+        //Settings the correct number of slots for the cures available
+        //This is only here incase multiple solutions are avaiable in the future.
+        int highestLength = 0;
+        if (npc.ailment.cures.Length == 0) { Debug.Log("There are no cures in the ailment", this); }
+        foreach (Cure c in npc.ailment.cures) 
+        {
+            highestLength = c.recipe.Length > highestLength ? c.recipe.Length: highestLength;
+        }
+        // Incase something bad happens and we dont have the UI slots to fit the max 
+        if (highestLength > ingredientSlots.Length) { highestLength = ingredientSlots.Length; }
+
+        for (int i =0;i < ingredientSlots.Length;i++) 
+        {
+            try
+            {
+                ingredientSlots[i].gameObject.SetActive((i < highestLength));
+            }
+            catch (Exception e) {
+                Debug.LogError($"Erorr: {e.Message}", this);
+            }
+            
+        }
+
 
         createPuzzleInventory();
 
@@ -197,10 +230,13 @@ public class PuzzleHandler : MonoBehaviour
     private bool compareRecipes(TreatedIngredient[] cureRecipe)
     {
         bool result = true;
+        /* This will always return false for smaller recipes, since recipe.Length is always the total amount of ingredient slots we could use.
+         * This doesn't seem to have been preventing any issues anyhow, but left it only commented out just in case.
         if(recipe.Length != cureRecipe.Length)
         {
             return false;
         }
+        */
         for(int i = 0; i < cureRecipe.Length; i++)
         {
             if(recipe[i] != cureRecipe[i])
