@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
 		// Movement Animation
 		float MoveSpeed = movement.magnitude; // Movespeed is applied as a multiplier while walking
-		bool IsWalking = (MoveSpeed > 0.1); // Is walking is a bool we pass to the animation controller to begin animating the walk cycle
+		bool IsWalking = (MoveSpeed > 0.1) && canMove; // Is walking is a bool we pass to the animation controller to begin animating the walk cycle
 		//0.1 is probably a bit high of a gate for animation, if anyone wants to test with a controller to find a more suitable number feel free
 		animator.SetFloat("MoveSpeed", MoveSpeed);
 		if (!canMove) { animator.SetFloat("MoveSpeed", 1); } // Sometimes animations can get stuck waiting if this is set to 0 so instead we set it to 1 to ensure other animations can play
@@ -249,7 +249,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		canMove = false;
 		animator.SetBool("IsWalking", false);
-		animator.SetBool("isSprinting", false);
+		animator.SetBool("IsSprinting", false);
 		animator.SetFloat("MoveSpeed", 1);
 		animator.SetTrigger("PickupLow");
 		

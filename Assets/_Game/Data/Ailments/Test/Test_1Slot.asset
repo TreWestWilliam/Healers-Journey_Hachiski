@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4ef99c74959f34aaa0fe41ad3fbb92, type: 3}
   m_Name: Test_1Slot
   m_EditorClassIdentifier: 
-  Name: Test Ailment
+  Name: Test Ailment Single
   Description: Cases of Test Ailment may be leathal if left untreated for too long.
-  UnlockedDescription: Turns out you can treat it by mixing three Test Ingredients,
-    each warmer than the last.
+  UnlockedDescription: Turns out you can treat it with a single normal Aloe Vera.
   tier: 0
   icon:
     UseConstant: 1
@@ -39,4 +38,7 @@ MonoBehaviour:
     recipe:
     - ingredient: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
       temperature: 0
-  complaints: []
+  complaints:
+  - UseConstant: 1
+    ConstantValue: I keep on Test Symptoming no matter what I do.  It's dreadful!
+    Variable: {fileID: 0}

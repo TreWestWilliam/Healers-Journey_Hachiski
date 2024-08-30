@@ -4565,7 +4565,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -150}
+  m_AnchoredPosition: {x: 139.96667, y: -150}
   m_SizeDelta: {x: 200, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &157305706 stripped
@@ -4856,595 +4856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e7dd4ed9461f334db74128251c62c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  discoveries:
-  - topic: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: 70842324c1a416e4e8b4d83cfdeeb7b0, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: 4fd1d1943e14d484ab39d90ee3ee78a4, type: 2}
-    UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
-    symptoms: 010101010101
-    cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: ea1b7da6bf928f541950304171b690e9, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 01010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6fe3b7839ab786248a7a3e1e154f5cd0, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000000000
-    ingredients: 
-    symptoms: 010101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e866e081b6aff7647b1de2f4a07836cd, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 01010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 480e9af550f766244a855eb8a9915cd7, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 43876177089de3741b7cc38bb5f57f84, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 0101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 010101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 40b04b0f9534a384b80c65ebb07a5500, type: 2}
-    UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
-    symptoms: 0101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
-    UnlockDescription: 0
-    ailments: 000000000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: 48d5e2ef8c7564a40944200aac55c542, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 39a3cec885f651e4db3a9fe4bb7e50e7, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 0101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 3c652b96c93ebaa4eb2483099a555048, type: 2}
-    UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
-    symptoms: 0101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 574dfb1da3c79b746b76eecaafa1c5bf, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 304bdd71a09924141a933500323e1abe, type: 2}
-    UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 609a92d3b6a36664e967bfae46b05e92, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: b56195c697f319c47a30b5d2cfe8e6f1, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 00
-  - topic: {fileID: 11400000, guid: 81423a955cbfc374b80eab8c814fe2cb, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ad7552e6cded2cf4c96a53c17d416f57, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000000000
-    ingredients: 
-    symptoms: 010101010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 0101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: fa29c6da7df46b74d9ee137c9097d97b, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ebaf91e593f54fb4dada9a3edb0a318a, type: 2}
-    UnlockDescription: 0
-    ailments: 0000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 49adc3a0d423249479f8979623222ed6, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 01010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e16f1a2df66475b43b515f4e6bcaa7bc, type: 2}
-    UnlockDescription: 0
-    ailments: 000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 30ecd8d6e4c49b74faace43cb015f726, type: 2}
-    UnlockDescription: 0
-    ailments: 0000000000
-    ingredients: 
-    symptoms: 010101
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: caaf006fa44f2f8488f548287c37f24e, type: 2}
-    UnlockDescription: 0
-    ailments: 01000000
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ec5df0ff7f644ef488c186e6feac2c45, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 1f892e21e72da874fb021c3cfb6baae5, type: 2}
-    UnlockDescription: 0
-    ailments: 01010000
-    ingredients: 0101010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6456ca37605ca6642860e3a4751291b4, type: 2}
-    UnlockDescription: 0
-    ailments: 0100
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 92af82a2c088894428fed0e72378e3de, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 0101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c8535b2b5f07edc44a9824af3bb0b918, type: 2}
-    UnlockDescription: 0
-    ailments: 010000
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ee20222c0acc2fe45a63c1ea573d6038, type: 2}
-    UnlockDescription: 0
-    ailments: 0101
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 866476ec938120c4dabbb07be8ab907e, type: 2}
-    UnlockDescription: 0
-    ailments: 0100
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: d2675c520804d544487eb98a9cd21c00, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 0c57c202d1a11d74992e18aa30ef44b8, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 1aac0b9f42cfca148bdc71e11bd19618, type: 2}
-    UnlockDescription: 0
-    ailments: 010100
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 58587b9e8e8db1d4da294fa38650edbb, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 042a52b91abdf4742b0321c0e4edc71d, type: 2}
-    UnlockDescription: 0
-    ailments: 010000000000
-    ingredients: 0101010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 45cce8cfc9af34c4d9283c1c63163751, type: 2}
-    UnlockDescription: 0
-    ailments: 010100
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ed81b27e1866d234bb94c3926ea32328, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 0101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 5a7ca05dc97fce14780195cbb0a5133f, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: a13928a6e3242264080acf28cc992011, type: 2}
-    UnlockDescription: 0
-    ailments: 0101010000
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: b9aae15cd7c5976479c62d20ba9b8255, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: fcb48bf44cc0f5d48a95ab4cf6e3451c, type: 2}
-    UnlockDescription: 0
-    ailments: 01010000
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c23b5d4538274584ca22fb2c04980972, type: 2}
-    UnlockDescription: 0
-    ailments: 00000000
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 1d967ec43a90dce49b620b96811e931e, type: 2}
-    UnlockDescription: 0
-    ailments: 010100
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 3f30eb5d54fb6644ea0f88efd9b4a0a4, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 1f68f93f196838c43aa6852462a50387, type: 2}
-    UnlockDescription: 0
-    ailments: 0101000000
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ba9149f6751e81f48909e5bba4017480, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e782c381dbcdcee438d4da25337a8f06, type: 2}
-    UnlockDescription: 0
-    ailments: 010100000000
-    ingredients: 0101010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: d141d5c26b08f664396d6ae59e871272, type: 2}
-    UnlockDescription: 0
-    ailments: 0101010100
-    ingredients: 0101010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: dbf335d3f042e4e4398db01b4b0f1c0a, type: 2}
-    UnlockDescription: 0
-    ailments: 01000000
-    ingredients: 01010101
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c85e5a459acada74a9542fffeb1781c5, type: 2}
-    UnlockDescription: 0
-    ailments: 00
-    ingredients: 
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: ab34c4351a78d0541afd411da1eac50f, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: d55868ecf3e45a64ca6126cbbf56c111, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 3ce46e6168eeecd42a383644d894473c, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: eb1902b6234e00344ba5f3d551a7b5e2, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 2f10a1fa09031f14a99ea0f1262fe369, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 2b6e4b36e178ea64d8337b588971b075, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 4dec709b7aea0a9438f9c87f3ce4eeb5, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e8fe5613f83f35a4facafeb391c25a22, type: 2}
-    UnlockDescription: 0
-    ailments: 01010000
-    ingredients: 00000000
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: a530ab8e0acee65499ede34ac5e06f39, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 7354a229217fad04ea465f179180a1d9, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: d22bd85df4d904c48b09da531250b866, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 2b727c427543571488cc9cd204d29e5b, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 76cab7ba666109748bb2320c708ca179, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 3250dc0431c029d43a63bac8361a3c13, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: c3b54e5a5e528dc4886ae27b66bf6958, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 0e4ba0f4c481dca4bb89d4de7e8ccbe0, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 000000
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 0af8383badafca8478b20f731e6f4e69, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e66db8af75c36614b9ecaf8251e7ad65, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 53009cd94a6d1c2469420838cad1ab61, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: f947d5ee2b79cad49bf1b42ed105c441, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6f24b93239517634c8f2503c09217380, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 6001746d690ebb94cb2b6a4b4b06ae74, type: 2}
-    UnlockDescription: 0
-    ailments: 01
-    ingredients: 00000000
-    symptoms: 
-    cures: 
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: e5af67fee305e1747bf05388e8145e95, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
-  - topic: {fileID: 11400000, guid: 27608c72873c42743b6ba1543acf3f0a, type: 2}
-    UnlockDescription: 0
-    ailments: 
-    ingredients: 
-    symptoms: 0101
-    cures: 00
-    locationsFound: 
+  discoveries: []
 --- !u!114 &163144130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7327,7 +6739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notebookHandler: {fileID: 163144130}
-  page: {fileID: 11400000, guid: cc121e4bd44852c40a47a895863dec6c, type: 2}
+  page: {fileID: 11400000, guid: bd0d83f112eaeae448845286a811b9c7, type: 2}
   exteriorBookmark: {fileID: 234309779}
   interiorBookmark: {fileID: 1367866240}
   exteriorLabel: {fileID: 450359871}
@@ -8526,7 +7938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50, y: 0}
   m_SizeDelta: {x: -400, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283193283
@@ -8768,6 +8180,7 @@ MonoBehaviour:
   reputation: {fileID: 484469068}
   minDelayBetweenAilments: 30
   maxDelayBetweenAilments: 60
+  TotalCured: 0
 --- !u!4 &295389082
 Transform:
   m_ObjectHideFlags: 0
@@ -13088,7 +12501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notebookHandler: {fileID: 163144130}
-  page: {fileID: 11400000, guid: 481a765961251d84ea2f4559f251a983, type: 2}
+  page: {fileID: 11400000, guid: 2dc0c3a9500cfc2458dbf17f8980d5d9, type: 2}
   exteriorBookmark: {fileID: 461900099}
   interiorBookmark: {fileID: 1461974009}
   exteriorLabel: {fileID: 1606864744}
@@ -21406,7 +20819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 750, y: -150}
+  m_AnchoredPosition: {x: 699.8334, y: -150}
   m_SizeDelta: {x: 200, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &834985576
@@ -21556,7 +20969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notebookHandler: {fileID: 163144130}
-  page: {fileID: 11400000, guid: 1cce858c6810a544fa730ab562fa341f, type: 2}
+  page: {fileID: 11400000, guid: 83292552a4eb28d4ba2f60639ca7a828, type: 2}
   exteriorBookmark: {fileID: 834985578}
   interiorBookmark: {fileID: 1707736839}
   exteriorLabel: {fileID: 2049932845}
@@ -25422,6 +24835,150 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d12622258c977540bbceed65b8eebd2, type: 3}
+--- !u!1 &983224431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983224432}
+  - component: {fileID: 983224434}
+  - component: {fileID: 983224433}
+  m_Layer: 5
+  m_Name: Controls Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &983224432
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983224431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2040080593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 8, y: -5}
+  m_SizeDelta: {x: -13, y: -10}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &983224433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983224431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Move: <b>WASD</b>     Interact: <b>E</b>
+
+    Run: <b>Shift</b>          
+    Walk: <b>Ctrl</b>
+
+    Inventory: <b>I</b>          Notebook: <b>N</b>
+
+    Pause
+    Menu/Close Menu: <b>Esc</b>
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 17
+  m_fontSizeBase: 17
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &983224434
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983224431}
+  m_CullTransparentMesh: 1
 --- !u!1001 &987119845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27547,7 +27104,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -400, y: -30}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1094951673
 GameObject:
@@ -27805,6 +27362,7 @@ RectTransform:
   - {fileID: 163144131}
   - {fileID: 283193282}
   - {fileID: 866478561}
+  - {fileID: 1805258300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -30393,10 +29951,10 @@ RectTransform:
   - {fileID: 831124747}
   m_Father: {fileID: 1651859325}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 900, y: 300}
+  m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1173515256
 MonoBehaviour:
@@ -34604,6 +34162,145 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345814752}
+  m_CullTransparentMesh: 1
+--- !u!1 &1352520469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352520470}
+  - component: {fileID: 1352520472}
+  - component: {fileID: 1352520471}
+  m_Layer: 5
+  m_Name: Control Tips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1352520470
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352520469}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111628495}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -80, y: -20}
+  m_SizeDelta: {x: 320, y: 70}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1352520471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352520469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Drag ingredients into crafting slots.
+
+    Set temp with bar below slot.
+
+    Order
+    matters.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1352520472
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352520469}
   m_CullTransparentMesh: 1
 --- !u!1001 &1355704899
 PrefabInstance:
@@ -45956,6 +45653,42 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!1 &1805258299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805258300}
+  m_Layer: 5
+  m_Name: ControlTips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1805258300
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805258299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2040080593}
+  m_Father: {fileID: 1103418948}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1808631531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52913,7 +52646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 450, y: -150}
+  m_AnchoredPosition: {x: 419.90002, y: -150}
   m_SizeDelta: {x: 200, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2031248364
@@ -53330,6 +53063,82 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1917788516}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2040080592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040080593}
+  - component: {fileID: 2040080595}
+  - component: {fileID: 2040080594}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2040080593
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040080592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 983224432}
+  m_Father: {fileID: 1805258300}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: 250, y: 100}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &2040080594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040080592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2040080595
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040080592}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2048339715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55160,6 +54969,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 899339199}
+  - {fileID: 1352520470}
   - {fileID: 1058940209}
   - {fileID: 1651859325}
   m_Father: {fileID: 866478561}
