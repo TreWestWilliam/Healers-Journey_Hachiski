@@ -56730,6 +56730,11 @@ PrefabInstance:
       propertyPath: npcName
       value: Won
       objectReference: {fileID: 0}
+    - target: {fileID: 4769431176350349171, guid: 8523bb680bb21ba48a4525bd774faa40,
+        type: 3}
+      propertyPath: ailAfterDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7456000589898623324, guid: 8523bb680bb21ba48a4525bd774faa40,
         type: 3}
       propertyPath: m_LocalPosition.x

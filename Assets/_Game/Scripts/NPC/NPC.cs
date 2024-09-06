@@ -10,6 +10,8 @@ public class NPC : MonoBehaviour, IInteractable
 
 	public string npcName;
 
+	public bool ailAfterDelay;
+
 	private GameObject _dialogueBoxInstance;
 	private DialogueBox _dialogueBox;
 
@@ -87,7 +89,7 @@ public class NPC : MonoBehaviour, IInteractable
             audioSource.clip = healthySound;
             audioSource.Play();
         }
-        AilmentInflicter.Instance.curedNPC(this, ailment);
+        AilmentInflicter.Instance.curedNPC(this, ailment, ailAfterDelay);
 		ailment = null;
     }
 
