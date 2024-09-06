@@ -49,8 +49,12 @@ public class StringRefDrawer : PropertyDrawer
             }
         }
 
+        float extraHeight = GetPropertyHeight(property, label);
         lineCount(str);
-        //position.height *= lines;
+        extraHeight = GetPropertyHeight(property, label) - extraHeight;
+        position.height = GetPropertyHeight(property, label);
+        GUILayoutUtility.GetRect(0f, extraHeight);
+        lines = 1;
 
         // Calculate rect for configuration button
         Rect buttonRect = new Rect(position);

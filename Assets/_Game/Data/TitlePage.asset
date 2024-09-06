@@ -15,16 +15,44 @@ MonoBehaviour:
   Name: Title
   credits:
   - UseConstant: 1
-    ConstantValue: Team Lion - YSL
+    ConstantValue: <b>Team Lion - YSL</b>
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Sidret Mangan @Sidret Mangan - Leader / Producer
+    ConstantValue: '
+
+      <b> First Sprint :</b>'
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Lance Eisele @IntrepidNeon   - Lead Programmer
+    ConstantValue: Sidret Mangan @Sidret Mangan -  Leader / Producer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Lance Eisele @IntrepidNeon  - Lead Programmer
     Variable: {fileID: 0}
   - UseConstant: 1
     ConstantValue: Christian Visaya @nelucchi - Programmer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Allison @allisondw - Junior Game Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Aditya Gopal @adityagopal -  Game Designer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Furkan Guder @furkanguder - Game Artist Shadowing
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Sams @thesamsown - 3D Game Artist Shadowing
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Emily @Slug - 2D Game Artist Shadowing
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: '
+
+      <b> First and Second Sprint :</b>'
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Jonathan Hernandez @BozosBros - 3D Game Artist, Team Leader
     Variable: {fileID: 0}
   - UseConstant: 1
     ConstantValue: Garrett Slattengren @Garrett - Programmer Shadowing
@@ -36,25 +64,10 @@ MonoBehaviour:
     ConstantValue: Julius @jujubeez - Level Designer
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Allison @allisondw - Junior Game Designer
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Aditya Gopal @adityagopal - Game Designer
-    Variable: {fileID: 0}
-  - UseConstant: 1
     ConstantValue: Linden Killam @HeadMooseInCharge    - Sound Artist
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Jay Rothman @Jay   - Sound Artist
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Furkan Guder @furkanguder - Game Artist Shadowing
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Sams @thesamsown - 3D Game Artist Shadowing
-    Variable: {fileID: 0}
-  - UseConstant: 1
-    ConstantValue: Jonathan Hernandez @BozosBros - 3D Game Artist
+    ConstantValue: Jay Rothman @Jay - Sound Artist
     Variable: {fileID: 0}
   - UseConstant: 1
     ConstantValue: Melissa Cerrato @Melissa_Cerrato - UI Designer
@@ -63,5 +76,19 @@ MonoBehaviour:
     ConstantValue: Tingella @tingella - 2D Game Artist
     Variable: {fileID: 0}
   - UseConstant: 1
-    ConstantValue: Emily @Slug - 2D Game Artist Shadowing
+    ConstantValue: '
+
+      <b> Second Sprint :</b>'
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Hachiski @Hachiski - Programmer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: xanib. @xanib. - Producer
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Ian @ian - Sound Artist
+    Variable: {fileID: 0}
+  - UseConstant: 1
+    ConstantValue: Lauren @WOWEE - 3D Artist
     Variable: {fileID: 0}

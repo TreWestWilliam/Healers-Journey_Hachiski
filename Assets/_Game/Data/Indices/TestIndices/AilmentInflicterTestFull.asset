@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a6cc76143713014fb045b5ac6e6d6e7, type: 3}
-  m_Name: AilmentInflicterTest
+  m_Name: AilmentInflicterTestFull
   m_EditorClassIdentifier: 
   Name: Ailment Inflicter
   title: Ailment Inflicter
@@ -18,6 +18,8 @@ MonoBehaviour:
   - data:
     - {fileID: 11400000, guid: 2b6e4b36e178ea64d8337b588971b075, type: 2}
     - {fileID: 11400000, guid: 76cab7ba666109748bb2320c708ca179, type: 2}
+    - {fileID: 11400000, guid: 5db46f1c00010464fa010a30e038fbd1, type: 2}
+    - {fileID: 11400000, guid: 9594b5060dcf81b4391c610b11742116, type: 2}
   - data:
     - {fileID: 11400000, guid: 362403503f7e0a64c8f3585bd2d0b2b5, type: 2}
     - {fileID: 11400000, guid: b78eedb383e2e1e408ca3d6822e5f0a9, type: 2}

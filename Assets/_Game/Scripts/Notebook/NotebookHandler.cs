@@ -49,6 +49,14 @@ public class NotebookHandler : MonoBehaviour
     private void open()
     {
         gameObject.SetActive(true);
+        if(currentPage == indexPage.gameObject)
+        {
+            goToIndexPage(indexPage.index);
+        }
+        else if(currentPage == entryPage.gameObject)
+        {
+            goToEntryPage(entryPage.currentEntry);
+        }
     }
 
     public void closeNotebook()
