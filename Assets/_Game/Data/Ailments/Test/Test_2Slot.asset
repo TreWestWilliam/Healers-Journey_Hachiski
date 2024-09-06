@@ -38,7 +38,22 @@ MonoBehaviour:
     recipe:
     - ingredient: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
+    - ingredient: {fileID: 11400000, guid: 72cbb71ee9833d04782b53bb91c33551, type: 2}
+      temperature: 0
+  - cureName:
+      UseConstant: 1
+      ConstantValue: Test Cure
+      Variable: {fileID: 0}
+    cureSprite:
+      UseConstant: 0
+      ConstantValue: {fileID: 0}
+      Variable: {fileID: 0}
+    preparation:
+      UseConstant: 1
+      ConstantValue: 
+      Variable: {fileID: 0}
+    recipe:
+    - ingredient: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
       temperature: 0
   complaints:
   - UseConstant: 1

@@ -14,6 +14,7 @@ public class SleepScript : MonoBehaviour, IInteractable
 
     public void Engage(PlayerMovement player)
     {
+        //Debug.Log("Bed is working");
         try
         {
             _DayManager.GoNextDay();

@@ -30,17 +30,37 @@ public class DayManager : MonoBehaviour
         {
             if (!DS.HasBeenDone) 
             {
-                if (DS.npcCheck.ailment == null  && _AilmentInflictor.GetTotalCured() > DS.requiredTotal) // If we're good to go
+                if (DS.npcCheck != null) 
                 {
-                    foreach (GameObject GO in DS.EnableObjects) 
+                    if (DS.npcCheck.ailment == null && _AilmentInflictor.GetTotalCured() >= DS.requiredTotal) // If we're good to go
                     {
-                        GO.SetActive(true);
+                        foreach (GameObject GO in DS.EnableObjects)
+                        {
+                            GO.SetActive(true);
+                        }
+                        foreach (GameObject GO in DS.DisableObjects)
+                        {
+                            GO.SetActive(false);
+                        }
                     }
-                    foreach (GameObject GO in DS.DisableObjects)
+                    DS.OnConditionsMet.Invoke();
+                }
+                else 
+                {
+                    if (_AilmentInflictor.GetTotalCured() >= DS.requiredTotal)
                     {
-                        GO.SetActive(false);
+                        foreach (GameObject GO in DS.EnableObjects)
+                        {
+                            GO.SetActive(true);
+                        }
+                        foreach (GameObject GO in DS.DisableObjects)
+                        {
+                            GO.SetActive(false);
+                        }
+                        DS.OnConditionsMet.Invoke();
                     }
                 }
+                
             }
         }
         CurrentDay++;
@@ -58,4 +78,5 @@ public struct DayStuff
     public bool HasBeenDone;
     public GameObject[] EnableObjects;
     public GameObject[] DisableObjects;
+    public UnityEvent OnConditionsMet;
 }
