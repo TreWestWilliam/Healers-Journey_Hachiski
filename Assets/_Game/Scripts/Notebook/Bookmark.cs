@@ -61,7 +61,7 @@ public class Bookmark : MonoBehaviour
     public void removeFromPage()
     {
         page = null;
-        setLables(string.Empty);
+        setLables("<size=8>Click to assign open entry</size>");
         turnFromPage();
     }
 

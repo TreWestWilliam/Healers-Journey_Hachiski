@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class TitlePage : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class TitlePage : MonoBehaviour
     {
         foreach(string credit in titleData.credits)
         {
-            dedication.text += credit + ", ";
+            string divider = credit.Last() == '>' ? " " : ", ";
+            dedication.text += credit + divider;
         }
         if(titleData.credits.Length > 0)
         {
