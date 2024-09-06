@@ -75,6 +75,7 @@ public struct DayStuff
 {
     public NPC npcCheck;
     public int requiredTotal;
+    public string SleepMessage;
     public bool HasBeenDone;
     public GameObject[] EnableObjects;
     public GameObject[] DisableObjects;

@@ -16,6 +16,6 @@ MonoBehaviour:
   title: Ailment Inflicter
   tiers:
   - data:
-    - {fileID: 11400000, guid: 5db46f1c00010464fa010a30e038fbd1, type: 2}
-    - {fileID: 11400000, guid: 9594b5060dcf81b4391c610b11742116, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
   - data: []
