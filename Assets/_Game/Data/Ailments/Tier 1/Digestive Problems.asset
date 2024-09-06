@@ -40,10 +40,6 @@ MonoBehaviour:
     recipe:
     - ingredient: {fileID: 11400000, guid: e8722254de0cd48408040d2941259f02, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
-      temperature: 0
-    - ingredient: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
-      temperature: 0
   complaints:
   - UseConstant: 1
     ConstantValue: I've been having a lot of stomach pain and bloating. It's really

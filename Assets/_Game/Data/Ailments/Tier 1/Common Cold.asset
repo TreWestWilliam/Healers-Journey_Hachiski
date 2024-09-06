@@ -39,11 +39,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     recipe:
     - ingredient: {fileID: 11400000, guid: 1e29f6dcacc8c1c4eacdac3d4ae59ce9, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: b30328b2ed45d2648b01c4b4f94385df, type: 2}
-      temperature: 1
+      temperature: 0
   complaints:
   - UseConstant: 1
     ConstantValue: My sinuses are so congested, and I keep getting these chills and

@@ -39,11 +39,7 @@ MonoBehaviour:
       Variable: {fileID: 0}
     recipe:
     - ingredient: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 940202ee8dd1b12418d3cc3f507af7b9, type: 2}
-      temperature: 1
-    - ingredient: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
-      temperature: 1
+      temperature: 0
   complaints:
   - UseConstant: 1
     ConstantValue: I have no energy at all, and my muscles feel so weak.
