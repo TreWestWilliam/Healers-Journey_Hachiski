@@ -15,18 +15,37 @@ public class MainMenuButtons : MonoBehaviour
 
     [SerializeField] private GameObject title;
     [SerializeField] private GameObject buttons;
+    private bool buttonsActive = false;
+
+    private void Start()
+    {
+        buttons.SetActive(false);
+    }
+
     private void Update()
     {
         Color titleColor = title.GetComponent<TMP_Text>().color;
         titleColor.a = Mathf.Min(Mathf.Max(timer - titleFadeTime, 0) / titleFadeLength, 1);
         title.GetComponent<TMP_Text>().color = titleColor;
 
-        foreach (Transform child in buttons.transform)
+        if (timer >= buttonFadeTime)
         {
-            Color buttonColor = child.GetComponent<Button>().colors.normalColor;
-            buttonColor.a = Mathf.Min(Mathf.Max(timer - buttonFadeTime, 0) / buttonFadeLength, 1);
-        }
+            if (!buttonsActive)
+            {
+                buttons.SetActive(true);
+                buttonsActive = true;
+            }
+            foreach (Transform child in buttons.transform)
+            {
+                Color buttonColor = child.GetComponent<Image>().color;
+                buttonColor.a = Mathf.Min(Mathf.Max(timer - buttonFadeTime, 0) / buttonFadeLength, 1);
+                child.GetComponent<Image>().color = buttonColor;
 
+                Color textColor = child.GetComponentInChildren<TMP_Text>().color;
+                textColor.a = Mathf.Min(Mathf.Max(timer - buttonFadeTime, 0) / buttonFadeLength, 1);
+                child.GetComponentInChildren<TMP_Text>().color = textColor;
+            }
+        }
         timer += Time.deltaTime;
     }
 
