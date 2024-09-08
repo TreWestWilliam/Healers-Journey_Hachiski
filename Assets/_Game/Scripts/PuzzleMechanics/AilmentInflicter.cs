@@ -305,7 +305,7 @@ public class AilmentInflicter : MonoBehaviour
 
         ailNPCsFromList(listToSicken, count);
     }
-
+    public int GetNPCListLength() { return npcs.Count; }
     public void ailNPCsTotal(int count)
     {
         List<NPC> listToSicken = new List<NPC>();

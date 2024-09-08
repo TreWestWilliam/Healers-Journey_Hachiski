@@ -26,6 +26,8 @@ public class DayManager : MonoBehaviour
     public void GoNextDay() 
     {
 
+        _AilmentInflictor.ailNPCs(_AilmentInflictor.GetNPCListLength() / 2);
+
         foreach (DayStuff DS in DayChecks) 
         {
             if (!DS.HasBeenDone) 

@@ -38,11 +38,11 @@ MonoBehaviour:
       ConstantValue: 
       Variable: {fileID: 0}
     recipe:
-    - ingredient: {fileID: 11400000, guid: 694b0694280a782438b5d1d655f8cafe, type: 2}
+    - ingredient: {fileID: 11400000, guid: 3f100f38260713345838798fc7837f25, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: 6fb074c90286355448e83fdd03fd9033, type: 2}
+    - ingredient: {fileID: 11400000, guid: 0d4249845d223914689e010999375496, type: 2}
       temperature: 0
-    - ingredient: {fileID: 11400000, guid: fa4ec9c8e2830f84089d5fae07a5b7ed, type: 2}
+    - ingredient: {fileID: 11400000, guid: 5f20e35ca5678b04a947645d0cb9d68c, type: 2}
       temperature: 0
   complaints:
   - UseConstant: 1

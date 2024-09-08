@@ -42,8 +42,6 @@ MonoBehaviour:
       temperature: 1
     - ingredient: {fileID: 11400000, guid: 4fd1d1943e14d484ab39d90ee3ee78a4, type: 2}
       temperature: 1
-    - ingredient: {fileID: 11400000, guid: 49adc3a0d423249479f8979623222ed6, type: 2}
-      temperature: 1
   complaints:
   - UseConstant: 1
     ConstantValue: I have a terrible headache, and my gums are sensitive and bleeding.
