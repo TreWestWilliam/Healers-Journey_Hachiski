@@ -38,7 +38,10 @@ public class AilmentInflicter : MonoBehaviour
     {
         foreach(NPC npc in npcs)
         {
-            ailNPCAfterDelay(npc);
+            if(npc.ailAfterDelay)
+            {
+                ailNPCAfterDelay(npc);
+            }
         }
     }
 
@@ -52,14 +55,14 @@ public class AilmentInflicter : MonoBehaviour
                 count = index.tiers.Length;
             }
         }
-        tierCount =  count;
+        tierCount = count;
         updateInflictedLengths();
         updateAilmentsPerTierCounts();
     }
 
     private void updateInflictedLengths()
     {
-       if(tierCount > lastInflictedAilment.Length)
+        if(tierCount > lastInflictedAilment.Length)
         {
             AilmentData[] temp = new AilmentData[tierCount];
             for(int i = 0; i < lastInflictedAilment.Length; i++)
@@ -68,7 +71,7 @@ public class AilmentInflicter : MonoBehaviour
             }
             lastInflictedAilment = temp;
         }
-       if(tierCount > inflictedAilments.Length)
+        if(tierCount > inflictedAilments.Length)
         {
             List<AilmentData>[] temp = new List<AilmentData>[tierCount];
             for(int i = 0; i < tierCount; i++)
@@ -105,7 +108,7 @@ public class AilmentInflicter : MonoBehaviour
             foreach(GenericData data in datas)
             {
                 AilmentData ailment = data as AilmentData;
-                if(ailment != null  && !ailmentLists[ailment.tier].Contains(ailment))
+                if(ailment != null && !ailmentLists[ailment.tier].Contains(ailment))
                 {
                     ailmentLists[ailment.tier].Add(ailment);
                 }
@@ -203,7 +206,10 @@ public class AilmentInflicter : MonoBehaviour
     public void addNPC(NPC npc)
     {
         npcs.Add(npc);
-        ailNPCAfterDelay(npc);
+        if(npc.ailAfterDelay)
+        {
+            ailNPCAfterDelay(npc);
+        }
     }
 
     public void removeNPC(NPC npc)
@@ -211,12 +217,14 @@ public class AilmentInflicter : MonoBehaviour
         npcs.Remove(npc);
     }
 
-    public void curedNPC(NPC npc, AilmentData ailment)
+    public void curedNPC(NPC npc, AilmentData ailment, bool ailAfterDelay = true)
     {
         TotalCured++;
         inflictedAilments[ailment.tier].Remove(ailment);
-        ailNPCAfterDelay(npc);
-
+        if(ailAfterDelay)
+        {
+            ailNPCAfterDelay(npc);
+        }
     }
 
     private AilmentData pickAilment()
@@ -267,7 +275,53 @@ public class AilmentInflicter : MonoBehaviour
             lastInflictedAilment[ailment.tier] = ailment;
 
             npc.developeAilment(ailment);
-        }    
+        }
+    }
+
+    private void ailNPCsFromList(List<NPC> listToSicken, int count)
+    {
+        for(int i = 0; i < count; i++)
+        {
+            if(listToSicken.Count == 0)
+            {
+                break;
+            }
+            int randomIndex = Random.Range(0, listToSicken.Count);
+            ailNPC(listToSicken[randomIndex]);
+            listToSicken.RemoveAt(randomIndex);
+        }
+    }
+
+    public void ailNPCs(int count)
+    {
+        List<NPC> listToSicken = new List<NPC>();
+        foreach(NPC npc in npcs)
+        {
+            if(npc.ailment == null)
+            {
+                listToSicken.Add(npc);
+            }
+        }
+
+        ailNPCsFromList(listToSicken, count);
+    }
+    public int GetNPCListLength() { return npcs.Count; }
+    public void ailNPCsTotal(int count)
+    {
+        List<NPC> listToSicken = new List<NPC>();
+        foreach(NPC npc in npcs)
+        {
+            if(npc.ailment == null)
+            {
+                listToSicken.Add(npc);
+            }
+            else
+            {
+                count--;
+            }
+        }
+
+        ailNPCsFromList(listToSicken, count);
     }
 
     private void ailNPCAfterDelay(NPC npc)
@@ -283,6 +337,9 @@ public class AilmentInflicter : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        ailNPC(npc);
+        if(npc.ailAfterDelay)
+        {
+            ailNPC(npc);
+        }
     }
 }

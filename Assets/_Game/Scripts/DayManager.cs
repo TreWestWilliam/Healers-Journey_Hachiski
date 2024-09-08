@@ -26,6 +26,8 @@ public class DayManager : MonoBehaviour
     public void GoNextDay() 
     {
 
+        _AilmentInflictor.ailNPCs(_AilmentInflictor.GetNPCListLength() / 2);
+
         foreach (DayStuff DS in DayChecks) 
         {
             if (!DS.HasBeenDone) 
@@ -75,6 +77,7 @@ public struct DayStuff
 {
     public NPC npcCheck;
     public int requiredTotal;
+    public string SleepMessage;
     public bool HasBeenDone;
     public GameObject[] EnableObjects;
     public GameObject[] DisableObjects;

@@ -6,6 +6,7 @@ using UnityEngine;
 public class SleepScript : MonoBehaviour, IInteractable
 {
     [SerializeField] private DayManager _DayManager;
+    private TransitionManager TM;
 
     public void Disengage(PlayerMovement player)
     {
@@ -18,6 +19,7 @@ public class SleepScript : MonoBehaviour, IInteractable
         try
         {
             _DayManager.GoNextDay();
+            TM.StartSleep();
         }
         catch (Exception e)
         {
@@ -32,6 +34,10 @@ public class SleepScript : MonoBehaviour, IInteractable
         if (_DayManager == null) 
         {
             _DayManager = GameObject.FindAnyObjectByType<DayManager>();
+        }
+        if (TM == null) 
+        {
+            TM = FindAnyObjectByType<TransitionManager>();
         }
     }
 
